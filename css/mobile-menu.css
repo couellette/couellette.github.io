@@ -1,0 +1,65 @@
+/* CSS Document */
+.mobile-menu-container {
+	display:none;
+}
+@media (max-width:767px) {
+/* Additional Mobile CSS */
+.corey-container {
+    text-align: left;
+    left: 4px;
+    top: 1px;
+	    width: 97%;
+}
+.menu-text {
+	display:none;
+}
+#port {
+	margin-left:0px!important;
+}
+/* ends here */
+.mobile-menu-container {
+    display: block;
+    height: 0px;
+}
+#mobile-menu {
+    opacity: 0;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    list-style: none;
+    overflow: hidden;
+}
+#mobile-menu a {
+    display: list-item;
+    text-decoration: none;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+	    background: rgba(48, 48, 48, 0.7);
+		margin-bottom:	1px
+	
+}
+
+.mobile-menu-icon {
+    width: 48px;
+    height: inherit;
+    position: absolute;
+    right: 5px;
+    top: 1px;
+}
+#collapse {
+	opacity:0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter:alpha(opacity=100);
+
+}
+#expand {
+	opacity:1;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter:alpha(opacity=100);
+
+}
+}
