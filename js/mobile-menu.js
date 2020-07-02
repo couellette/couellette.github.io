@@ -10,3 +10,12 @@ document.getElementById('mobile-menu').style.cssText = 'opacity:0!important; tra
 document.getElementById('collapse').style.cssText = 'display:none; transition: ease-in-out, .6s;' ;
 document.getElementById('expand').style.cssText = 'display:block; transition: ease-in-out, .6s;' ;
 }
+// iframe = $("iframe")
+// video = $("#bgvid")
+// if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+//    iframe.remove()
+// }
+// else {
+
+//   video.remove()
+// }

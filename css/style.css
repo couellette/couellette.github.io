@@ -18,6 +18,24 @@ li, ul {
     text-align: center;
     width: 100%;
 }
+.conference-presentation {
+    color: rgba(255, 255, 255, 0.5);
+    border: solid 2px rgba(255, 255, 255, 0.51);
+    border-radius: 10px;
+    padding: 5px;
+    background: hsla(0, 0%, 0%, 0.19);
+    position: absolute;
+    right: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    transition: ease-in-out 1s;
+}
+.conference-presentation:hover {
+    color: rgba(255, 255, 255, 1);
+    border: solid 2px rgba(255, 255, 255, 1);
+
+  
+}
 .corey {
     width: 80px;
     height: inherit;
@@ -50,7 +68,6 @@ header a {
 video#bgvid, iframe { 
     position: fixed;
     top: 50%;
-    left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
@@ -58,8 +75,14 @@ video#bgvid, iframe {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-  background: url(../images/Slide-Show.jpg) no-repeat;
+  /*background: url(../images/Slide-Show.jpg) no-repeat;*/
     background-size: cover; 
+}
+video#bgvid{ 
+    left: 50%;
+}
+iframe { 
+    left: 50%;
 }
 .front-page-banner {
     /* background-image: linear-gradient( rgba(40, 148, 126, 0.8), rgba(42, 100, 88, 0.8) ), url(../images/front-banner.jpg); */
@@ -697,7 +720,12 @@ display: flex;
 	.gallery-holder {
     display: initial;
 }
-	
+	video#bgvid{ 
+    left: -10%;
+}
+.conference-presentation {
+    display: none;
+}
 	.gallery-holder {
     display: initial;
 }
@@ -1794,6 +1822,13 @@ main:after {
     top: -20px;
     top: -1.25rem
 }
+    #topcontrol img {
+    width: 20px;
+    cursor: pointer;
+    z-index: 10000000000;
+    position: relative;
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     .timeline .timeline-event .timeline-label:after {
@@ -1803,6 +1838,10 @@ main:after {
         left: -1.25rem;
         top: 50%;
     }
+    iframe {
+        height: 100vh;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
