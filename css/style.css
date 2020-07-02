@@ -1717,7 +1717,7 @@ main:after {
 .timeline:before {
     padding: 0 0 30px;
     padding: 0 0 1.875rem;
-    content: "2016"
+    content: "Today"
 }
 
 .timeline:after {
