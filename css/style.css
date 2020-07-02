@@ -1112,7 +1112,7 @@ main:after {
 }
 
 
-@media  (min-width: 768px) {
+@media  (max-width: 768px) {
     video#bgvid{ 
     left: -10%;
 }
