@@ -1112,14 +1112,6 @@ main:after {
 }
 
 
-@media  (max-width: 768px) {
-    video#bgvid{ 
-    left: -10%;
-}
-.conference-presentation {
-    display: none;
-}
-}
 
 @media screen and (min-width: 768px) {
     .item.skill {
@@ -1933,3 +1925,12 @@ main:after {
     left: auto;
 }
 }
+@media  (max-width: 768px) {
+    video#bgvid{ 
+    left: -10%;
+}
+.conference-presentation {
+    display: none;
+}
+}
+
