@@ -716,16 +716,12 @@ display: flex;
 #esight-visual {
     top: 21px;
 }
+
 @media screen and (max-width: 768px) {
 	.gallery-holder {
     display: initial;
 }
-	video#bgvid{ 
-    left: -10%;
-}
-.conference-presentation {
-    display: none;
-}
+
 	.gallery-holder {
     display: initial;
 }
@@ -985,7 +981,7 @@ small {
     white-space: nowrap;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url("svg/sprite.svg");
+    /*background-image: url("svg/sprite.svg");*/
     background-position: 0 0;
     vertical-align: middle
 }
@@ -1116,6 +1112,14 @@ main:after {
 }
 
 
+@media  (min-width: 768px) {
+    video#bgvid{ 
+    left: -10%;
+}
+.conference-presentation {
+    display: none;
+}
+}
 
 @media screen and (min-width: 768px) {
     .item.skill {
