@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.geo.tile.v0.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/d3.geo.tile.v0.min.js"></script>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+        path:hover {
+	fill-opacity: .7;
+}
+body {
+	background: #666666;
+}
+/* Style for Custom Tooltip */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0px;
+    pointer-events: none;
+    color: white;
+    padding: 5px;
+    border: solid 1px white;
+    font-size: 13px;    z-index: 10000000;
+
+}
+path .active {
+  fill: orange;
+}
+iframe {
+  opacity: 1
+}     
+
+.map-background {
+    background: rgba(99, 98, 98, 0.8);
+   width: 100vw;
+ height: 100vh;
+    margin: 0 auto;
+}
+/* Legend Font Style */
+
+        
+/* Legend Position Style */
+.legend {
+    position: absolute;
+    left: 49px;
+    top: -102px;
+    background: rgba(255, 255, 255, 0.86);
+    height: 80px;
+    padding: 10px;
+    /* border-radius: 0 0 10px; */
+    /* box-shadow: 3px 3px 0 0px #afafaf; */
+    font-size: 14px;
+    width: 174px;
+}
+
+
+.sphere {
+  fill: transparent;
+}
+
+.land {
+  fill: #000;
+}
+
+.boundary {
+  fill: none;
+  stroke: #ccc;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.layer {
+    position: absolute;
+    z-index: 1000;
+}
+#map {
+	position: absolute;
+}
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+    </style>
+</head>
+<body><div id='map'></div>
+<div id="container">
+  <div id="map-canvas">
+    <canvas>
+      <div id="points"></div>
+    </canvas>
+
+<script src="js/menu.js"></script> <script src="map-canvas.js"></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiY291ZWxsZXR0ZSIsImEiOiJjajBrMHVmZW4wMXllMnFtZW9weDhuancwIn0.vSIlhzkgSsNyGQMz5C28iw';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/mapbox/dark-v9', //hosted style id
+    center: [0, 8], // starting position
+    zoom: 2 // starting zoom
+});
+</script>
+
+</body>
+</html>

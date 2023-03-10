@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+  <script src="selector.js"></script>
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/autocomplete.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+    <style>
+     
+body {
+	background: #666666;
+}
+/* Style for Custom Tooltip */
+body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0;     font-family: arial;}
+    #filter {
+    position: absolute;
+    left: 38%;
+    z-index: 10000;
+    font-size: 16px;
+    margin-top: 15px;
+    background: #585858;
+    color: white;
+    border: none;
+    border-radius: 0;
+    height: 29px;
+    width: 200px;
+
+}
+    #map { 
+      position:absolute; 
+      width: 100%;
+      height: 100%;
+    }
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    nav {
+      position: absolute;
+      top: 40px;
+      left: 20px;
+      z-index: 1;
+    }
+    #circle {
+      background-color: rgba(20, 20, 20, 0.1);
+      font-family: Helvetica, sans-serif;
+      color: #3b83bd;
+      padding: 5px 8px;
+      border-radius: 3px;
+      cursor: pointer;
+      border: 1px solid #111;
+
+    }
+    #circle.active {
+      background-color: rgba(250, 250, 250, 0.9);
+    }
+    circle {
+    	opacity: .6;
+    	stroke: gray;
+    }
+    .button-container {
+    position: absolute;
+    z-index: 1100;
+    display: block;
+}
+button {
+    width: 102px;
+    border: none;
+    color: white;
+    background: #656565;
+    text-align: left;
+    text-indent: 10px;
+}
+#map {
+    width: 100%;
+    height: 100%;
+}
+.data {
+    width: 25%;
+    height: 1005px;
+    margin: 0;
+    height: 100vh;
+    z-index: 1999;
+    position: absolute;
+    right: 0;
+}
+.footer-data {
+    height: 25vh;
+    background: #333;
+    width: 75%;
+    position: absolute;
+    border-top:solid 1px #666;
+    bottom: 0;
+}
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 2px;
+    font: 12px sans-serif;
+  opacity: 1!important;
+    border: none;
+    pointer-events: none;
+    color: black;
+    padding: 5px;
+    font-size: 13px;    z-index: 10000000;
+        transition: ease-in-out 3s;
+
+
+}
+.scat {
+  fill: red;
+}
+#legend {
+    width: 100px;
+    height: 500px;
+    position: absolute;
+    z-index: 1000000;
+    fill: white;
+    right: 25%;
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-top: 9px;
+}
+.arc text, .wedge text {
+    fill: white;
+    /* stroke: black; */
+    font: 12px sans-serif;
+    text-anchor: middle;
+    stroke-linejoin: miter;
+    font-size: 15px;
+    /* font-weight: bold; */
+    text-shadow: 1px 1px #333333;
+}
+
+.arc path, .wedge path {
+    stroke: #333;
+    stroke-width: 3px;
+}
+#pie {
+    width: 350px;
+    margin-left: 35px;
+    position: absolute;
+    bottom: -30px;
+    height: 327px;
+
+}
+.twitter-profile {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+    margin: 0 auto;
+    margin-left: 13px;
+    padding: 14px;
+    width: 210px;
+}
+.twitter-username {
+      font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    margin-right: 2px;
+    word-wrap: break-word;
+}
+.twitter-text {
+  font-size: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    letter-spacing: .01em;
+}
+.twitter-influence-container {
+    display: -webkit-box;
+    color:#66757f;
+}
+.twitter-influence {
+      color: #66757f;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 3px;
+    transition: color .15s ease-in-out;
+}
+.twitter-influence-container {
+}
+.twitter-influence {
+    color: #66757f;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 3px;
+    transition: color .15s ease-in-out;
+    position: relative;
+    left: -57px;
+}
+.twitter-profile img {
+    border-radius: 7px;
+    border: solid 3px #d8d8d8;
+}
+#timeline {
+    position: absolute;
+    z-index: 1000000000;
+    width: 100%;
+    height: 35px;
+    display: -webkit-box;
+    bottom: 0
+}
+.country {
+    margin-right: 10px;
+    line-height: 35px;
+    text-indent: 10px;
+    color: white;
+}
+rect {
+    stroke: #75cff0;
+    stroke-width: 3px;
+}
+    </style>
+</head>
+<body>  
+
+<div class="button-container">
+<div><button id='toronto'>Toronto</button></div>
+<div><button id='waterloo'>Waterloo</button></div>
+<div><button id='pune'>Pune</button></div>
+<div><button id='canada'>Princeton</button></div>
+<div><button id='canada'>Tehran</button></div>
+<div><button id='canada'>Paris</button></div>
+</div>
+<section>
+<div id="timeline"></div>
+  <div id='map'></div>
+  </div>
+</section>
+<!--<div class="footer-data"></div>-->
+
+<script src="mapbox-amir.js"></script>
+<script src="pie.js"></script>
+</body>
+</html>

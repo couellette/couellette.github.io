@@ -1,0 +1,13 @@
+{
+  "manifestVersion": 1,
+  "html": [
+    {
+      "filename": "parent.html",
+      "name": "EV visualization",
+      "type": "fragment"
+    }
+  ],
+  "bodyEnd": {
+    "js": ["dist/parent.js"]
+  }
+}

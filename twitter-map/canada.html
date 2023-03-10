@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/d3.geo.tile.v0.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+
+/* On mouse hover, lighten state color */
+path:hover {
+	fill-opacity: .7;
+}
+body {
+	background: #666666;
+}
+/* Style for Custom Tooltip */
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    padding: 2px;
+    font: 12px sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    border: 0px;
+    pointer-events: none;
+    color: white;
+    padding: 5px;
+    border: solid 1px white;
+    font-size: 13px;    z-index: 10000000;
+
+}
+path .active {
+  fill: orange;
+}
+iframe {
+  opacity: 1
+}     
+
+.map-background {
+    background: rgba(99, 98, 98, 0.8);
+   width: 100vw;
+ height: 100vh;
+    margin: 0 auto;
+}
+/* Legend Font Style */
+
+        
+/* Legend Position Style */
+.legend {
+    position: absolute;
+    left: 49px;
+    top: -102px;
+    background: rgba(255, 255, 255, 0.86);
+    height: 80px;
+    padding: 10px;
+    /* border-radius: 0 0 10px; */
+    /* box-shadow: 3px 3px 0 0px #afafaf; */
+    font-size: 14px;
+    width: 174px;
+}
+
+
+.sphere {
+  fill: transparent;
+}
+
+.land {
+  fill: #000;
+}
+
+.boundary {
+  fill: none;
+  stroke: #ccc;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+</style>
+</head>
+<body>
+
+<header>Title goes here<div class="menu-button-container">
+		<div id="close-menu" class="invisible">❯</div>
+	<div id="open-menu" class="visible">
+		<div class="menu-icon"></div>
+		<div class="menu-icon"></div>
+		<div class="menu-icon"></div>
+	</div>
+
+</div >	
+
+</header>
+<!--  HTML for Side menu navigation -->
+
+<div class="upper-dashboard">
+
+<!--<div id="left"></div>-->
+
+
+<div id="container">
+  <div id="map-canvas">
+    <canvas>
+      <div id="points"></div>
+    </canvas>
+<div id="map"></div>
+
+
+</div>
+
+<!--<div id="right"></div>-->
+</div>
+<!--
+<div class="lower-dashboard">
+	<div id="start"></div>
+	<div id="end"></div>
+</div>
+-->
+</body>
+
+</html><script src="js/menu.js"></script> <script src="map-svg.js"></script>

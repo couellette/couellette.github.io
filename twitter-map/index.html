@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+        <title>#UXploration of Data</title>                
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.0/mapbox-gl.css' rel='stylesheet' />
+         <link rel="stylesheet" type="text/css" href="css/search.css">
+        <link rel="stylesheet" href="css/jquery-ui-1.7.1.custom.css" type="text/css" />
+        <link rel="Stylesheet" href="css/ui.slider.extras.css" type="text/css" />
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <script type="text/javascript" src="js/autocomplete.js"></script>
+        <script src="//d3js.org/d3.v3.min.js"></script>
+        <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+        <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.7.1.custom.min.js"></script>
+        <script type="text/javascript" src="js/selectToUISlider.jQuery.js"></script>
+        <style>
+        body {
+            background: #666666;
+        overflow: hidden;
+        font-family: sans-serif;
+        }
+        /* Style for Custom Tooltip */
+        body { margin:0;position:fixed;top:0;right:0;bottom:0;left:0; }
+        #filter {
+        position: absolute;
+        left: 38%;
+        z-index: 10000;
+        font-size: 16px;
+        padding-top: 9px;
+        color: #7e7e7e;
+        font-size: 14px;
+        border: none;
+        border-radius: 0;
+        height: 54px;
+        width: 500px;
+        background: #2d313e;
+        outline: none;
+        line-height: 54px;
+        }
+        #slider3 {
+        margin: 20px 0 10px 20px;
+        width: 900px;
+        }
+        #map {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        }
+        svg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        }
+        nav {
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        z-index: 1;
+        }
+        #circle {
+        background-color: rgba(20, 20, 20, 0.1);
+        color: #3b83bd;
+        padding: 5px 8px;
+        border-radius: 2px;
+        cursor: pointer;
+        border: 1px solid #111;
+        }
+        #circle.active {
+        background-color: rgba(250, 250, 250, 0.9);
+        }
+        circle {
+            opacity: .6;
+            stroke: gray;
+        }
+        .button-container {
+        position: absolute;
+        z-index: 1100;
+        display: block;
+        }
+        button {
+        width: 102px;
+        border: none;
+        color: white;
+        background: #656565;
+        text-align: left;
+        text-indent: 10px;
+        }
+   #map {
+    width: calc(100% - 290px);
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+        .data {
+        width: 290px;
+        background: #efefef;
+        border-left:solid 1px #666;
+        margin: 0;
+        height: 100vh;
+        z-index: 1999;
+        position: absolute;
+        left: 0;
+        }
+        .footer-data {
+        height: 80px;
+        background: #333;
+        width: 100%;
+        position: absolute;
+        border-top:solid 1px #666;
+        bottom: 0;
+        /*padding-left: 300px;*/
+        z-index: 100000;
+        }
+        div.tooltip {
+        position: absolute;
+        text-align: left;
+        width: 250px;
+        padding: 2px;
+        font: 12px sans-serif;
+        border: none;
+        pointer-events: none;
+        color: black;
+        padding: 5px;
+        font-size: 13px;    z-index: 10000000;
+        width: 350px;
+        }
+        svg {
+        overflow: hidden;
+        }
+        .scat {
+        fill: red;
+        }
+        #legend {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        fill: #d0d0d0;
+        font-size: 13px;
+        /* margin-top: 109px; */
+        z-index: -1;
+        bottom: 245px;
+        left: 325px;
+        color: white;
+        }
+        .arc text, .wedge text {
+        fill: white;
+        /* stroke: black; */
+        font: 12px sans-serif;
+        text-anchor: middle;
+        stroke-linejoin: miter;
+        font-size: 15px;
+        /* font-weight: bold; */
+        text-shadow: 1px 1px #ccc;
+        }
+        .arc path, .wedge path {
+        stroke: #333;
+        stroke-width: 3px;
+        }
+        #pie {
+        width: 250px;
+        /* margin-left: 35px; */
+        position: absolute;
+        top: 50px;
+        height: 250px;
+        right: 21px;
+        opacity: .7;
+        }
+        .twitter-profile {
+        background: white;
+        border-radius: 2px;
+        margin: 0 auto;
+        margin-left: 13px;
+        padding: 14px;
+        width: inherit;
+        padding-bottom: 0;
+        }
+        .twitter-username {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 1;
+        margin-right: 2px;
+        word-wrap: break-word;
+        position: absolute;
+        top: 41px;
+        left: 98px;
+        width: -webkit-fill-available;
+        }
+        .twitter-text {
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 300;
+        letter-spacing: .01em;
+        }
+        .twitter-influence-container {
+        display: inline-flex;
+        color:#66757f;
+        }
+        .twitter-influence {
+        color: #66757f;
+        font-size: 15px;
+        font-weight: 600;
+        padding-top: 3px;
+        transition: color .15s ease-in-out;
+        }
+        .twitter-influence-container {
+        }
+        .twitter-influence {
+        color: #66757f;
+        font-size: 18px;
+        font-weight: 600;
+        padding-top: 0px;
+        transition: color .15s ease-in-out;
+        position: relative;
+        left: -51px;
+        top: -6px;
+        }
+        .twitter-profile img {
+        border-radius: 2px;
+        border: solid 3px #d8d8d8;
+        }
+        header {
+        height: 70px;
+        background: #2d313e;
+        margin-left: -250px;
+        z-index: 100000000000;
+        }
+        .hide {
+        display: none!important;
+        }
+        option {
+        display: inline;
+        /* border: solid 1px gray; */
+        margin-left: 5px;
+        /* background: white; */
+        padding: 5px;
+        color: white;
+        width: 86px;
+        /* height: 70px; */
+        padding: 23px;
+        opacity: .6
+        }
+        option:checked, option:hover {
+        opacity: 1;
+        -webkit-text-fill-color: white;
+        color: white!important;
+        background: #2d313e repeat url("data:;base64,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b3ViQG/gAAAAAAAAAAAAR3JuIGRvdWJAb+AAAAAAAAAAAABCbCAgZG91YkBv4AAAAAAAAAAAAEJyZFRVbnRGI1JsdAAAAAAAAAAAAAAAAEJsZCBVbnRGI1JsdAAAAAAAAAAAAAAAAFJzbHRVbnRGI1B4bEBSAAAAAAAAAAAACnZlY3RvckRhdGFib29sAQAAAABQZ1BzZW51bQAAAABQZ1BzAAAAAFBnUEMAAAAATGVmdFVudEYjUmx0AAAAAAAAAAAAAAAAVG9wIFVudEYjUmx0AAAAAAAAAAAAAAAAU2NsIFVudEYjUHJjQFkAAAAAAAAAAAAQY3JvcFdoZW5QcmludGluZ2Jvb2wAAAAADmNyb3BSZWN0Qm90dG9tbG9uZwAAAAAAAAAMY3JvcFJlY3RMZWZ0bG9uZwAAAAAAAAANY3JvcFJlY3RSaWdodGxvbmcAAAAAAAAAC2Nyb3BSZWN0VG9wbG9uZwAAAAAAOEJJTQPtAAAAAAAQAEgAAAABAAIASAAAAAEAAjhCSU0EJgAAAAAADgAAAAAAAAAAAAA/gAAAOEJJTQQNAAAAAAAEAAAAWjhCSU0EGQAAAAAABAAAAB44QklNA/MAAAAAAAkAAAAAAAAAAAEAOEJJTScQAAAAAAAKAAEAAAAAAAAAAjhCSU0D9QAAAAAASAAvZmYAAQBsZmYABgAAAAAAAQAvZmYAAQChmZoABgAAAAAAAQAyAAAAAQBaAAAABgAAAAAAAQA1AAAAAQAtAAAABgAAAAAAAThCSU0D+AAAAAAAcAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAA4QklNBAgAAAAAABAAAAABAAACQAAAAkAAAAAAOEJJTQQeAAAAAAAEAAAAADhCSU0EGgAAAAADSQAAAAYAAAAAAAAAAAAAAMgAAADIAAAACgBVAG4AdABpAHQAbABlAGQALQAxAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAADIAAAAyAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAbnVsbAAAAAIA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IABQAGgAbwB0AG8AcwBoAG8AcAAAABcAQQBkAG8AYgBlACAAUABoAG8AdABvAHMAaABvAHAAIABDAEMAIAAyADAAMQA3AAAAAQA4QklNBAYAAAAAAAcACAAAAAEBAP/hDSBodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpwaG90b3Nob3A9Imh0dHA6Ly9ucy5hZG9iZS5jb20vcGhvdG9zaG9wLzEuMC8iIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDE3LTA0LTIwVDE2OjMyOjI2LTA0OjAwIiB4bXA6TWV0YWRhdGFEYXRlPSIyMDE3LTA0LTIwVDE2OjMyOjI2LTA0OjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNy0wNC0yMFQxNjozMjoyNi0wNDowMCIgZGM6Zm9ybWF0PSJpbWFnZS9qcGVnIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjRhZjcyMjJlLTkxYTgtNGJiNC04MzFmLWI2MzJjZmIyMDRiZSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0YWY3MjIyZS05MWE4LTRiYjQtODMxZi1iNjMyY2ZiMjA0YmUiIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo0YWY3MjIyZS05MWE4LTRiYjQtODMxZi1iNjMyY2ZiMjA0YmUiIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJEaXNwbGF5Ij4gPHhtcE1NOkhpc3Rvcnk+IDxyZGY6U2VxPiA8cmRmOmxpIHN0RXZ0OmFjdGlvbj0iY3JlYXRlZCIgc3RFdnQ6aW5zdGFuY2VJRD0ieG1wLmlpZDo0YWY3MjIyZS05MWE4LTRiYjQtODMxZi1iNjMyY2ZiMjA0YmUiIHN0RXZ0OndoZW49IjIwMTctMDQtMjBUMTY6MzI6MjYtMDQ6MDAiIHN0RXZ0OnNvZnR3YXJlQWdlbnQ9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE3IChNYWNpbnRvc2gpIi8+IDwvcmRmOlNlcT4gPC94bXBNTTpIaXN0b3J5PiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSJ3Ij8+/+IM6ElDQ19QUk9GSUxFAAEBAAAM2GFwcGwCEAAAbW50clJHQiBYWVogB+EAAgANABEACgAaYWNzcEFQUEwAAAAAQVBQTAAAAAAAAAAAAAAAAAAAAAEAAPbWAAEAAAAA0y1hcHBsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA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IRIFMQYAIhNBUQcyYRRxCEKBI5EVUqFiFjMJsSTB0UNy8BfhgjQlklMYY0TxorImNRlUNkVkJwpzg5NGdMLS4vJVZXVWN4SFo7PD0+PzKRqUpLTE1OT0laW1xdXl9ShHV2Y4doaWprbG1ub2Z3eHl6e3x9fn90hYaHiImKi4yNjo+DlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+v/aAAwDAQACEQMRAD8A1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//Q1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//R1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//S1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//T1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//U1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//V1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//W1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//X1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//Q1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//R1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//S1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//T1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//U1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//V1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//W1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//X1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//Q1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//R1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//S1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//T1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//U1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//V1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//W1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//X1ifY56J+ve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuve/de697917r3v3Xuv//Z");;
+        border-top:solid 4px red;
+        }
+   #search-icon {
+    position: absolute;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    z-index: 100000000000000;
+    transition: ease-in-out 1s;
+    font-size: 31px;
+    color: white;
+}
+        .form-control {
+        /*opacity: : 0;*/
+        /*transition: ease-in-out 1s;*/
+        /*right: -400px;*/
+        opacity: 1;
+        right: 10px;
+        }
+        .visible {
+        opacity: 1;
+        right: 20px;
+        }
+        .filters {
+        filter: invert(74%);
+        width: 20px;
+        height: 20px;
+        margin-top: 6px;
+        margin-right: 1px;
+        font-size: 20px!important;
+        }
+        select {
+        overflow: hidden;
+        }
+        .twitter-location {
+        font-weight: 500;
+        line-height: 14px;
+        margin-left: 1px;
+        color: #191a1a;
+        font-size: 14px;
+        font-style: italic;
+        position: absolute;
+        top: 68px;
+        left: 97px;
+        }
+        .bar {
+        fill: rgb(45, 49, 62);
+        }
+        .bar:hover {
+        fill: #666;
+        }
+        .axis {
+        font: 10px sans-serif;
+        fill: gray;
+        }
+        .axis path, .axis line {
+        fill: none;
+        stroke: rgba(134, 134, 134, 0.36);
+        shape-rendering: crispEdges;
+        }
+        #bar-title, #pie-title {
+        color: gray;
+        }
+        #bar {
+        position: absolute;
+        z-index: 10000;
+        width: 396px;
+        height: 500px;
+        bottom: 55px;
+        z-index: 1000;
+        }
+.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+    /* position: absolute; */
+    top: 30px;
+    width: 50%;
+    margin-left: 11px;
+    /* right: 200px; */
+    height: 13px;
+    margin: 0 auto;
+}
+        .ui-slider li span.ui-slider-label-show, .ui-slider dd span.ui-slider-label-show {
+        display: none!important;
+        }
+        .x.axis path {
+        display: none;
+        }
+        .title {
+        font: 20px sans-serif;
+        font-weight: bold;
+        }
+        /* tooltip CSS */
+        .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        z-index: 10000;
+        }
+        .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        content: "\25BC";
+        position: absolute;
+        text-align: center;
+        }
+        /* Style northward tooltips differently */
+        .d3-tip.n:after {
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+        }
+        #dayFilter {
+        display: none;
+        }
+        #bar-title {
+        position: absolute;
+        bottom: 505px;
+        left: 40px;
+        }
+        #pie-title {
+        width: 20vw;
+        text-align: center;
+        margin-top: 20px
+        }
+        header div {
+        color: white;
+        font-size: 32px;
+        z-index: 1000000;
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        }
+        sup {
+        font-size: 20px;
+        }
+        #timeline-title {
+        position: absolute;
+        bottom: 25px;
+        color: white;
+        z-index: 10000000;
+        font-size: 21px;
+        left: 3vw;
+        }
+        #content {
+        z-index: 100000;
+        color: white;
+        position: absolute;
+        right: 10px;
+        bottom: 90px;
+        z-index: 1;
+        }
+        .tweet-box {
+        width: 300px;
+        /* height: 50px; */
+        /* background: white; */
+        margin: 5px;
+        border-radius: 2px;
+        border: solid 1px rgba(204, 204, 204, 0.4);
+        font-size: 12px;
+        display: flex;
+        padding: 5PX;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.18);
+        transition: ease-in 1s;
+        opacity: 0;
+        -webkit-animation: tweet 15s linear forwards;
+        }
+        .tweet-box img {
+        height: 40px;
+        margin: 5px;
+        background-color:white;
+        border: solid 1px rgba(204, 204, 204, 0.4);
+        background-size: cover!important;
+        }
+        .tweet-text {
+        width: 248px;
+        }
+#content-container {
+    max-height: 310px;
+    right: 0;
+    overflow: -webkit-paged-x;
+    height: 312px;
+    /* top: 450px; */
+    width: 334px;
+    /* left: 1100px; */
+    opacity: 1;
+    transition: ease-in-out .75s;
+    z-index: 10000;
+    cursor: pointer;
+    position: absolute;
+    bottom: inherit;
+}
+        #feed-toggle {
+        z-index: 100000;
+        background: #191a1a;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        padding: 10px;
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+        }
+        .invisible {
+        opacity: 0!important;
+        z-index: -10000
+        }
+       #testw {
+    position: absolute;
+    right: 10px;
+    z-index: 10000000000000;
+    margin-top: 11px;
+    border: none;
+    background: #efefef;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+        #reset-zoom {
+        position: absolute;
+        right: 10px;
+        z-index: 10000000000000;
+        margin-top: 44px;
+        border: none;
+        background: #efefef;
+        font-size: 12px;
+        padding: 5px 10px;
+        border-radius: 2px;
+        font-weight: 700;
+        outline: none;
+        cursor: pointer;
+        }
+        .ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all {
+        background: #2d313e;
+        }
+      .twitter-profile-search {
+    left: 39vw;
+    top: 23vh;
+    width: 219PX;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 2px;
+    padding: 20px;
+}
+        .twitter-profile-search .twitter-username {
+        position: inherit;
+        }
+        #boop {
+        -webkit-animation: fadein .5s linear forwards;
+        animation: fadein .5s linear forwards;
+        visibility: visible;
+        }
+        @-webkit-keyframes tweet {
+        0% { opacity: 0; display: none; z-index: -10000}
+        10% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { opacity: 0; display: none; z-index: -10000 }
+        }
+        @keyframes tweet {
+        0% { opacity: 0; display: none; z-index: -10000}
+        10% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { opacity: 0; display: none; z-index: -10000 }
+        }
+        @-webkit-keyframes fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        @keyframes fadein {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+        }
+        #boop2 {
+        -webkit-animation: fadeout 4s linear forwards;
+        animation: fadeout 4s linear forwards;
+        }
+        @-webkit-keyframes fadeout {
+        0% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+        }
+        @keyframes fadeout {
+        0%{ opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0; }
+        }
+        #boop3 {
+        -webkit-animation: fadeoutB 4s linear forwards;
+        animation: fadeoutB 4s linear forwards;
+        }
+        @-webkit-keyframes fadeoutB {
+        0% { opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0;     visibility: hidden;
+        }
+        }
+        @keyframes fadeoutB {
+        0%{ opacity: 1; }
+        80% { opacity: 1; }
+        100% { opacity: 0;     visibility: hidden;
+        }
+        }
+        circle {
+             transition: stroke-width 300ms linear;
+  -moz-transition: stroke-width 300ms linear;
+  -webkit-transition: stroke-width 300ms linear;
+        }
+        circle:hover {
+          stroke-width: 20px;
+  stroke-opacity: .5;
+        
+        }
+        #triangle {
+    position: absolute;
+    right: 24%;
+    top: -7px;
+    width: 30px;
+}
+#triangleB {
+    position: absolute;
+    right: 41%;
+    width: 40px;
+    top: 56%;
+    transform: rotate(90deg);
+}
+.twitter-profile-search p {
+    margin-bottom: 10px;
+}
+.twitter-profile p {
+    margin-bottom: 7px;
+}
+        svg {
+        cursor: cell;
+        }
+        .legend-container {
+        position: absolute;
+        left: 325px;
+        bottom: 145px;
+        color:rgba(255, 255, 255, 0.84);
+        font-size: 12px;
+        }
+        .circle1 {
+        width: 65px;
+        height: 65px;
+        border-radius: 300px;
+        border: solid 1px rgba(255, 255, 255, 0.44);
+        position: absolute;
+        }
+        .circle2 {
+        width: 20px;
+        height: 20px;
+        border-radius: 300px;
+        border: solid 1px rgba(255, 255, 255, 0.44);
+        position: absolute;
+        left: 22px;
+        top: 45px;
+        }
+        .circle3 {
+        width: 45px;
+        height: 45px;
+        border-radius: 300px;
+        border: solid 1px rgba(255, 255, 255, 0.44);
+        position: absolute;
+        left: 9.5px;
+        top: 20px;
+        }
+        .circle4 {
+        width: 10px;
+        height: 10px;
+        border-radius: 300px;
+        border: solid 1px rgba(255, 255, 255, 0.44);
+        position: relative;
+        left: 27px;
+        top: 55px;
+        }
+        .legend-text {
+        position: absolute;
+        width: 200px;
+        margin-left: 80px;
+        }
+        #c1 {
+        left: -28px;
+        top: -5px;
+        }
+        #c2 {
+        top: 15px;
+        left: -33px;
+        }
+        #c3 {
+        top: 39px;
+        left: -37px;
+        }
+        #c4 {
+        top: 54px;
+        left: -39px;
+        }
+        .title-size {
+        position: absolute;
+        top: 88px;
+        font-size: 16px;
+        }
+        .titlesent {
+        position: absolute;
+        top: -27px;
+        font-size: 16px;
+        width: max-content;
+        }
+        #credits {
+        position: absolute;
+        right: 20px;
+        bottom: 4px;
+        z-index: 10000000000;
+        color: #666;
+        font-size: 11px;
+        }
+        header div i {
+        font-size: 24px!important;
+        position: absolute;
+        margin-left: 8px;
+        }
+        .ui-slider .ui-slider-tooltip {
+        position: absolute;
+        width: max-content;
+        bottom: 22px;
+        color: white;
+        background: #191a1a;
+        padding: 2px;
+        border: solid 1px #a6c9e2;
+        padding-left: 5px;
+        padding-right: 5px;
+        }
+        #start-date {
+        position: absolute;
+        z-index: 10000000;
+        bottom: 32px;
+        font-size: 12px;
+        color: grey;
+        left: 15vw;
+        }
+        #mid-date {
+        position: absolute;
+        z-index: 10000000;
+        bottom: 17px;
+        font-size: 12px;
+        color: grey;
+        left: 49vw;
+        }
+        #end-date {
+        position: absolute;
+        z-index: 10000000;
+        bottom: 32px;
+        font-size: 12px;
+        color: grey;
+        left: 83vw;
+        }
+        #end-date sup, #mid-date sup, #start-date sup {
+        font-size: 8px
+        }
+        .senti {
+        text-align: center;
+        position: absolute;
+        right: -21px;
+        }
+        .senti .twitter-influence {
+        left: 0;
+        top: -20px;
+        }
+        .twitter-profile-search img {
+        width: 222px;
+        height: 222px;
+        background-size: contain;
+        }
+        .about-info {
+        width: 380px;
+        background: white;
+        color: gray;
+        height: 180px;
+        opacity: 0;
+        transition: ease-in-out .74s;
+        position: absolute;
+        left: -500px;
+        top: 20px;
+        border-radius: 2px;
+        padding: 10px;
+        z-index: 10000000000;
+        }
+        .visible-info {
+        opacity: 1!important;
+        left: 340px;
+        }
+        i {
+            cursor: pointer;
+        }
+.legend2 {
+    border-radius: 3px;
+    bottom: 320px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    position: absolute;
+    left: 295px;
+    z-index: 1;
+    color: white;
+}
+
+.legend2 h4 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.legend2 div span {
+    border-radius: 50%;
+    display: inline-block;
+    height: 10px;
+    margin-right: 5px;
+    width: 10px;
+    border: solid 1px rgba(242, 242, 242, 0.52);
+}
+svg.svg-inline--fa.fa-info-circle.fa-w-16 {
+    width: 17px;
+    position: relative;
+    top: -12px;
+}
+        </style>
+    </head>
+    <body><div class="about-info">The spirit of this visualization was to demonstrate the idea that data visualization can lead to data exploration.  There is no single outcome that is achieved when viewing this visualization, but rather a unique experience each time you search and find your own bit of insight with the information.  It is a combination of multiple visualizations leveraging the same dataset. <p style="height: 30px;"> <p>Data provided from geo-located tweets referencing #UX<p></div><div id="test"></div>
+    
+    <header><div><sup>#</sup><b>UX</b>ploration of Data <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="info-circle" class="svg-inline--fa fa-info-circle fa-w-16" role="img" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"/></svg></div><select multiple="" name="" id="filter">
+    <option value="All" selected>All Sentiment</option>
+    <option id="neutral" value="neutral">Neutral</option>
+    <option id="positive" value="positive">Positive</option>
+    <option id="negative" value="negative">Negative</option>
+</select>
+</header><!--<input id="timeslide" type="range" min="0" max="11" value="0" step="1"/>-->
+<div id="testw">Reset Data</div>
+<div id="reset-zoom">Reset Zoom</div>
+<section>
+    <div id='map'></div>
+    <div id="data" class="data">
+        <div id="bar-title">Top Five locations for Tweets</div><div id="bar"></div>
+        <div id="pie-title">Sentiment Distribution</div><div id="pie"></div>
+        <div id='legend'><div class="titlesent">Tweet Sentiment</div><div class="title-size">Follower Size</div></div>
+    </div>
+    </section><div id="timeline-title">Tweet Timeline</div>
+    <div class="footer-data">
+        <select class="day" name="" id="dayFilter">
+        </select>
+    </div>
+    <div class="legend-container"><div class="legend-text" id="c1">----- 250,000+ followers</div><div id="c2" class="legend-text">----- 10000 - 249,999 followers</div><div id="c3" class="legend-text">-------- 1000 - 9999 followers</div><div id="c4" class="legend-text">-------- 1 - 999 followers</div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+</div>
+<div id="content-container"><div id="content"></div></div>
+<div id="feed-toggle"> Hide Twitter Feed</div>
+<div id="credits">*Data provided from Twitter open source API referencing #UX of geo-located tweets</div>
+<div id="start-date">March 21<sup>st</sup> 2017</div>
+<div id="mid-date">April 11<sup>th</sup> 2017</div>
+<div id="end-date">May 11<sup>th</sup> 2017</div>
+<!--<div id='state-legend' class='legend2'>
+    <h4>Population</h4>
+    <div><span style='background-color: #ffffff'></span>25,000,000</div>
+    <div><span style='background-color: #f0f0f0'></span>10,000,000</div>
+    <div><span style='background-color: #d9d9d9'></span>7,500,000</div>
+    <div><span style='background-color: #bdbdbd'></span>5,000,000</div>
+    <div><span style='background-color: #969696'></span>2,500,000</div>
+    <div><span style='background-color: #737373'></span>1,000,000</div>
+    <div><span style='background-color: #525252'></span>750,000</div>
+    <div><span style='background-color: #252525'></span>500,000</div>
+    <div><span style='background-color: #000000'></span>0</div>
+</div>
+
+<div id='county-legend' class='legend2' style='display: none;'>
+    <h4>Population</h4>
+    <div><span style='background-color: #ffffff'></span>1,000,000</div>
+    <div><span style='background-color: #f0f0f0'></span>500,000</div>
+    <div><span style='background-color: #d9d9d9'></span>100,000</div>
+    <div><span style='background-color: #bdbdbd'></span>50,000</div>
+    <div><span style='background-color: #969696'></span>10,000</div>
+    <div><span style='background-color: #737373'></span>5,000</div>
+    <div><span style='background-color: #525252'></span>1,000</div>
+    <div><span style='background-color: #252525'></span>100</div>
+    <div><span style='background-color: #000000'></span>0</div>
+</div>-->
+
+<script src="pie.js"></script>
+<script src="bar.js"></script>
+        <script src="selector.js"></script>
+<script src='us-states.js'></script>
+<script src="mapbox-d32.js"></script>
+<script>
+var delayMillis = 5000;
+/*setTimeout(function() {
+$(function() {
+d3.select("#dayFilter").on("change", function() { // when one changes
+$('.ui-slider-handle').val($(this).val());
+d3.selectAll('#bar-f').on('change')();
+d3.selectAll('#pie-f').on('change')();
+})
+})}, delayMillis);*/
+//1 second
+setTimeout(function() {
+$('#dayFilter').selectToUISlider()
+}, delayMillis);
+$('#test').keypress(function (e) {
+if(e.which == 13) {
+$(".bp-autocomplete-dropdown").addClass("hide");
+}
+else {
+$(".bp-autocomplete-dropdown").removeClass("hide");
+}
+});
+$(function() {
+$('#search-icon').click(function() {
+$(".form-control").toggleClass("visible");
+$("#search-icon").toggleClass("filters");
+}); // put jQuery code here
+});
+$(function() {
+$('#about-icon').click(function() {
+$(".about-info").toggleClass("visible-info");
+}); // put jQuery code here
+});
+function imgError(image) {
+image.onerror = "";
+image.src = "/img/waterloo.png";
+return true;
+}
+$(function() {
+$('#feed-toggle').click(function() {
+var $this = $(this);
+$this.toggleClass('print-friendly');
+if($this.hasClass('print-friendly')){
+$this.text('Show Twitter Feed');
+} else {
+$this.text('Hide Twitter Feed');
+}
+$("#content-container").toggleClass("invisible");
+});
+});
+function ClearFields() {
+document.getElementById("searching").value = "";
+}
+</script>
+
+</body>
+</html>

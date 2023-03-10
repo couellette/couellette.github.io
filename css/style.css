@@ -305,6 +305,70 @@ iframe {
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
 }
+#twitter {
+    background-image: -webkit-linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/twitter.png);
+    background-image: linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/twitter.png);
+    background-position: center;
+    BACKGROUND-SIZE: 126%;
+    width: 60%;
+    background-size: cover;
+    border: solid;
+    background-position-x: 0px;
+    
+}
+
+#twitter:hover .read-more { 
+opacity:1; 
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+#vat {
+    background-image: -webkit-linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/vat.png);
+    background-image: linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/vat.png);
+    background-position: center;
+    BACKGROUND-SIZE: 126%;
+    width: 30%;
+    background-size: cover;
+    border: solid;
+    background-position-x: 0px;
+    
+}
+
+#vat:hover .read-more { 
+opacity:1; 
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+#ev {
+    background-image: -webkit-linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/ev.png);
+    background-image: linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/ev.png);
+    background-position: center;
+    BACKGROUND-SIZE: 126%;
+    width: 30%;
+    background-size: cover;
+    border: solid;
+    background-position-x: 0px;
+    
+}
+
+#ev:hover .read-more { 
+opacity:1; 
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+#conestoga {
+    background-image: -webkit-linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/conestoga.png);
+    background-image: linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/conestoga.png);
+    background-position: center;
+    BACKGROUND-SIZE: 126%;
+    width: 60%;
+    background-size: cover;
+    border: solid;
+    background-position-x: 0px;
+    
+}
+
+#conestoga:hover .read-more { 
+opacity:1; 
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
 #p1 {
     background-image: -webkit-linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/idea3.jpg);
     background-image: linear-gradient( rgba(0,0,0,0.50), rgba(0,0,0,0.50) ),url(../images/idea3.jpg);

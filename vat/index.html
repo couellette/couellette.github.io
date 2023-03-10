@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<div class="parent">
+	<header><div class="title">VAT <b>Dashboard</b></div><div id="newData"><img src="assets/swap.png" alt=""></div>
+	<!-- <div class="uploader"><input type="file" id="uploader"></div> -->
+</header>
+<body>
+	<div class="wall"></div>
+	<div class="newupload"><form id="uploadForm"
+		enctype="multipart/form-data"
+		action="/new_data"
+		method="post">
+		<div>Upload new data</div>
+		<input class="files" id="files" type="file" name="files" multiple />		
+		<input placeholder="Dashboard Name" type='text' id='db_name' name='db_name'>
+		<input type="submit" id="submit" value="Update Dashboard" name="submit">
+		<span id = "status" value="Refresh Page" onClick="event.preventDefault()"></span>
+	</form></div>
+	<div class="main-container">
+		<div class="side"></div>
+		<div class="main">
+			<div class="lower"><section class="label">Entity:</section></div>
+			<section id="primary" class="categories">
+				<div id="receivables"></div>
+				<div id="payables"><div id='tooltip' style='position:absolute;background-color:lightgray;padding:5px'></div></div>
+			</section>
+			<section id="secondary" class="categories">
+				<div id="pie"></div>
+				<div id="taxrate"></div>
+				<div id="fourth"></div>
+			</section>
+			
+		</div>
+		
+	</div>
+	<div class="lower-content">	</div>
+</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/d3.v4.min.js"></script>
+<script src="js/topojson.v1.min.js"></script>
+<script src="js/scripts.js"></script>

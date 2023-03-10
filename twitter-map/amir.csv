@@ -1,0 +1,8 @@
+city,citation,duration,order,start,finish,lng,lat,img
+Tehran,0,2,0,2000,2002,51.39,35.68,http://localhost:8000/twitter-map-example/img/tehran.png
+Pune,80,4,1,2002,2006,72.88,18.52,http://localhost:8000/twitter-map-example/img/pune.png
+Princeton,169,2,2,2006,2008,-74.67,40.36,http://localhost:8000/twitter-map-example/img/princeton.png
+Paris,299,1,3,2008,2008,2.35,48.85,http://localhost:8000/twitter-map-example/img/paris.jpg
+Princeton,400,2,4,2008,2008,-74.67,40.36,http://localhost:8000/twitter-map-example/img/princeton.png
+Toronto,4142,5,5,2010,2015,-79.39,43.65,http://localhost:8000/twitter-map-example/img/waterloo.png
+Waterloo,5113,2,6,2015,2017,-80.52,43.46,http://localhost:8000/twitter-map-example/img/waterloo.png
