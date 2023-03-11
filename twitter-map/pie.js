@@ -1,7 +1,16 @@
 
+
+
+if ($(window).width() < 768) {
+var width = $(window).width()/2.2,
+    height = $(window).width()/2.2,
+    radius = Math.min(width, height) / 1.9;
+}
+else {
 var width = 250,
     height = 250,
     radius = Math.min(width, height) / 2;
+}
 
 var totalAmount = 0;
 var circleGraph;

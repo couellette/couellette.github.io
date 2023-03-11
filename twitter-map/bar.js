@@ -4,9 +4,15 @@ var margin = {
     right: 20,
     bottom: 50
 }
-height = 370 - margin.top - margin.bottom
-width = 300 - margin.left - margin.right
 
+if ($(window).width() < 768) {
+   height = 270 - margin.top - margin.bottom
+width = ($(window).width()/2) - margin.left - margin.right
+}
+else {
+   height = 370 - margin.top - margin.bottom
+width = 300 - margin.left - margin.right
+}
 var totalTweets = 0;
 
 var Barsvg = d3.select("#bar").append("svg")

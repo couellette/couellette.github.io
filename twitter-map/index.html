@@ -781,6 +781,106 @@ svg.svg-inline--fa.fa-info-circle.fa-w-16 {
     position: relative;
     top: -12px;
 }
+@media screen and (max-width: 768px) {
+    #map {
+    width: 100%;
+    height: calc(40vh + 35px);
+    position: absolute;
+    right: 0;
+}
+.data {
+    width: 100%;
+    height: calc(50vh - 80px);
+    bottom: 80px;
+}
+#bar {
+    position: absolute;
+    z-index: 10000;
+    width: 45%;
+    height: calc(50vh - 80px);
+    bottom: 0px;
+    z-index: 1000;
+}
+#pie {
+    width: 45%;
+    /* margin-left: 35px; */
+    position: absolute;
+    top: 50px;
+    height: calc(50vh - 80px);
+    right: 21px;
+    opacity: .7;
+}
+#content-container {
+    display: none;
+}
+#start-date {
+    left: 5vw;
+    width: 51px;
+}
+#feed-toggle {
+    display: none;
+}
+#timeline-title {
+    display: none;
+}
+#credits {
+    font-size: 10px;
+}
+#mid-date {
+    display: none;
+}
+header div {
+    font-size: 22px;
+    top: 5px;
+    left: 10px;
+}
+header svg {
+    display: none;
+}
+#filter {
+    left: 0;
+    padding-top: 45px;
+    top: 25px;
+}
+.form-control {
+    z-index: 100000;
+    top: 10px;
+    width: 201px;
+    right: 10px;
+}
+option:checked {
+    border-top: none;
+    border-bottom: solid 4px red;
+}
+option {
+    padding: 10px;
+    position: relative;
+    top: -13px;
+    left: -3px;
+}
+header {
+    height: 50px;
+}
+#bar-title {
+    bottom: 34vh;
+    left: 15px;
+    font-size: 13px;
+}
+#pie-title {
+    bottom: 34vh;
+    right: calc(50% - 167px);
+    font-size: 13px;
+    position: absolute;
+    width: auto;
+}
+#legend {
+    top: -35%;
+    left: 8px;
+}
+.title-size {
+    display: none;
+}
+}
         </style>
     </head>
     <body><div class="about-info">The spirit of this visualization was to demonstrate the idea that data visualization can lead to data exploration.  There is no single outcome that is achieved when viewing this visualization, but rather a unique experience each time you search and find your own bit of insight with the information.  It is a combination of multiple visualizations leveraging the same dataset. <p style="height: 30px;"> <p>Data provided from geo-located tweets referencing #UX<p></div><div id="test"></div>
