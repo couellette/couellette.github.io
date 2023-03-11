@@ -102,6 +102,9 @@ text {
 #db_name {
     display: -webkit-box;
 }
+#newData {
+    display: none;
+}
 input:not([type="image" i]) {
     width: -webkit-fill-available;
     height: 29px;
