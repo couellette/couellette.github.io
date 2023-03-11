@@ -97,25 +97,25 @@
           <h1 id="white">PORTFOLIO</h1>
           <div class="skills-cta">A showcase of design, development, thought leadership and expertise - have a click, see what you think.</div>
           <h2>Thomson Reuters*</h2>
-          <sup>*Due to the confidential nature of work perfomed, only a limited number of portfolio items are available for viewing. Best viewed on a desktop experience</sup>
+          <sup>*Due to the confidential nature of work perfomed, only a limited number of portfolio items are available for viewing. </br><sup>†</sup>Best viewed on a desktop experience</sup>
           <ul>
             <li onclick="window.open('twitter-map/index.html', '_blank');" class="portfolio-item"  id="twitter">
               <div class="skills-detail">
                 <h2><img src="" alt="" /><div class="read-more">View my work</div><br />
-                </h2> <div class="portfolio-description">Twitter UX Sentiment Map<div>></div></div>
+                </h2> <div class="portfolio-description">Twitter UX Sentiment Map<sup>†</sup><div>></div></div>
               </div>
             </li>
             <li onclick="window.open('vat/index.html', '_blank');" class="portfolio-item"  id="vat">
               <div class="skills-detail">
                 <h2><img src="" alt="" /><div class="read-more">View my work</div><br />
-                </h2> <div class="portfolio-description">VAT Tax Dashboard<div>></div></div>
+                </h2> <div class="portfolio-description">VAT Tax Dashboard<sup>†</sup><div>></div></div>
               </div>
             </li>
           </ul><ul>
             <li onclick="window.open('ev/html/index.html', '_blank');" class="portfolio-item"  id="ev">
               <div class="skills-detail">
                 <h2><img src="" alt="" /><div class="read-more">View my work</div><br />
-                </h2> <div class="portfolio-description">EV Adoption Prediction Model<div>></div></div>
+                </h2> <div class="portfolio-description">EV Adoption Prediction Model<sup>†</sup><div>></div></div>
               </div>
             </li>
           </ul>
@@ -348,5 +348,28 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-80353750-1', 'auto');
 ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+    // Detect different screens.
+$(window).resize(function()
+{
+    // Detect the current screen width.
+    var width = $(window).width();
+    // Determine what you define a as a mobile screen size.
+    var mobileScreen = 767;
+    // Check whether the condition applies.
+    if(width <= mobileScreen)
+    {
+        // Change every href attribute of every a element with #
+        $('#twitter').attr('href', '#');
+        // You can also hide them, if you want, with
+        // $('a').hide();
+    }
+    else
+    {
+        // Do nothing otherwise, 
+        // or change the href attribute back to an actual url, using ids.
+    }
+}).resize();
 </script>
 </html>
