@@ -288,6 +288,7 @@ iframe {
     margin: 10px;
     cursor: pointer;
     border-bottom: solid 44px white!important;
+    min-height: 140px;
 }
 
 .portfolio-description {
