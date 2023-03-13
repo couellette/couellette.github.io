@@ -71,7 +71,7 @@ li, ul {
 }
 .menu-text {
     position: relative;
-    top: -50px;
+    /*top: -50px;*/
 }
 header {
     width: 100%;
