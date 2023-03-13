@@ -323,6 +323,7 @@ iframe {
     height: 69px;
 }
 .read-more {
+    display: none;
     width: 118px;
     background: #254c54;
     position: relative;
