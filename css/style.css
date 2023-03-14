@@ -871,7 +871,7 @@ display: flex;
 .colour-scheme img {
     width: 95%;
 }	
-.portfolio-item {
+.portfolio-item, .portfolio-item2 {
     width: 75%!important;	
 }
 .skills-container ul, portfolio-item ul{
