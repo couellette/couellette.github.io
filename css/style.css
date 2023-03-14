@@ -289,7 +289,16 @@ iframe {
     margin: 10px;
     cursor: pointer;
     border-bottom: solid 44px white!important;
-    min-height: 140px;
+    min-height: 133px;
+}
+.portfolio-item2 {
+    display: -webkit-inline-box;
+    width: 33%;
+    padding: 28px;
+    margin: 10px;
+    cursor: pointer;
+    border-bottom: solid 44px white!important;
+    min-height: 143px;
 }
 
 .portfolio-description {
@@ -555,6 +564,7 @@ h1#resume {
 footer {
     width: 100%;
     BACKGROUND: #303030;
+    display: none;
 } 
 FOOTER A {
     COLOR: rgba(255,255,255,.59);
