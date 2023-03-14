@@ -302,6 +302,17 @@ iframe {
     display: flex;
     left: -28px;
 }
+.pmg-portfolio-description {
+    color: gray;
+    position: relative;
+    bottom: -73px;
+    padding: 8px;
+    text-align: left;
+    width: inherit;
+    font-size: 19px;
+    display: flex;
+    left: -28px;
+}
 .portfolio-description div {
     color: gray;
     right: -25px;
@@ -2028,7 +2039,7 @@ main:after {
 }
 @media  (max-width: 768px) {
     video#bgvid{ 
-    left: -10%;
+    left: -3%;
 }
 .conference-presentation {
     display: none;
