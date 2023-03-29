@@ -1,0 +1,217 @@
+{
+    "social": [{
+        "type": "linkedin",
+        "url": "https://www.linkedin.com/in/coreyouellette/",
+        "thumbnail": "images/linkedin.png"
+    }, {
+        "type": "github",
+        "url": "https://github.com/couellette",
+        "thumbnail": "images/github.png"
+    }, {
+        "type": "thingiverse",
+        "url": "https://www.thingiverse.com/0cordo/designs",
+        "thumbnail": "images/thingiverse.png"
+    }],
+    "header": {
+        "h1": "Corey Ouellette",
+        "h2": "An passionate and curious leader, with a data driven mindset spanning across Product, Data Visualization, Design, Development, and UX.",
+        "footer": "See more"
+    },
+    "videoBanner": {
+        "bannerVideo": "video/mobile-vid.mp4",
+        "bannerText": "Full Presentation Available Here",
+        "youtubeLink": "https://www.youtube.com/watch?v=sthbciREVQw",
+        "youtubeText": "Full Presentation Available Here"
+    },
+    "expertise": {
+        "headline": "SKILLS & EXPERTISE",
+        "intro": "I have honed my skill set, prioritizing efficiency and effectiveness, to deliver results with speed and precision.",
+        "content": [{
+            "title": "USER EXPERIENCE",
+            "img": "images/ux.png",
+            "headline": "In my view, it's crucial to prioritize adapting technology to suit the user, rather than imposing technology on the user.",
+            "content": "A well-executed website or application goes beyond just a polished user interface; it necessitates Design Thinking Workshops, Usability Testing, and UX interviews and research to validate ideas with the intended audience."
+        }, {
+            "title": "DATA VISUALIZATION",
+            "img": "images/data-viz.png",
+            "headline": "I breathe life into data by synergizing my expertise as a designer, web developer, and data engineer.",
+            "content": "With a mastery of D3, my objective is to illuminate the narrative of the data. Just as a software project should never commence without a UX designer, data projects must never be executed without proficient data visualization."
+        }, {
+            "title": "FRONT-END DEVELOPMENT",
+            "img": "images/html.png",
+            "headline": "From websites and custom HTML letters to enterprise-level frontend development of applications, I am well-equipped to provide adept solutions.",
+            "content": "I write code that adheres to the W3C's web standards and industry best practices, leveraging HTML5, CSS3, and JavaScript to actualize concepts into mobile-first, sophisticated, interactive, and fully functional user-interfaces - precisely as envisioned."
+        }, {
+            "title": "USER INTERFACE DESIGN",
+            "img": "images/ui.png",
+            "headline": "Design is a craft that cannot be perfected through education alone; it requires years of hands-on experience, a constant awareness of industry trends, and a creative mind.",
+            "content": "For me, anything less than perfection is unsatisfactory. I fuse my expertise in UX with a focus on UI to curate an integrated and seamless experience. My approach prioritizes not only creating visually striking UI, but also delivering the ideal end product that resonates with your audience."
+        }, {
+            "title": "PRODUCT MANAGEMENT",
+            "img": "images/responsive.png",
+            "headline": "A results-driven, strategic leader to take your organization to new heights. A product management expert who's driven by customer feedback and industry-leading user research methodologies.",
+            "content": "Successfully launched flagship products, such as Account Payable integrations to market leading ERP systems, and achieved remarkable results, including a 5x reduction in implementation time and a 10x decrease in operational expenses."
+        }, {
+            "title": "MARKETING",
+            "img": "images/seo.png",
+            "headline": "I'm a digital marketing maven with a track record of successfully launching products and developing cutting-edge marketing strategies.",
+            "content": "From growing Qbord to one of the largest online research panel in Canada, to teaching Online Markerting and Social Media Marketing at Conestoga College, I've demonstrated my ability to drive growth and innovation in the digital space. With my expertise in online marketing and contextual research, I can help any organization achieve their goals and make a splash in the digital world."
+        }]
+    },
+    "portfolio": {
+        "headline": "PORTFOLIO",
+        "intro": "A showcase of design, development, thought leadership and expertise - have a click, see what you think.",
+        "content": [{
+            "company": "Thomson Reuters*",
+            "intro": "*Due to the confidential nature of work perfomed, only a limited number of portfolio items are available for viewing.<br /><sup>†</sup>Best viewed on a desktop experience",
+            "experience": [{
+                "title": "Twitter UX Sentiment Map<sup>†</sup>",
+                "url": "twitter-map/index.html",
+                "id": "twitter",
+                "logo": ""
+            }, {
+                "title": "VAT Tax Dashboard<sup>†</sup>",
+                "url": "vat/index.html",
+                "id": "vat",
+                "logo": ""
+            }, {
+                "title": "EV Adoption Prediction Model<sup>†</sup>",
+                "url": "ev/html/index.html",
+                "id": "ev",
+                "logo": ""
+            }]
+        }, {
+            "company": "Conestoga College",
+            "intro": "",
+            "experience": [{
+                "title": "Coding Lectures",
+                "url": "https://www.youtube.com/playlist?list=PLGaiWb36FC59gDOjER8Iox-uBzQwNcNxD",
+                "id": "conestoga",
+                "logo": ""
+            }]
+        }, {
+            "company": "PMG Intelligence",
+            "intro": "",
+            "experience": [{
+                "title": "Qbord",
+                "url": "qbord.html",
+                "id": "p1",
+                "logo": "images/qbord%20logo.png"
+            }, {
+                "title": "Survey-Go",
+                "url": "survey-go.html",
+                "id": "p2",
+                "logo": "images/logo2.png"
+            }, {
+                "title": "eSight",
+                "url": "esight.html",
+                "id": "p3",
+                "logo": "images/esight.png"
+            }, {
+                "title": "finlife Wealth",
+                "url": "finlife.html",
+                "id": "p4",
+                "logo": "images/mapwell-logo.png"
+            }, {
+                "title": "AdvisorLink",
+                "url": "advisorlink.html",
+                "id": "p5",
+                "logo": "images/logo - Copy.png"
+            }]
+        }]
+    },
+    "timeline": {
+        "headline": "PROFESSIONAL HISTORY",
+        "intro": "I have 15+ years professional industry and agency experience, working with broad spectrum of customers, subject matter experts and educational institutions.",
+        "history": [{
+            "finish": "Today",
+            "start": "2006",
+            "role": "Senior Product Manager",
+            "company": "Thomson Reuters",
+            "logo": "images/tr.png",
+            "duration": "September 2021 – Present",
+            "description": "As a key leader in Thomson Reuters' legal solutions team, I played an instrumental role in driving innovation and excellence in our products and services. One of my most notable achievements was spearheading the adoption of SALI's open-source legal ontology into our flagship solutions, Legal Tracker, HighQ, and Document Intelligence. Working closely with cross-functional teams, I ensured that the adoption and integration was seamless and effective, enhancing the functionality and accuracy of our solutions for our clients.  In addition to this, I led the development and implementation of cutting-edge accounts payable integrations using ERPs such as Oracle Cloud and SAP S4/HANA. Thanks to my efforts, we were able to reduce implementation time by an impressive 5X and decrease operational expenses by a staggering 10X, delivering significant cost savings and efficiencies for our clients.  My passion for customer-centric product design and development also drove me to incorporate customer feedback into every aspect of our Legal Matters experience, from establishing a comprehensive product roadmap to developing a user-friendly and intuitive UX/UI strategy for the successful launch of Legal Tracker Advanced. Utilizing industry-leading user research methodologies, I was able to ensure that our products and services met the needs and expectations of our clients, delivering exceptional value and driving growth for our organization."
+        }, {
+            "role": "Lead, Toronto Labs",
+            "company": "Thomson Reuters Labs",
+            "logo": "images/tr.png",
+            "duration": "December 2018 – March 2021",
+            "description": "As the lead of Thomson Reuters Labs in Toronto, I designed and built out the facility to create an inspiring and functional workspace for our team of designers, data scientists, and developers. Additionally, I served as the primary point of contact and face of the Labs to our customers, managing and nurturing key relationships with top executives and decision-makers."
+        }, {
+            "role": "Senior Data Experience Developer (Lead Designer)",
+            "company": "Thomson Reuters Labs",
+            "logo": "images/tr.png",
+            "duration": "December 2018 – March 2021",
+            "description": "In this role, I gained extensive hands-on experience working with a variety of Thomson Reuters APIs, including Contract Express, Regulatory Intelligence, Onvio, and more. Leveraging these APIs, I built fully functional visualizations, analytics, and dashboards that seamlessly integrated existing Thomson Reuters data with data generated by AI algorithms from our Labs data science team. Through this work, I was able to make AI simple, transparent, and consumable for end-users, unlocking tremendous value for our clients.  In addition to my technical work, I also played a key role in providing broad data access to our Labs Data Science team, working closely with General Counsel and adhering to data privacy laws across a variety of regions and jurisdictions. Through this collaboration, we were able to unlock valuable insights and identify strategic growth opportunities that would propel Thomson Reuters to the forefront of the industry.  As part of my work, I also led over 30 design thinking workshops and engaged with over 300 customers across a range of Thomson Reuters products, including Legal Tracker, Westlaw, OneSource, Onvio, Regulatory Intelligence, Elite 3E, and Reuters News. Through these workshops, we gained invaluable insights into customer needs and preferences, which we leveraged to identify project opportunities for data/AI candidacy within our strategic growth areas.  In my role, I also played a key role in product evaluation and validation of data/AI project opportunities for business value and path to market. Through my leadership and guidance, we were able to bring a range of innovative data/AI solutions to market, driving significant business value for Thomson Reuters.  Throughout my time in this role, I led and managed a team of designers and data visualization specialists, earning a far exceeded performance rating every year for my exceptional work and leadership."
+        }, {
+            "role": "Customer Research Lead (Secondment)",
+            "company": "Reuters News",
+            "logo": "images/tr.png",
+            "duration": "July 2020 – December 2020",
+            "description": "As the driving force behind customer research, I took charge of the Legal News growth accelerator, conducting a staggering 120+ customer interactions, 5 design thinking workshops, 12 focus groups, and numerous customer feedback sessions. Through this extensive research, I gained invaluable insights into customer needs, preferences, and pain points, which I leveraged to develop highly effective growth strategies.  To ensure that all initiatives were grounded in rigorous market validation research, I employed a range of qualitative and quantitative methods. Through this process, I gained a comprehensive understanding of the competitive landscape and identified key areas of opportunity that would set Legal News apart from the pack.  In close collaboration with the product team, I led the effort to define Epics and evaluate feasibility and effort for roadmap planning. Through my deep expertise and strategic guidance, we were able to create a roadmap that expertly balanced customer needs with technical considerations, setting Legal News up for continued success and growth in a fiercely competitive market."
+        }, {
+            "role": "Data Experience Developer (Senior Designer)",
+            "company": "Thomson Reuters Labs",
+            "logo": "images/tr.png",
+            "duration": "December 2016 – December 2018",
+            "description": "With an impressive toolkit of programming languages and frameworks, I created intuitive and highly functional applications and prototypes that exceeded customers' expectations. Using cutting-edge tools like D3, Node, Angular, Neo4J, Python, Elasticsearch, Wordpress, and Vue, along with custom-built frameworks, I ensured that every solution I developed was tailored to the specific needs of each customer.  In addition to my technical expertise, I also excelled at conceptualizing innovative ideas that bridged the gap between end-users' needs and data science solutions. Working closely with data scientists and designers, I evaluated projects, designed APIs, and coded interfaces that seamlessly integrated with the customers' existing systems.  To ensure that every project was a resounding success, I also organized and facilitated Design Thinking Workshops that helped to create actionable next steps. Through my leadership and guidance, these workshops resulted in clear and effective strategies that drove business growth and delighted customers."
+        }, {
+            "role": "Instructor - School of Business",
+            "company": "Conestoga College",
+            "logo": "images/conestoga_logo.png",
+            "duration": "August 2014 – December 2018",
+            "description": "I brought my passion for web development to the classroom, teaching students how to craft stunning websites using HTML5, CSS3, and WordPress. In addition to these essential coding languages, I emphasized the importance of user experience and user interface design, instilling in my students the principles they needed to create intuitive, engaging digital experiences.  As a true innovator in the field of online marketing, I also developed the entire curriculum for Conestoga College's marketing program. Drawing on my extensive industry experience, I imparted valuable knowledge to students, equipping them with the tools they needed to succeed in today's fast-paced digital landscape.  I also demonstrated my prowess in online marketing by showcasing highly successful strategies to my students. From organic SEO to paid advertising, I showed my students the ins and outs of driving traffic to websites and increasing conversions. Through my expert guidance, my students were able to achieve unprecedented success and thrive in the competitive world of digital marketing."
+        }, {
+            "role": "Manager, Marketing & Digital Services",
+            "company": "PMG Intelligence",
+            "logo": "images/pmg.jpg",
+            "duration": "June 2014 – December 2016",
+            "description": "With great creativity and technical prowess, I spearheaded the successful product launch of the company's online division, qbord.com. Through careful attention to detail, I managed the content, aesthetics, and optimization of company websites while also taking charge of designing and implementing an intuitive web user interface for client research applications.  Not content to rest on my laurels, I also conducted extensive contextual research for both company and client-based applications, allowing me to develop and implement highly effective online marketing strategies that drove significant business growth. Through my tireless efforts, I helped the company establish a dominant online presence and cement its position as a leader in the industry."
+        }, {
+            "role": "Online Marketing Specialist",
+            "company": "PMG Intelligence",
+            "logo": "images/pmg.jpg",
+            "duration": "September 2011 – June 2014",
+            "description": " started my web career at PMG Intelligence; further learning the craft of web design / UX, HTML5, CSS3 and JavaScript. As well as exploring the technical challenges of the frontend, I also designed the websites and applications we built and lead the project management too; dealing with clients directly both over the phone and in regular project meetings."
+        }, {
+            "role": "TEFL Instructor",
+            "company": "DD Dragon English School 迪迪龙英语学校",
+            "logo": "images/dd.jpeg",
+            "duration": "August 2009 – September 2010",
+            "description": "I felt I should have an adventure after graduating so at 20 years old I bought a one way ticket to China with nothing more than a signed contract to teach at School on my way to a City I had never heard of. During that time I learned essential teaching/class room management skills and how to speak Mandarin at a professional level. 中文是我的第二语言。"
+        }, {
+            "role": "Marketing Student",
+            "company": "Conestoga College",
+            "logo": "images/conestoga_logo.png",
+            "duration": "September 2006 – April 2009",
+            "description": "I graduated from Business Administration - Marketing specializing in Web Design. The course was multidisciplinary in nature; combining both academic and hands-on study of the digital and marketing industries."
+        }]
+    },
+    "pageLinks": [{
+        "id": "expe",
+        "link": "#expertise",
+        "label": "Expertise"
+    }, {
+        "id": "port",
+        "link": "#portfolio",
+        "label": "Portfolio"
+    }, {
+        "id": "hist",
+        "link": "#pro-history",
+        "label": "Experience"
+    }, {
+        "id": "resu",
+        "link": "#resume",
+        "label": "Resume"
+    }, {
+        "id": "code",
+        "link": "#",
+        "label": " < / > "
+    }],
+    "resume": {
+        "title": "Resume",
+        "content": "",
+        "button": "Download Resume",
+        "link": "Corey Ouellette Resume.pdf"
+    }
+}
