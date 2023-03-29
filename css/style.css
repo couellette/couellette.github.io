@@ -464,11 +464,11 @@ iframe {
     text-align: left;
 }
 .portfolio-item img {
-    width: initial;
     top: 54px;
     position: relative;
     height: inherit;
-    height: 69px;
+    height: auto;
+    max-height: 86%;
 }
 .read-more {
     display: none;
