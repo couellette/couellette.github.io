@@ -17,7 +17,7 @@
     <script type="text/javascript" src="js/content.js"></script>
 </head>
 <body>
-
+<video playsinline="" autoplay="" muted="" loop="" id="bgvid"><source src="video/mobile-vid.mp4" type="video/mp4"></video>
 </body>
 
    <script type="text/javascript" src="js/smooth-scroll.js"></script>
@@ -32,6 +32,11 @@
    ga('send', 'pageview');
    </script>
    <script type="text/javascript" src="js/app.min.js"></script>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("bgvid").autoplay;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
   
 </html>

@@ -23,11 +23,15 @@ Promise.all([
         // banner
 
         videoBanner = body.append("video")
-            .attr("playsinline", "").attr("autoplay", "")
-            .attr("muted", "").attr("loop", "")
-            .attr("id", "bgvid").selectAll("body")
-            .data([websiteContent]).enter()
-        videoBanner.append("source")
+            .attr("playsinline", "")
+            .attr("autoplay", "")
+            .attr("muted", "")
+            .attr("loop", "")
+            .attr("id", "bgvid")
+            .selectAll("body")
+            .data([websiteContent])
+            .enter()
+        videoBanner.append("bgvid")
             .attr("src", d => d.videoBanner.bannerVideo)
             .attr("type", "video/mp4")
 
