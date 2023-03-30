@@ -424,6 +424,7 @@ iframe {
     cursor: pointer;
     border-bottom: solid 44px white!important;
     min-height: 133px;
+    cursor: pointer;
 }
 .portfolio-item2 {
     display: -webkit-inline-box;
@@ -433,6 +434,7 @@ iframe {
     cursor: pointer;
     border-bottom: solid 44px white!important;
     min-height: 143px;
+    cursor: pointer;
 }
 #code {
     color: #4caf50;
