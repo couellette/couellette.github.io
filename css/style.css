@@ -1,5 +1,6 @@
 /* CSS Document */
 @import url(https://fonts.googleapis.com/css?family=Hind+Madurai:400,500,300,600,700);
+html{scroll-behavior:smooth}
 body {
     margin: 0;
     font-family: 'Hind Madurai', sans-serif;
@@ -1061,6 +1062,19 @@ display: flex;
     display: initial;
 }
 header {
+    /* display: none; */
+    height: fit-content;
+    /*width: fit-content;*/
+    position: absolute;
+    right: 0;
+        /*background: #303030a6;*/
+}
+.menu-container {
+    /*display: grid;*/
+    width: fit-content;
+}
+
+#code {
     display: none;
 }
     .gallery-holder {

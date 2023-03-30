@@ -65,7 +65,7 @@
             "company": "Public Speaking",
             "intro": "",
             "experience": [{
-                "title": "Web Unleased 2018",
+                "title": "Web Unleashed 2018",
                 "url": "https://fitc.ca/presentation/designing-data-visualization-2/",
                 "id": "fitc",
                 "logo": "images/fitc_logo.png"
@@ -243,10 +243,6 @@
         "id": "hist",
         "link": "#pro-history",
         "label": "Experience"
-    }, {
-        "id": "resu",
-        "link": "#resume",
-        "label": "Resume"
     }, {
         "id": "code",
         "link": "#",
