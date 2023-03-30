@@ -56,6 +56,7 @@ Promise.all([
             .html(d => d.header.h2)
 
         // skills section
+        body.append("div").classed("top", true)
 
         skillsSection = body.append("section")
             .classed("skills-parent", true)
@@ -79,6 +80,7 @@ Promise.all([
             .classed("skills", true)
             .append("div")
             .classed("skills-detail", true)
+        body.append("div").classed("bottom", true)
 
         uniqueSkillTiles.append("img")
             .attr("src", d => d.img)
@@ -136,8 +138,8 @@ Promise.all([
         portfolioDetails.append("div")
             .classed("portfolio-description", true)
             .html(d => d.title)
-
-        //timeline
+        body.append("div").classed("bottom2", true)
+            //timeline
 
         timelineSection = body.append("section")
             .classed("section section--grey", true)
@@ -184,7 +186,7 @@ Promise.all([
         d3.select(".timeline")
             .append("li")
             .classed("timeline-line", true)
-
+        body.append("div").classed("bottom3", true)
         startTimeline()
 
 
