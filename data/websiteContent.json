@@ -62,6 +62,50 @@
         "headline": "PORTFOLIO",
         "intro": "A showcase of design, development, thought leadership and expertise - have a click, see what you think.",
         "content": [{
+            "company": "Public Speaking",
+            "intro": "",
+            "experience": [{
+                "title": "Web Unleased 2018",
+                "url": "https://fitc.ca/presentation/designing-data-visualization-2/",
+                "id": "fitc",
+                "logo": "images/fitc_logo.png"
+            },
+        {
+                "title": "Designing Data Visualizations",
+                "url": "https://fitc.ca/presentation/designing-data-visualization/",
+                "id": "fitc2",
+                "logo": "images/fitc_logo.png"
+            },
+        {
+                "title": "Designing Data Visualizations",
+                "url": "https://www.fluxible.ca/fluxible-2017/events/designing-data-visualizations/",
+                "id": "fluxible",
+                "logo": "images/fluxible_logo.png"
+            },{
+                "title": "The Legal Innovation Landscape",
+                "url": "https://www.iltanet.org/events/event-description?CalendarEventKey=9270ead7-eb66-40e9-9dde-018618a984ad&Home=%2Flive-events%2Fcalendar",
+                "id": "ilta",
+                "logo": "images/ilta_logo.png"
+            },
+        {
+                "title": "Transforming Knowledge Work",
+                "url": "https://elearning.aallnet.org/products/aall-innovation-bootcamp#tab-product_tab_overview",
+                "id": "aall",
+                "logo": "images/aall_logo.png"
+            },
+        {
+                "title": "AI in the Tax Industry",
+                "url": "https://www.cpaacademy.org/archived_show/a0D2S00000qdO7EUAU",
+                "id": "cpa",
+                "logo": "images/cpa_logo.png"
+            },
+        {
+                "title": "Blockchain and the future of Tax",
+                "url": "https://www.cpaacademy.org/archived_show/a0D2S00000qeKxDUAU",
+                "id": "cpa2",
+                "logo": "images/cpa_logo.png"
+            }]
+        }, {
             "company": "Thomson Reuters*",
             "intro": "*Due to the confidential nature of work perfomed, only a limited number of portfolio items are available for viewing.<br /><sup>†</sup>Best viewed on a desktop experience",
             "experience": [{
