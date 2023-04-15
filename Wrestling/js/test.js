@@ -20,8 +20,7 @@ function run(ogquery) {
     query = titleCase(ogquery).replace(/ /g, "_")
     app.remove()
     d3.select("h1").remove()
-    // these are free trial APIs - they will max out it you try to abuse them
-    newsKey = "295400f4f1a34d5fb06b24d30d249a3"
+    // this is a free trial API - they will max out it you try to abuse them
     youtubeKey = 'AIzaSyDukkqsudKv7UXgixVY839GN1UCrT_Sx6I'
 
 
@@ -55,7 +54,6 @@ function run(ogquery) {
         return splitStr.join(' ');
     }
 
-    news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
     youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
     search(query, ogquery, news)
     function search() {
@@ -64,23 +62,21 @@ function run(ogquery) {
             fetch('https://api.wikimedia.org/core/v1/wikipedia/en/search/page?q=' + query + '&limit=1'),
             fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + query),
             fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
-            fetch(news),
             fetch(youtube)
-            // fetch('http://localhost:7777/data/news3.json'),
+            fetch('http://localhost:7777/data/news3.json'),
             // fetch('http://localhost:7777/data/video.json'),
         ]).then(function(responses) {
             return Promise.all(responses.map(function(response) {
                 return response.json();
             }));
         }).then(function(data) {
-
             videos = data[4].items
             d = data
             images = d[1].items
             images = images.filter(d => Boolean(d.srcset))
             images = images.filter(function(d) {
                     format = d.srcset[0].src
-                    console.log(videos)
+      
                     return format.substr(format.length - 3) === 'jpg'
                 })
 
