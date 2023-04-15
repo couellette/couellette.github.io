@@ -139,7 +139,7 @@ function run(ogquery) {
 
             other = also.append("div").classed("other-wrestler-container", true).selectAll("div").data(otherData).enter().append("div").classed("other-wrestlers", true)
             other.append("div").classed("other-wrestler-headshot", true).style("background", d => "url(" + d.thumbnail.source.replace("/60px", "/400px") + ")").style("background-size", "cover").on("click", function(d, x, i) {
-                document.getElementById("search-bar").value = x.normalizedtitle
+                document.getElementById("searched").value = x.normalizedtitle
 
                 ogquery = x.normalizedtitle
                 run(ogquery)
