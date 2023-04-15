@@ -60,7 +60,7 @@ function run(ogquery) {
         return splitStr.join(' ');
     }
     news = 'data/news.json'
-    youtube = 'data/news.json'
+    youtube = 'data/video.json'
     search(query, ogquery, news)
     function search() {
 
