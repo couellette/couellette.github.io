@@ -27,8 +27,7 @@ function run(ogquery) {
     query = titleCase(ogquery).replace(/ /g, "_")
     app.remove()
     d3.select("h1").remove()
-    // this is a free trial API - they will max out it you try to abuse them
-    youtubeKey = 'AIzaSyDukkqsudKv7UXgixVY839GN1UCrT_Sx6I'
+
 
 
     const date = new Date();
@@ -61,7 +60,7 @@ function run(ogquery) {
         return splitStr.join(' ');
     }
     news = 'data/news.json'
-    youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
+    youtube = 'data/news.json'
     search(query, ogquery, news)
     function search() {
 
