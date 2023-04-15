@@ -62,8 +62,8 @@ function run(ogquery) {
             fetch('https://api.wikimedia.org/core/v1/wikipedia/en/search/page?q=' + query + '&limit=1'),
             fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + query),
             fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
-            fetch(youtube)
             fetch('http://localhost:7777/data/news3.json'),
+            fetch(youtube)
             // fetch('http://localhost:7777/data/video.json'),
         ]).then(function(responses) {
             return Promise.all(responses.map(function(response) {
