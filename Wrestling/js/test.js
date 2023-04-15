@@ -16,7 +16,14 @@ search.on("keypress", function(e) {
 
 
 function run(ogquery) {
-    d3.select("#search-bar").attr("id","searched")
+   var searched = d3.select("#search-bar").attr("id","searched")
+   searched.on("keypress", function(e) {
+    ogquery = d3.select("#searched").node().value
+    if (e.charCode === 13) {
+        run(ogquery)
+    }
+})
+
     query = titleCase(ogquery).replace(/ /g, "_")
     app.remove()
     d3.select("h1").remove()
