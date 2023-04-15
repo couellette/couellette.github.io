@@ -5,7 +5,7 @@ header.append("div").classed("name", true).html("Wrester DB")
 // body.append("h1").html("Find your favourite wrestler")
 search = header.append('div').classed("query", true).append("input").attr("id", "searched").attr("placeholder", "Search by wrestler")
 app = body.append("div").classed("app-container", true)
-newsKey = "295400f4f1a34d5fb06b24d30d249a3"
+
        const date = new Date();
     let currentDay = String(date.getDate()).padStart(2, '1');
     let currentMonth = String(date.getMonth() + 1).padStart(2, "0");
@@ -23,16 +23,19 @@ newsKey = "295400f4f1a34d5fb06b24d30d249a3"
     }
    var dateRange = addMonths(new Date(currentDate), -1).toISOString().split('T')[0]
         // console.log(dateRange)
-
+var newsFrontPage = 'data/news3.json'
 console.log(dateRange)
 Promise.all([
-    fetch('https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q=aew+OR+wwe+OR+roh&from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6')
+ fetch(newsFrontPage)
+    // fetch('https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q=aew+OR+wwe+OR+roh&from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=45')
 ]).then(function(responses) {
     return Promise.all(responses.map(function(response) {
         return response.json();
     }));
 }).then(function(data) {
-    articlesData = data[0].articles
+    console.log(data[0])
+    // articlesData = data[0].articles
+   articlesData = data[0]
     console.log(articlesData)
     news = app.append("div").classed("news", true)
     headline = news.append("div").classed("news-label", true).html("Top News In Wrestling")

@@ -1,45 +1,587 @@
-{
-    "status": "ok",
-    "totalResults": 2,
-    "articles": [
-        {
-            "source": {
-                "id": null,
-                "name": "TMZ"
-            },
-            "author": "TMZ Staff",
-            "title": "Matt Hardy Says Jeff Hardy Could Return To AEW In 6-8 Weeks",
-            "description": "Matt Hardy is optimistic his brother, Jeff, will return to AEW sometime soon ... saying the wrestling star is doing well and taking care of himself during his time away from the squared-circle. Matt gave an update on Jeff -- who resurfaced last…",
-            "url": "https://www.tmz.com/2023/04/10/matt-hardy-hopeful-jeff-hardy-return-aew-six-eight-weeks-eye-surgery/",
-            "urlToImage": "https://imagez.tmz.com/image/f7/16by9/2023/04/10/f7bbc846768a483591058ef0b6d2144d_xl.jpg",
-            "publishedAt": "2023-04-10T22:10:50Z",
-            "content": "Matt Hardy is optimistic his brother, Jeff, will return to AEW sometime soon ... saying the wrestling star is doing well and taking care of himself during his time away from the squared-circle.\r\nMatt… [+1020 chars]"
+[
+    {
+        "source": {
+            "id": null,
+            "name": "ESPN"
         },
-        {
-            "source": {
-                "id": null,
-                "name": "TMZ"
-            },
-            "author": "TMZ Staff",
-            "title": "Jeff Hardy Resurfaces After Resolving DUI Case, Poses With Wrestling Fan",
-            "description": "Jeff Hardy has maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrestling fan, and even posing for a pic. A fan…\n Permalink",
-            "url": "https://www.tmz.com/2023/04/05/jeff-hardy-resurfaces-dui-case-florida/",
-            "urlToImage": "https://imagez.tmz.com/image/a2/16by9/2023/04/05/a221e72c330d4de2815bea510224bea0_xl.jpg",
-            "publishedAt": "2023-04-05T23:09:18Z",
-            "content": "Jeff Hardyhas maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrest… [+1163 chars]"
+        "author": "Marc Raimondi",
+        "title": "WWE to induct Japanese legend Great Muta into Hall of Fame",
+        "description": "Muta, the four-time former IWGP champion and noted rival of Sting and Ric Flair in WCW, gets the call to WWE's Hall of Fame.",
+        "url": "https://www.espn.com/wwe/story/_/id/35864984/wwe-induct-japanese-legend-great-muta-hall-fame",
+        "urlToImage": "https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0315%2Fr1144870_1296x729_16%2D9.jpg",
+        "publishedAt": "2023-03-15T16:38:27Z",
+        "content": "The Great Muta technically never performed for WWE. But his accomplishments and mystique will be immortalized by the world's largest pro wrestling promotion forever.\r\nThe legendary Japanese wrestler … [+1915 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "ESPN"
         },
-        {
-            "source": {
-                "id": null,
-                "name": "TMZ"
-            },
-            "author": "TMZ Staff",
-            "title": "Jeff Hardy Resurfaces After Resolving DUI Case, Poses With Wrestling Fan",
-            "description": "Jeff Hardy has maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrestling fan, and even posing for a pic. A fan…\n Permalink",
-            "url": "https://www.tmz.com/2023/04/05/jeff-hardy-resurfaces-dui-case-florida/",
-            "urlToImage": "https://imagez.tmz.com/image/a2/16by9/2023/04/05/a221e72c330d4de2815bea510224bea0_xl.jpg",
-            "publishedAt": "2023-04-05T23:09:18Z",
-            "content": "Jeff Hardyhas maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrest… [+1163 chars]"
-        }
-    ]
-}
+        "author": "Marc Raimondi",
+        "title": "'I don't fake fight': UFC fighters and coaches have mixed feelings on WWE merger",
+        "description": "Collaboration? Confrontation? Cool entrance music? The UFC community weighs in on having closer ties to pro wrestling.",
+        "url": "https://www.espn.com/mma/story/_/id/36147401/ufc-fighters-coaches-mixed-feelings-wwe-merger-acquisition-endeavor",
+        "urlToImage": "https://a2.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0412%2Fr1157676_2_1296x729_16%2D9.jpg",
+        "publishedAt": "2023-04-12T12:20:15Z",
+        "content": "MIAMI - Israel Adesanya tweeted a pro wrestling promo from 2001 on April 1, one week before his UFC middleweight title main event against Alex Pereira. The promo, one of the most famous in WWE (then … [+6862 chars]"
+    },
+    {
+        "source": {
+            "id": null,
+            "name": "ESPN"
+        },
+        "author": "Marc Raimondi",
+        "title": "WWE WrestleMania 39 Night 2 live results and analysis",
+        "description": "Roman Reigns faces Cody Rhodes in the main event of WrestleMania Night 2. Follow live.",
+        "url": "https://www.espn.com/wwe/story/_/id/36025299/wwe-wrestlemania-39-night-2-live-results-analysis-roman-reigns-vs-cody-rhodes-bianca-belair-vs-asuka-brock-lesnar-vs-omos",
+        "urlToImage": "https://a.espncdn.com/combiner/i?img=%2Fphoto%2F2023%2F0402%2Fr1153660_1296x729_16%2D9.jpg",
+        "publishedAt": "2023-04-02T23:35:48Z",
+        "content": "Editor's note: For results of WrestleMania Night 1, click here.\r\nINGLEWOOD, Calif. - The Bloodline is down some championship belts after the first night of WrestleMania 39. Will that trend continue?\r… [+1327 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "Ring of Honor Results: Winners, Grades, Reaction and ROH Highlights from March 30",
+        "description": "Welcome to Bleacher Report's coverage and recap of Ring of Honor TV on March 30. This week's show was taped before and after Wednesday's episode of AEW…",
+        "url": "https://bleacherreport.com/articles/10070633-ring-of-honor-results-winners-grades-reaction-and-roh-highlights-from-march-30",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680188509/wrixctgehvijsnoqsrpg.jpg",
+        "publishedAt": "2023-03-30T22:35:27Z",
+        "content": "Athena and Emi Sakura.ROH\r\nWelcome to Bleacher Report's coverage and recap of Ring of Honor TV on March 30.\r\nThis week's show was taped before and after Wednesday's episode of AEW Dynamite, so we got… [+384 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Tyler Conway",
+        "title": "WWE Rumors: Vince McMahon's Raw Creative, Morale, Cody Rhodes, The Rock and Bayley",
+        "description": "Bleacher Report catches you up on the latest news from WWE and AEW. Vince McMahon's Meddling Returns to WWE Raw; Superstar Morale Down Well, it was fun while…",
+        "url": "https://bleacherreport.com/articles/10071152-wwe-rumors-vince-mcmahons-raw-creative-morale-cody-rhodes-the-rock-and-bayley",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680622621/sd09gom6t5nkeaxgkqdj.jpg",
+        "publishedAt": "2023-04-04T16:04:57Z",
+        "content": "Ronald Martinez/Getty Images\r\nBleacher Report catches you up on the latest news from WWE and AEW.\r\nVince McMahon's Meddling Returns to WWE Raw; Superstar Morale Down\r\nWell, it was fun while it lasted… [+3884 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Tyler Conway",
+        "title": "WWE Rumors on Sami Zayn as a 'Top Guy'; Ronda Rousey's Injury; Stone Cold on Return",
+        "description": "Bleacher Report catches you up on the latest news from WWE and AEW. Sami Zayn Seen as 'Top Guy' in WWE Moving Forward The Sami Zayn push doesn't appear to be…",
+        "url": "https://bleacherreport.com/articles/10070207-wwe-rumors-on-sami-zayn-as-a-top-guy-ronda-rouseys-injury-stone-cold-on-return",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679925009/jpjgkdgn6wxoctadhaxh.jpg",
+        "publishedAt": "2023-03-27T15:04:30Z",
+        "content": "Francois Lacasse/NHLI via Getty Images\r\nBleacher Report catches you up on the latest news from WWE and AEW.\r\nSami Zayn Seen as 'Top Guy' in WWE Moving Forward\r\nThe Sami Zayn push doesn't appear to be… [+3231 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Graham GSM Matthews",
+        "title": "Quick Takes on AEW Capturing the Moment, the Roman Reigns Void in WWE and More",
+        "description": "Even with an eventful WrestleMania weekend in the rear view, WWE and AEW have done an effective job of setting the stage for an exciting remainder of the…",
+        "url": "https://bleacherreport.com/articles/10071857-quick-takes-on-aew-capturing-the-moment-the-roman-reigns-void-in-wwe-and-more",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681102674/tjij9t9jjfmoqffica28.jpg",
+        "publishedAt": "2023-04-10T12:00:00Z",
+        "content": "Depending on where the story is headed, the decision to have Roman Reigns defeat Cody Rhodes in the main event of WrestleMania and hold onto the Undisputed WWE Universal Championship could be critici… [+1195 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "Nikki Garcia Says She, Brie Aren't Going to AEW After Leaving WWE as Bella Twins",
+        "description": "Nikki Garcia—formerly known as Nikki Bella—said Wednesday that she and her twin sister Brie will not be signing with AEW after choosing to not renew their…",
+        "url": "https://bleacherreport.com/articles/10069059-nikki-garcia-says-she-brie-arent-going-to-aew-after-leaving-wwe-as-bella-twins",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_55,w_1800,h_1195,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1678974880/obbbakk68k2scmoanl4q.jpg",
+        "publishedAt": "2023-03-16T14:26:47Z",
+        "content": "Sean Gardner/Getty Images\r\nNikki Garciaformerly known as Nikki Bellasaid Wednesday that she and her twin sister Brie will not be signing with AEW after choosing to not renew their contracts with WWE.… [+2141 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Tyler Conway",
+        "title": "WWE Rumors on The Rock-WrestleMania 40, Vince McMahon, Roster Morale and Nick Aldis",
+        "description": "Bleacher Report catches you up on the latest news from WWE and AEW. The Rock Open to WrestleMania 40 but No Guarantee Stop me when you've heard this before:…",
+        "url": "https://bleacherreport.com/articles/10071872-wwe-rumors-on-the-rock-wrestlemania-40-vince-mcmahon-roster-morale-and-nick-aldis",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681131215/jzzlhgsqdttsns97hrjv.jpg",
+        "publishedAt": "2023-04-10T15:16:16Z",
+        "content": "Scott Taetsch\r\nBleacher Report catches you up on the latest news from WWE and AEW.\r\nThe Rock Open to WrestleMania 40 but No Guarantee\r\nStop me when you've heard this before: WWE is hopeful The Rock w… [+4410 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "Cody Rhodes and WWE, AEW's Early Winners and Losers of 2023",
+        "description": "It is still very early on in 2023 but for WWE and AEW, there are indisputably stars who have emerged as winners and losers thus far in the year. Cody Rhodes…",
+        "url": "https://bleacherreport.com/articles/10071840-cody-rhodes-and-wwes-aews-early-winners-and-losers-of-2023",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681085791/nzjd01bp76s4dvybjphd.jpg",
+        "publishedAt": "2023-04-10T12:04:21Z",
+        "content": "Cody Rhodes may be coming off a controversial loss in the main event of WrestleMania 39 but that does not make him a loser, especially when so much of WWE's creative focus was on The American Nightma… [+1198 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "AEW Dynamite Results: Winners, Grades, Reaction and Highlights from March 22",
+        "description": "Fresh off of throwing his name in the pool for an AEW World Championship match against MJF, Darby Allin teamed with Sting and AEW International champion…",
+        "url": "https://bleacherreport.com/articles/10069700-aew-dynamite-results-winners-grades-reaction-and-highlights-from-march-22",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679496809/uax3dq17uahoybsdgf2d.jpg",
+        "publishedAt": "2023-03-22T23:30:00Z",
+        "content": "Darby Allin teamed with Sting and Orange Cassidy in a star-studded trios match Wednesday.Credit: All Elite Wrestling\r\nFresh off of throwing his name in the pool for an AEW World Championship match ag… [+535 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "ROH Supercard of Honor 2023 Results: Winners, Grades, Reaction and Highlights",
+        "description": "Welcome to Bleacher Report's coverage and recap of ROH Supercard of Honor 2023. This is the first pay-per-view since the company returned to airing weekly…",
+        "url": "https://bleacherreport.com/articles/10070736-roh-supercard-of-honor-2023-results-winners-grades-reaction-and-highlights",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680237744/zpxfd84jm7wabdx2qkt7.jpg",
+        "publishedAt": "2023-03-31T22:30:00Z",
+        "content": "Samoa Joe and Mark Briscoe.ROH\r\nWelcome to Bleacher Report's coverage and recap of ROH Supercard of Honor 2023.\r\nThis is the first pay-per-view since the company returned to airing weekly episodes fi… [+1094 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "Ring of Honor Results: Winners, Grades, Reaction and ROH Highlights from March 23",
+        "description": "Welcome to Bleacher Report's coverage and recap of Ring of Honor from March 23. With Supercard of Honor coming up March 31, the men and women of ROH were all…",
+        "url": "https://bleacherreport.com/articles/10069791-ring-of-honor-results-winners-grades-reaction-and-roh-highlights-from-march-23",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679559045/shogyfdam2sbc7kv7b3m.jpg",
+        "publishedAt": "2023-03-23T22:30:00Z",
+        "content": "Mark Briscoe and Tony Nese.ROH\r\nAfter a brief promo from Samoa Joe backstage, Tony Nese made his way to the ring for the first match of the night against the man who will challenge Joe for the TV tit… [+1278 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Kevin Berge",
+        "title": "AEW Rampage Results: Winners, Grades, Reaction and Highlights from March 31",
+        "description": "For its own contribution to WrestleMania weekend, All Elite Wrestling put together an impressive card. The March 31 edition of AEW Rampage would include Sammy…",
+        "url": "https://bleacherreport.com/articles/10070816-aew-rampage-results-winners-grades-reaction-and-highlights-from-march-31",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680304245/giiphj590z4aztvs0c83.jpg",
+        "publishedAt": "2023-04-01T01:30:00Z",
+        "content": "House of Black continue to dominate as Malakai Black and Brody King compete against Best Friends.Credit: All Elite Wrestling/YouTube\r\nFor its own contribution to WrestleMania weekend, All Elite Wrest… [+676 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "AEW Dynamite Results: Winners, Grades, Reaction and Highlights from April 5",
+        "description": "Amid a common rivalry with The Outcasts, AEW World Women's champion Jamie Hayter and top contender, Riho, clashed in one of three title bouts Wednesday on…",
+        "url": "https://bleacherreport.com/articles/10071286-aew-dynamite-results-winners-grades-reaction-and-highlights-from-april-5",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680696097/bittbdngzzfpqk7chpiu.jpg",
+        "publishedAt": "2023-04-05T23:30:00Z",
+        "content": "Riho challenged Jamie Hayter in one of three championship matches on AEW Dynamite.Credit: All Elite Wrestling\r\nAmid a common rivalry with The Outcasts, AEW World Women's champion Jamie Hayter and top… [+587 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "Ring of Honor Results: Winners, Grades, Reaction and ROH Highlights from April 6",
+        "description": "Welcome to Bleacher Report's coverage and recap of Ring of Honor Wrestling from on April 6. This is the first post-Supercard of Honor show for the recently…",
+        "url": "https://bleacherreport.com/articles/10071434-ring-of-honor-results-winners-grades-reaction-and-roh-highlights-from-april-6",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680791588/tqfedwmwna1nsdttrtyv.jpg",
+        "publishedAt": "2023-04-06T22:30:00Z",
+        "content": "Athena holding the ROH Women's Championship.ROH\r\nWelcome to Bleacher Report's coverage and recap of Ring of Honor Wrestling from on April 6.\r\nThis is the first post-Supercard of Honor show for the re… [+510 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "Ring of Honor Results: Winners, Grades, Reaction and ROH Highlights from March 16",
+        "description": "Welcome to Bleacher Report's coverage and recap of episode three of Ring of Honor TV on March 16. This week's show featured two championship proving ground…",
+        "url": "https://bleacherreport.com/articles/10069087-ring-of-honor-results-winners-grades-reaction-and-roh-highlights-from-march-16",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1678987766/tivtjaxbvynhb3hkgy5i.jpg",
+        "publishedAt": "2023-03-16T22:49:59Z",
+        "content": "The Ring of Honor logo and stars.ROH\r\nWelcome to Bleacher Report's coverage and recap of episode three of Ring of Honor TV on March 16.\r\nThis week's show featured two championship proving ground matc… [+337 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "Ring of Honor Results: Winners, Grades, Reaction and ROH Highlights from April 13",
+        "description": "Welcome to Bleacher Report's coverage and recap of Ring of Honor Wrestling on April 13. It has been less than two weeks since Supercard of Honor, but being…",
+        "url": "https://bleacherreport.com/articles/10072265-ring-of-honor-results-winners-grades-reaction-and-roh-highlights-from-april-13",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681398838/i7jfimdjxznodm0p7xff.jpg",
+        "publishedAt": "2023-04-13T22:30:00Z",
+        "content": "Episode 7ROH\r\nWelcome to Bleacher Report's coverage and recap of Ring of Honor Wrestling on April 13.\r\nIt has been less than two weeks since Supercard of Honor, but being the ROH world champion means… [+396 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "AEW Dynamite Results: Winners, Grades, Reaction and Highlights from March 29",
+        "description": "The Chaifetz Arena in St. Louis played host to another stacked episode of AEW Dynamite Wednesday, headlined by IWGP U.S. Heavyweight champion Kenny Omega…",
+        "url": "https://bleacherreport.com/articles/10070487-aew-dynamite-results-winners-grades-reaction-and-highlights-from-march-29",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680096155/lvef4ngwtrw2v0zonpdi.jpg",
+        "publishedAt": "2023-03-29T23:30:00Z",
+        "content": "Adam Cole returned to the ring Wednesday night against Daniel Garcia.Credit: All Elite Wrestling\r\nThe Chaifetz Arena in St. Louis played host to another stacked episode of AEW Dynamite Wednesday, hea… [+482 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "John Cena to Join PGA Tour 2K23 Video Game as Playable Golfer after WWE WrestleMania",
+        "description": "Legendary WWE Superstar John Cena is coming to PGA Tour 2K23 as a playable character next month. On Thursday, 2K announced that the 16-time WWE world champion…",
+        "url": "https://bleacherreport.com/articles/10070641-john-cena-to-join-pga-tour-2k23-video-game-as-playable-golfer-after-wwe-wrestlemania",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680190414/gsrj5lbd4p7vpw34hci9.jpg",
+        "publishedAt": "2023-03-30T15:55:16Z",
+        "content": "Jonathan Bachman/AP Images for WWE, File\r\nLegendary WWE Superstar John Cena is coming to PGA Tour 2K23 as a playable character next month.\r\nOn Thursday, 2K announced that the 16-time WWE world champi… [+2159 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "WWE Hall of Fame 2023: Top Highlights from Rey Mysterio, Great Muta and All Speeches",
+        "description": "Rey Mysterio took his rightful place in pro wrestling immortality Friday night as the headliner of the WWE Hall of Fame Class of 2023. The former WWE and…",
+        "url": "https://bleacherreport.com/articles/10070595-wwe-hall-of-fame-2023-top-highlights-from-rey-mysterio-great-muta-and-all-speeches",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680179295/ary0gphxega1rr0zljn6.jpg",
+        "publishedAt": "2023-04-01T01:30:00Z",
+        "content": "Chris Pizzello/Invision/AP\r\nRey Mysterio took his rightful place in pro wrestling immortality Friday night as the headliner of the WWE Hall of Fame Class of 2023.\r\nThe former WWE and world champion t… [+308 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors on Vince McMahon's Involvement, Raw Travel Issues, Eric Young's Return",
+        "description": "Bleacher Report catches you up on the latest news from the WWE Universe. Vince McMahon Reportedly Didn't Heavily Influence Raw Script WWE chairman Vince…",
+        "url": "https://bleacherreport.com/articles/10072004-wwe-rumors-on-vince-mcmahons-involvement-raw-travel-issues-eric-youngs-return",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681228280/djcl3onqwmxtxc4nbaho.jpg",
+        "publishedAt": "2023-04-11T18:07:45Z",
+        "content": "Ethan Miller/Getty Images\r\nBleacher Report catches you up on the latest news from the WWE Universe.\r\nVince McMahon Reportedly Didn't Heavily Influence Raw Script\r\nWWE chairman Vince McMahon reportedl… [+4449 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors on Bray Wyatt, Lashley, Carmella and WrestleMania 39 Results",
+        "description": "Bleacher Report catches you up on the latest news from the WWE Universe. Wyatt vs. Lashley Possibly Off WrestleMania 39 Card WWE had been building toward a…",
+        "url": "https://bleacherreport.com/articles/10069675-wwe-rumors-on-bray-wyatt-lashley-carmella-and-wrestlemania-39-results",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_306,y_109,w_1490,h_992,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1679486504/t5xnpvtdlijdkvstgafg.jpg",
+        "publishedAt": "2023-03-22T15:09:47Z",
+        "content": "Alex Bierens de Haan/Getty Images\r\nBleacher Report catches you up on the latest news from the WWE Universe.\r\nWyatt vs. Lashley Possibly Off WrestleMania 39 Card\r\nWWE had been building toward a match … [+4576 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors: Why Batista May Not Be Inducted into 2023 WWE Hall of Fame",
+        "description": "Despite heavy speculation, Batista reportedly may not be part of WWE's 2023 Hall of Fame class. According to PWInsider.com's Mike Johnson (h/t Manik Aftab of…",
+        "url": "https://bleacherreport.com/articles/10069063-wwe-rumors-why-batista-may-not-be-inducted-into-2023-wwe-hall-of-fame",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1678977257/lzb90zwotpraz1cbn9dg.jpg",
+        "publishedAt": "2023-03-16T14:57:42Z",
+        "content": "ANGELA WEISS/AFP via Getty Images\r\nDespite heavy speculation, Batista reportedly may not be part of WWE's 2023 Hall of Fame class.\r\nAccording to PWInsider.com's Mike Johnson (h/t Manik Aftab of Rings… [+1853 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "AEW Rampage Results: Winners, Grades, Reaction and Highlights from March 17",
+        "description": "Welcome to Bleacher Report's coverage and recap of AEW Rampage on March 17. The annual St. Patrick's Day Slam is upon us and with it came the in-ring debut of…",
+        "url": "https://bleacherreport.com/articles/10069217-aew-rampage-results-winners-grades-reaction-and-highlights-from-march-17",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679084052/odvd718vopk1njeybbtk.jpg",
+        "publishedAt": "2023-03-18T03:00:00Z",
+        "content": "Friday's lineup.AEW\r\nWelcome to Bleacher Report's coverage and recap of AEW Rampage on March 17.\r\nThe annual St. Patrick's Day Slam is upon us and with it came the in-ring debut of the recently-signe… [+365 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "AEW Rampage Results: Winners, Grades, Reaction and Highlights from March 25",
+        "description": "Next weekend may be the busiest of the year for pro wrestling fans, but AEW still made sure this weekend had some fun due to Friday's Rampage being preempted…",
+        "url": "https://bleacherreport.com/articles/10070057-aew-rampage-results-winners-grades-reaction-and-highlights-from-march-25",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679765827/g9ayebexcbnlkvxu41wo.jpg",
+        "publishedAt": "2023-03-26T01:30:00Z",
+        "content": "Friday's lineup.AEW\r\nNext weekend may be the busiest of the year for pro wrestling fans, but AEW still made sure this weekend had some fun due to Friday's Rampage being preempted until Saturday.\r\nAft… [+395 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "AEW's Jon Moxley on CM Punk's IG Post: 'I'm Not Going to F--king Sink to That Level'",
+        "description": "AEW star Jon Moxley fired back at CM Punk on Tuesday in the wake of Punk accusing Moxley of not wanting to lose to him in an Instagram post. Appearing on The…",
+        "url": "https://bleacherreport.com/articles/10070338-aews-jon-moxley-on-cm-punks-ig-post-im-not-going-to-f--king-sink-to-that-level",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680011675/kppo8q77velf2ckfc1hu.jpg",
+        "publishedAt": "2023-03-28T14:06:30Z",
+        "content": "Masashi Hara/Getty Images\r\nAEW star Jon Moxley fired back at CM Punk on Tuesday in the wake of Punk accusing Moxley of not wanting to lose to him in an Instagram post.\r\nAppearing on The Sessions with… [+3552 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "AEW Dynamite Results: Winners, Grades, Reaction and Highlights from March 15",
+        "description": "AEW continued the march to Double or Nothing on May 29 with an episode of Dynamite headlined by a three-way World Trios Championship Match in which The Elite…",
+        "url": "https://bleacherreport.com/articles/10068906-aew-dynamite-results-winners-grades-reaction-and-highlights-from-march-15",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1678915177/ppewsfz41obknptqvsaa.jpg",
+        "publishedAt": "2023-03-15T23:30:00Z",
+        "content": "What did The Outcasts have to say Wednesday night on Dynamite?Credit: All Elite Wrestling\r\nAEW continued the march to Double or Nothing on May 29 with an episode of Dynamite headlined by a three-way … [+438 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "AEW Rampage, Battle of the Belts VI Results: Winners, Grades, Reaction and Highlights",
+        "description": "Welcome to Bleacher Report's coverage and recap of AEW Rampage and Battle of the Belts on April 7. The first hour was the Rampage section of the show, and the…",
+        "url": "https://bleacherreport.com/articles/10071561-aew-rampage-battle-of-the-belts-vi-results-winners-grades-reaction-and-highlights",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680881054/jna8qbrq8kwtkurzhdqn.jpg",
+        "publishedAt": "2023-04-08T01:30:00Z",
+        "content": "The show began with Hook vs. Page. The FTW champion was knocked off the apron when he got to the ring, so All Ego wasn't trying to keep things fair.\r\nThey fought into the crowd and up into the stands… [+882 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "WWE WrestleMania 39: Predicting Most Likely Swerves",
+        "description": "Professional wrestling fans love a good swerve and there are no bigger and more impactful than those that take place on WWE's biggest night. The company rolls…",
+        "url": "https://bleacherreport.com/articles/10070182-wwe-wrestlemania-39-predicting-most-likely-swerves",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679957384/qgxclv3gwiv10ocvy632.jpg",
+        "publishedAt": "2023-03-28T11:00:00Z",
+        "content": "WrestleVotes reported on March 21 that plans for Roman Reigns to lose the Undisputed WWE Universal Championship were \"not certain.\"\r\nWhile some time has passed since that tweet was published, the fac… [+1382 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "AEW Dynamite Results: Winners, Grades, Reaction and Highlights from April 12",
+        "description": "The road to All Elite Wrestling's Double or Nothing continued Wednesday night in Milwaukee at the MU-Milwaukee Panther Arena with an episode of Dynamite that…",
+        "url": "https://bleacherreport.com/articles/10072135-aew-dynamite-results-winners-grades-reaction-and-highlights-from-april-12",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/vsgwhgtqap0nemx2gmha.jpg",
+        "publishedAt": "2023-04-12T23:30:00Z",
+        "content": "Orange Cassidy battled Buddy Matthews for the International Championship Wednesday.Credit: All Elite Wrestling\r\nThe road to All Elite Wrestling's Double or Nothing continued Wednesday night in Milwau… [+426 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE's Kofi Kingston to Undergo Surgery for Ankle Injury ahead of WrestleMania 39",
+        "description": "New Day member and former WWE champion Kofi Kingston revealed Thursday that he is undergoing surgery on his ankle this week after getting injured two weeks…",
+        "url": "https://bleacherreport.com/articles/10069185-wwes-kofi-kingston-to-undergo-surgery-for-ankle-injury-ahead-of-wrestlemania-39",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_290,w_1800,h_1192,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1679067999/oijl3e8syq0nlpm3pnbg.jpg",
+        "publishedAt": "2023-03-17T16:16:10Z",
+        "content": "Stephen Olker/Getty Images for SXSW\r\nNew Day member and former WWE champion Kofi Kingston revealed Thursday that he is undergoing surgery on his ankle this week after getting injured two weeks ago on… [+2116 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "Report: Goldberg Draws Interest from 'Several Companies' After WWE Contract Expired",
+        "description": "Multiple pro wrestling companies have reportedly expressed interest in WWE Hall of Famer Bill Goldberg now that he is a free agent. According to Fightful…",
+        "url": "https://bleacherreport.com/articles/10069805-report-goldberg-draws-interest-from-several-companies-after-wwe-contract-expired",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679577418/ouzw472zmeotxsdyxcyv.jpg",
+        "publishedAt": "2023-03-23T13:45:07Z",
+        "content": "Jerod Harris/Getty Images\r\nMultiple pro wrestling companies have reportedly expressed interest in WWE Hall of Famer Bill Goldberg now that he is a free agent.\r\nAccording to Fightful Select (h/t Felix… [+2855 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Joseph Zucker",
+        "title": "Roman Reigns on Potential WWE Retirement: Could 'Definitely Push to 45 If I Wanted'",
+        "description": "Roman Reigns sees a future where he isn't leaving WWE behind anytime soon. The world champion told BT Sport's Ariel Helwani he might continue competing \"at…",
+        "url": "https://bleacherreport.com/articles/10070938-roman-reigns-on-potential-wwe-retirement-could-definitely-push-to-45-if-i-wanted",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_97,y_27,w_1698,h_1133,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1680444706/qpgmwhrk2nmuhijeffvg.jpg",
+        "publishedAt": "2023-04-02T14:42:59Z",
+        "content": "Alex Bierens de Haan/Getty Images\r\nRoman Reigns sees a future where he isn't leaving WWE behind anytime soon.\r\nThe world champion told BT Sport's Ariel Helwani he might continue competing \"at this pa… [+1283 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors: Cody Rhodes Hits 'Levels of Top-Tier Main Eventers' for Merchandise Sales",
+        "description": "Ahead of his main event match against undisputed WWE universal champion Roman Reigns at WrestleMania 39 next weekend, Cody Rhodes is reportedly establishing…",
+        "url": "https://bleacherreport.com/articles/10070038-wwe-rumors-cody-rhodes-hits-levels-of-top-tier-main-eventers-for-merchandise-sales",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679758191/blnmihpu5sumfzuxkmti.jpg",
+        "publishedAt": "2023-03-25T15:44:59Z",
+        "content": "Alex Bierens de Haan/Getty Images\r\nAhead of his main event match against undisputed WWE universal champion Roman Reigns at WrestleMania 39 next weekend, Cody Rhodes is reportedly establishing himself… [+1827 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "Vince McMahon Pays WWE $17.4M for Costs Related to Sexual Misconduct Investigation",
+        "description": "WWE chairman Vince McMahon reimbursed the company for $17.4 million in costs related to an investigation into sexual misconduct allegations against him.…",
+        "url": "https://bleacherreport.com/articles/10070043-vince-mcmahon-pays-wwe-174m-for-costs-related-to-sexual-misconduct-investigation",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_176,w_1800,h_1193,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1679761269/s9czewyumxnex8nin7fg.jpg",
+        "publishedAt": "2023-03-25T16:27:21Z",
+        "content": "Ethan Miller/Getty Images\r\nWWE chairman Vince McMahon reimbursed the company for $17.4 million in costs related to an investigation into sexual misconduct allegations against him.\r\nAccording to Todd … [+1890 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Joseph Zucker",
+        "title": "Lesnar on Omos Match; WWE Rumors on Vince McMahon, Reigns, Cody Rhodes and Bad Bunny",
+        "description": "Bleacher Report catches you up on the latest news from the WWE Universe. Lesnar 'Liked' WrestleMania Feud with Omos Brock Lesnar's victory over Omos probably…",
+        "url": "https://bleacherreport.com/articles/10071018-lesnar-on-omos-match-wwe-rumors-on-vince-mcmahon-reigns-cody-rhodes-and-bad-bunny",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_20,w_1800,h_1199,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1680525341/elk5ns2hquykd6yagbpy.jpg",
+        "publishedAt": "2023-04-03T13:26:08Z",
+        "content": "Ronald Martinez/Getty Images\r\nBleacher Report catches you up on the latest news from the WWE Universe.\r\nLesnar 'Liked' WrestleMania Feud with Omos\r\nBrock Lesnar's victory over Omos probably isn't a m… [+3573 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors: Roman Reigns Isn't Scheduled for Backlash Hosted by Bad Bunny",
+        "description": "Undisputed WWE universal champion Roman Reigns is reportedly not scheduled to be part of the Backlash premium live event card on May 6. According to Dave…",
+        "url": "https://bleacherreport.com/articles/10071573-wwe-rumors-roman-reigns-isnt-scheduled-for-backlash-hosted-by-bad-bunny",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_203,w_1800,h_1192,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1680886312/hay5ayijmirurc6lmi9e.jpg",
+        "publishedAt": "2023-04-07T17:25:09Z",
+        "content": "Ronald Martinez/Getty Images\r\nUndisputed WWE universal champion Roman Reigns is reportedly not scheduled to be part of the Backlash premium live event card on May 6.\r\nAccording to Dave Meltzer of the… [+2302 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Tyler Conway",
+        "title": "Logan Paul Signs WWE Contract Extension After WrestleMania Match vs. Seth Rollins",
+        "description": "Logan Paul isn't done with WWE by a long shot. The social media star announced a new multiyear contract with the promotion Monday. \"I feel incredibly blessed…",
+        "url": "https://bleacherreport.com/articles/10071894-logan-paul-signs-wwe-contract-extension-after-wrestlemania-match-vs-seth-rollins",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681140846/p38bkwqp89vnmn3l0n5h.jpg",
+        "publishedAt": "2023-04-10T15:41:51Z",
+        "content": "CHANDAN KHANNA/AFP via Getty Images\r\nLogan Paul isn't done with WWE by a long shot.\r\nThe social media star announced a new multiyear contract with the promotion Monday.\r\nLogan Paul@LoganPaulContract … [+1011 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Doc-Chris Mueller",
+        "title": "WWE Raw Results: Winners, Grades, Reaction and Highlights from April 10",
+        "description": "Welcome to Bleacher Report's coverage and recap of WWE Raw on April 10. Last week's post-WrestleMania episode of Raw ended with a not-so-shocking betrayal by…",
+        "url": "https://bleacherreport.com/articles/10071896-wwe-raw-results-winners-grades-reaction-and-highlights-from-april-10",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681141227/ctq7edm7ywk3hoylcndd.jpg",
+        "publishedAt": "2023-04-10T23:30:00Z",
+        "content": "Cody Rhodes and Brock Lesnar.WWE\r\nWelcome to Bleacher Report's coverage and recap of WWE Raw on April 10.\r\nLast week's post-WrestleMania episode of Raw ended with a not-so-shocking betrayal by Brock … [+514 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors: Cody Rhodes Tops Reigns, All Stars in WrestleMania 39 Merchandise Sales",
+        "description": "Cody Rhodes fell short against undisputed WWE universal champion Roman Reigns in the main event of WrestleMania 39 last weekend, but he was still a big winner…",
+        "url": "https://bleacherreport.com/articles/10071679-wwe-rumors-cody-rhodes-tops-reigns-all-stars-in-wrestlemania-39-merchandise-sales",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680971759/wthavtzdsvq4qjamgkku.jpg",
+        "publishedAt": "2023-04-08T17:00:15Z",
+        "content": "Ronald Martinez/Getty Images\r\nCody Rhodes fell short against undisputed WWE universal champion Roman Reigns in the main event of WrestleMania 39 last weekend, but he was still a big winner on the fin… [+2018 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE's Gable Steveson Returns to Amateur Wrestling Ahead of 2024 Olympics After Rumors",
+        "description": "USA Wrestling announced Tuesday that Olympic gold medalist turned WWE Superstar Gable Steveson is returning to amateur wrestling as part of the U.S. Open…",
+        "url": "https://bleacherreport.com/articles/10072122-wwes-gable-steveson-returns-to-amateur-wrestling-ahead-of-2024-olympics-after-rumors",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1681300426/iehd1w45i6nlwl7glazz.jpg",
+        "publishedAt": "2023-04-12T12:27:58Z",
+        "content": "Jay LaPrete/NCAA Photos/NCAA Photos via Getty Images\r\nUSA Wrestling announced Tuesday that Olympic gold medalist turned WWE Superstar Gable Steveson is returning to amateur wrestling as part of the U… [+2551 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "WWE SmackDown Results: Winners, Grades, Reaction, Highlights Before WrestleMania 39",
+        "description": "Just 48 hours before they do battle in the main event of WrestleMania 39, Cody Rhodes and Undisputed WWE Universal champion Roman Reigns came face-to-face one…",
+        "url": "https://bleacherreport.com/articles/10070593-wwe-smackdown-results-winners-grades-reaction-highlights-before-wrestlemania-39",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1680178619/mulegtuv1png7if0dgjs.jpg",
+        "publishedAt": "2023-03-31T23:30:00Z",
+        "content": "Credit: WWE.com\r\nUndisputed WWE Tag Team Champions The Usos hit the ring to kick off the show, looking to say a few final words ahead of their defense at WrestleMania. Their top contenders and rivals… [+2194 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Mike Chiari",
+        "title": "WWE Rumors on Bray Wyatt vs. Lashley, Edge vs. Bálor, Carmella, WrestleMania 39 Card",
+        "description": "Bleacher Report catches you up on the latest news from the WWE Universe. Wyatt, Lashley Seemingly Off WrestleMania Card After initially teasing the match for…",
+        "url": "https://bleacherreport.com/articles/10070335-wwe-rumors-on-bray-wyatt-vs-lashley-edge-vs-balor-carmella-wrestlemania-39-card",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/x_0,y_260,w_1800,h_1196,c_crop/c_fill,g_faces,w_3800,h_2000,q_95/v1680009120/chccbzyt4vi4ank87ntu.jpg",
+        "publishedAt": "2023-03-28T16:56:58Z",
+        "content": "Etsuo Hara/Getty Images\r\nBleacher Report catches you up on the latest news from the WWE Universe.\r\nWyatt, Lashley Seemingly Off WrestleMania Card\r\nAfter initially teasing the match for WrestleMania 3… [+4862 chars]"
+    },
+    {
+        "source": {
+            "id": "bleacher-report",
+            "name": "Bleacher Report"
+        },
+        "author": "Erik Beaston",
+        "title": "WWE WrestleMania 39: Predicting Match Order for Saturday and Sunday Cards",
+        "description": "WWE rolls into SoFi Stadium in suburban Los Angeles on April 1 and 2 for WrestleMania 39, a two-night extravaganza featuring the top stars, stories and…",
+        "url": "https://bleacherreport.com/articles/10069994-wwe-wrestlemania-39-predicting-match-order-for-saturday-and-sunday-cards",
+        "urlToImage": "https://media.bleacherreport.com/image/upload/c_fill,g_faces,w_3800,h_2000,q_95/v1679699289/m86cfpq1rumenmjb2ecm.jpg",
+        "publishedAt": "2023-03-25T11:00:00Z",
+        "content": "The predicted match order for Night Two of WrestleMania 39 is as follows:\r\n<ol><li>Lita, Becky Lynch and Trish Stratus vs. Damage CTRL (Bayley, Dakota Kai and Iyo Sky)</li><li>Brock Lesnar vs. Omos</… [+1805 chars]"
+    }
+]
