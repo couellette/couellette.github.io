@@ -1,28 +1,69 @@
-
 body = d3.select("body")
 header = body.append("header")
 header.append("div").classed("logo", true)
 header.append("div").classed("name", true).html("Wrester DB")
-body.append("h1").html("Find your favourite wrestler")
-search = header.append('div').classed("query", true).append("input").attr("id", "search-bar").attr("placeholder", "search")
+// body.append("h1").html("Find your favourite wrestler")
+search = header.append('div').classed("query", true).append("input").attr("id", "searched").attr("placeholder", "Search by wrestler")
 app = body.append("div").classed("app-container", true)
+newsKey = "295400f4f1a34d5fb06b24d30d249a3"
+       const date = new Date();
+    let currentDay = String(date.getDate()).padStart(2, '1');
+    let currentMonth = String(date.getMonth() + 1).padStart(2, "0");
+    let currentYear = date.getFullYear();
+    let currentDate = `${currentYear}-${currentMonth}-${parseInt(currentDay)+1}`;
 
-search.on("keypress", function(e) {
-    ogquery = d3.select("#search-bar").node().value
-    if (e.charCode === 13) {
-        run(ogquery)
+
+     function addMonths(date, months) {
+        var d = date.getDate();
+        date.setMonth(date.getMonth() + +months);
+        if (date.getDate() != d) {
+            date.setDate(0);
+        }
+        return date;
     }
-})
+   var dateRange = addMonths(new Date(currentDate), -1).toISOString().split('T')[0]
+        // console.log(dateRange)
 
+console.log(dateRange)
+Promise.all([
+    fetch('https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q=aew+OR+wwe+OR+roh&from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6')
+]).then(function(responses) {
+    return Promise.all(responses.map(function(response) {
+        return response.json();
+    }));
+}).then(function(data) {
+    articlesData = data[0].articles
+    console.log(articlesData)
+    news = app.append("div").classed("news", true)
+    headline = news.append("div").classed("news-label", true).html("Top News In Wrestling")
+
+    news.append("div").classed("news-container", true)
+
+    articles = news.selectAll("body").data(articlesData).enter().append("div").classed("unique-news", true)
+    articles.append("div").classed("article-image", true).style("background", d => "url(" + d.urlToImage + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
+    articles.append("div").classed("article-source", true).html(d => d.source.name)
+    articles.append("div").classed("article-date", true).html(d => d.publishedAt.split('T')[0])
+    articles.append("div").classed("article-title", true).html(d => d.title)
+    articles.append("div").classed("article-description", true).html(d => d.description)
+
+
+    search.on("keypress", function(e) {
+        ogquery = d3.select("#searched").node().value
+        if (e.charCode === 13) {
+            run(ogquery)
+        }
+    })
+
+})
 
 function run(ogquery) {
-   var searched = d3.select("#search-bar").attr("id","searched")
-   searched.on("keypress", function(e) {
-    ogquery = d3.select("#searched").node().value
-    if (e.charCode === 13) {
-        run(ogquery)
-    }
-})
+    var searched = d3.select("#search-bar").attr("id", "searched")
+    searched.on("keypress", function(e) {
+        ogquery = d3.select("#searched").node().value
+        if (e.charCode === 13) {
+            run(ogquery)
+        }
+    })
 
     query = titleCase(ogquery).replace(/ /g, "_")
     app.remove()
@@ -62,6 +103,7 @@ function run(ogquery) {
     news = 'data/news.json'
     youtube = 'data/video.json'
     search(query, ogquery, news)
+
     function search() {
 
         Promise.all([
@@ -70,7 +112,7 @@ function run(ogquery) {
             fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
             fetch(news),
             fetch(youtube)
-       ]).then(function(responses) {
+        ]).then(function(responses) {
             return Promise.all(responses.map(function(response) {
                 return response.json();
             }));
@@ -80,10 +122,10 @@ function run(ogquery) {
             images = d[1].items
             images = images.filter(d => Boolean(d.srcset))
             images = images.filter(function(d) {
-                    format = d.srcset[0].src
-      
-                    return format.substr(format.length - 3) === 'jpg'
-                })
+                format = d.srcset[0].src
+
+                return format.substr(format.length - 3) === 'jpg'
+            })
 
             mainData = data[0].pages[0]
             otherData = data[2].pages.filter(item => Boolean(item.thumbnail))
