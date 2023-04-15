@@ -53,7 +53,7 @@ function run(ogquery) {
         // Directly return the joined string
         return splitStr.join(' ');
     }
-
+    news = 'data/news.json'
     youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
     search(query, ogquery, news)
     function search() {
@@ -62,10 +62,9 @@ function run(ogquery) {
             fetch('https://api.wikimedia.org/core/v1/wikipedia/en/search/page?q=' + query + '&limit=1'),
             fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + query),
             fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
-            fetch('http://localhost:7777/data/news3.json'),
+            fetch(news),
             fetch(youtube)
-            // fetch('http://localhost:7777/data/video.json'),
-        ]).then(function(responses) {
+       ]).then(function(responses) {
             return Promise.all(responses.map(function(response) {
                 return response.json();
             }));
