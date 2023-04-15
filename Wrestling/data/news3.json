@@ -1,0 +1,45 @@
+{
+    "status": "ok",
+    "totalResults": 2,
+    "articles": [
+        {
+            "source": {
+                "id": null,
+                "name": "TMZ"
+            },
+            "author": "TMZ Staff",
+            "title": "Matt Hardy Says Jeff Hardy Could Return To AEW In 6-8 Weeks",
+            "description": "Matt Hardy is optimistic his brother, Jeff, will return to AEW sometime soon ... saying the wrestling star is doing well and taking care of himself during his time away from the squared-circle. Matt gave an update on Jeff -- who resurfaced last…",
+            "url": "https://www.tmz.com/2023/04/10/matt-hardy-hopeful-jeff-hardy-return-aew-six-eight-weeks-eye-surgery/",
+            "urlToImage": "https://imagez.tmz.com/image/f7/16by9/2023/04/10/f7bbc846768a483591058ef0b6d2144d_xl.jpg",
+            "publishedAt": "2023-04-10T22:10:50Z",
+            "content": "Matt Hardy is optimistic his brother, Jeff, will return to AEW sometime soon ... saying the wrestling star is doing well and taking care of himself during his time away from the squared-circle.\r\nMatt… [+1020 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "TMZ"
+            },
+            "author": "TMZ Staff",
+            "title": "Jeff Hardy Resurfaces After Resolving DUI Case, Poses With Wrestling Fan",
+            "description": "Jeff Hardy has maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrestling fan, and even posing for a pic. A fan…\n Permalink",
+            "url": "https://www.tmz.com/2023/04/05/jeff-hardy-resurfaces-dui-case-florida/",
+            "urlToImage": "https://imagez.tmz.com/image/a2/16by9/2023/04/05/a221e72c330d4de2815bea510224bea0_xl.jpg",
+            "publishedAt": "2023-04-05T23:09:18Z",
+            "content": "Jeff Hardyhas maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrest… [+1163 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "TMZ"
+            },
+            "author": "TMZ Staff",
+            "title": "Jeff Hardy Resurfaces After Resolving DUI Case, Poses With Wrestling Fan",
+            "description": "Jeff Hardy has maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrestling fan, and even posing for a pic. A fan…\n Permalink",
+            "url": "https://www.tmz.com/2023/04/05/jeff-hardy-resurfaces-dui-case-florida/",
+            "urlToImage": "https://imagez.tmz.com/image/a2/16by9/2023/04/05/a221e72c330d4de2815bea510224bea0_xl.jpg",
+            "publishedAt": "2023-04-05T23:09:18Z",
+            "content": "Jeff Hardyhas maintained a low profile since resolving his DUI case in late February -- but now the suspended AEW star has finally resurfaced after his most recent legal troubles, chatting up a wrest… [+1163 chars]"
+        }
+    ]
+}

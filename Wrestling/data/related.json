@@ -1,0 +1,1034 @@
+{
+    "pages": [
+        {
+            "pageid": 2490889,
+            "ns": 0,
+            "index": 20,
+            "type": "standard",
+            "title": "Hiroshi_Tanahashi",
+            "displaytitle": "<span class=\"mw-page-title-main\">Hiroshi Tanahashi</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q1189750",
+            "titles": {
+                "canonical": "Hiroshi_Tanahashi",
+                "normalized": "Hiroshi Tanahashi",
+                "display": "<span class=\"mw-page-title-main\">Hiroshi Tanahashi</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Hiroshi_Tanahashi_-_Forbidden_Door_%28AEW_x_NJPW%29_%2852291671242%29_%28cropped%29.jpg/320px-Hiroshi_Tanahashi_-_Forbidden_Door_%28AEW_x_NJPW%29_%2852291671242%29_%28cropped%29.jpg",
+                "width": 320,
+                "height": 504
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/d/da/Hiroshi_Tanahashi_-_Forbidden_Door_%28AEW_x_NJPW%29_%2852291671242%29_%28cropped%29.jpg",
+                "width": 1721,
+                "height": 2708
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1147564066",
+            "tid": "96fe5020-d620-11ed-8049-812287ebb70c",
+            "timestamp": "2023-03-31T19:43:02Z",
+            "description": "Japanese professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Hiroshi_Tanahashi",
+                    "revisions": "https://en.wikipedia.org/wiki/Hiroshi_Tanahashi?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Hiroshi_Tanahashi?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Hiroshi_Tanahashi"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Hiroshi_Tanahashi",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Hiroshi_Tanahashi",
+                    "edit": "https://en.m.wikipedia.org/wiki/Hiroshi_Tanahashi?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Hiroshi_Tanahashi"
+                }
+            },
+            "extract": "Hiroshi Tanahashi  is a Japanese professional wrestler. He is signed to \nNew Japan Pro-Wrestling (NJPW).",
+            "extract_html": "<p><b>Hiroshi Tanahashi</b><span style=\"font-weight:normal\"> </span> is a Japanese professional wrestler. He is signed to \nNew Japan Pro-Wrestling (NJPW).</p>",
+            "normalizedtitle": "Hiroshi Tanahashi"
+        },
+        {
+            "pageid": 15446472,
+            "ns": 0,
+            "index": 1,
+            "type": "standard",
+            "title": "Kota_Ibushi",
+            "displaytitle": "<span class=\"mw-page-title-main\">Kota Ibushi</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q3201317",
+            "titles": {
+                "canonical": "Kota_Ibushi",
+                "normalized": "Kota Ibushi",
+                "display": "<span class=\"mw-page-title-main\">Kota Ibushi</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Kota_Ibushi_-_G1_CLIMAX_27_press_conference_%282%29.jpg/320px-Kota_Ibushi_-_G1_CLIMAX_27_press_conference_%282%29.jpg",
+                "width": 320,
+                "height": 299
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/3/31/Kota_Ibushi_-_G1_CLIMAX_27_press_conference_%282%29.jpg",
+                "width": 717,
+                "height": 669
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1147631324",
+            "tid": "fc7ad010-d786-11ed-a383-13f010433d45",
+            "timestamp": "2023-04-01T05:23:27Z",
+            "description": "Japanese professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Kota_Ibushi",
+                    "revisions": "https://en.wikipedia.org/wiki/Kota_Ibushi?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Kota_Ibushi?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Kota_Ibushi"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Kota_Ibushi",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Kota_Ibushi",
+                    "edit": "https://en.m.wikipedia.org/wiki/Kota_Ibushi?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Kota_Ibushi"
+                }
+            },
+            "extract": "Kota Ibushi  is a Japanese professional wrestler and martial artist. He is best known for his tenure with New Japan-Pro Wrestling (NJPW).",
+            "extract_html": "<p><b>Kota Ibushi</b><span style=\"font-weight:normal\"> </span> is a Japanese professional wrestler and martial artist. He is best known for his tenure with New Japan-Pro Wrestling (NJPW).</p>",
+            "normalizedtitle": "Kota Ibushi"
+        },
+        {
+            "pageid": 15569087,
+            "ns": 0,
+            "index": 19,
+            "type": "standard",
+            "title": "IWGP_World_Heavyweight_Championship",
+            "displaytitle": "<span class=\"mw-page-title-main\">IWGP World Heavyweight Championship</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q105754905",
+            "titles": {
+                "canonical": "IWGP_World_Heavyweight_Championship",
+                "normalized": "IWGP World Heavyweight Championship",
+                "display": "<span class=\"mw-page-title-main\">IWGP World Heavyweight Championship</span>"
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149252669",
+            "tid": "ea61cb20-d80f-11ed-9eae-91b1fa44620f",
+            "timestamp": "2023-04-11T02:23:56Z",
+            "description": "Men's professional wrestling world championship",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/IWGP_World_Heavyweight_Championship",
+                    "revisions": "https://en.wikipedia.org/wiki/IWGP_World_Heavyweight_Championship?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/IWGP_World_Heavyweight_Championship?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:IWGP_World_Heavyweight_Championship"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/IWGP_World_Heavyweight_Championship",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/IWGP_World_Heavyweight_Championship",
+                    "edit": "https://en.m.wikipedia.org/wiki/IWGP_World_Heavyweight_Championship?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:IWGP_World_Heavyweight_Championship"
+                }
+            },
+            "extract": "The IWGP World Heavyweight Championship  is a professional wrestling world heavyweight championship owned by the New Japan Pro-Wrestling (NJPW) promotion. \"IWGP\" is the acronym of NJPW's governing body, the International Wrestling Grand Prix . The championship was created on March 1, 2021 by the unification of the IWGP Heavyweight Championship and the IWGP Intercontinental Championship. The current champion is Sanada, who is in his first reign.",
+            "extract_html": "<p>The <b>IWGP World Heavyweight Championship</b><span style=\"font-weight:normal\"> </span> is a professional wrestling world heavyweight championship owned by the New Japan Pro-Wrestling (NJPW) promotion. \"IWGP\" is the acronym of NJPW's governing body, the International Wrestling Grand Prix<span style=\"font-weight:normal\"> </span>. The championship was created on March 1, 2021 by the unification of the IWGP Heavyweight Championship and the IWGP Intercontinental Championship. The current champion is Sanada, who is in his first reign.</p>",
+            "normalizedtitle": "IWGP World Heavyweight Championship"
+        },
+        {
+            "pageid": 17958040,
+            "ns": 0,
+            "index": 8,
+            "type": "standard",
+            "title": "Zack_Sabre_Jr.",
+            "displaytitle": "<span class=\"mw-page-title-main\">Zack Sabre Jr.</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q137195",
+            "titles": {
+                "canonical": "Zack_Sabre_Jr.",
+                "normalized": "Zack Sabre Jr.",
+                "display": "<span class=\"mw-page-title-main\">Zack Sabre Jr.</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Zack_Sabre_Jr%2C_June_2022.jpg/320px-Zack_Sabre_Jr%2C_June_2022.jpg",
+                "width": 320,
+                "height": 480
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Zack_Sabre_Jr%2C_June_2022.jpg",
+                "width": 879,
+                "height": 1319
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149176119",
+            "tid": "395f5a80-d7bb-11ed-99ec-417e5bfd32da",
+            "timestamp": "2023-04-10T16:17:36Z",
+            "description": "British professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Zack_Sabre_Jr.",
+                    "revisions": "https://en.wikipedia.org/wiki/Zack_Sabre_Jr.?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Zack_Sabre_Jr.?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Zack_Sabre_Jr."
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Zack_Sabre_Jr.",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Zack_Sabre_Jr.",
+                    "edit": "https://en.m.wikipedia.org/wiki/Zack_Sabre_Jr.?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Zack_Sabre_Jr."
+                }
+            },
+            "extract": "Lucas Eatwell, better known by his ring name Zack Sabre Jr. , is an English professional wrestler. He is currently signed to New Japan Pro-Wrestling (NJPW), where he is a member of The Mighty Don't Kneel stable, and is the current and inaugural NJPW World Television Champion in his first reign. From 2017, Sabre Jr was a part of the Suzuki-gun stable, until its disbandment in 2022. Outside NJPW, Sabre performs for Pro Wrestling Guerrilla (PWG), Ring of Honor (ROH), Revolution Pro Wrestling (RPW), and Progress Wrestling (Progress).",
+            "extract_html": "<p><b>Lucas Eatwell</b>, better known by his ring name <b>Zack Sabre Jr.</b><span style=\"font-weight:normal\"> </span>, is an English professional wrestler. He is currently signed to New Japan Pro-Wrestling (NJPW), where he is a member of The Mighty Don't Kneel stable, and is the current and inaugural NJPW World Television Champion in his first reign. From 2017, Sabre Jr was a part of the Suzuki-gun stable, until its disbandment in 2022. Outside NJPW, Sabre performs for Pro Wrestling Guerrilla (PWG), Ring of Honor (ROH), Revolution Pro Wrestling (RPW), and Progress Wrestling (Progress).</p>",
+            "normalizedtitle": "Zack Sabre Jr."
+        },
+        {
+            "pageid": 23124359,
+            "ns": 0,
+            "index": 11,
+            "type": "standard",
+            "title": "The_Young_Bucks",
+            "displaytitle": "<span class=\"mw-page-title-main\">The Young Bucks</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q2187828",
+            "titles": {
+                "canonical": "The_Young_Bucks",
+                "normalized": "The Young Bucks",
+                "display": "<span class=\"mw-page-title-main\">The Young Bucks</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/All_Elite_Wrestling_Executive_Vice_Presidents_-_The_Young_Bucks%3B_Nick_%26_Matt_Jackson.jpg/320px-All_Elite_Wrestling_Executive_Vice_Presidents_-_The_Young_Bucks%3B_Nick_%26_Matt_Jackson.jpg",
+                "width": 320,
+                "height": 400
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/a/a9/All_Elite_Wrestling_Executive_Vice_Presidents_-_The_Young_Bucks%3B_Nick_%26_Matt_Jackson.jpg",
+                "width": 2410,
+                "height": 3012
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1148766318",
+            "tid": "021409e0-d87e-11ed-9503-911b7654a570",
+            "timestamp": "2023-04-08T05:37:39Z",
+            "description": "American professional wrestling tag team",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/The_Young_Bucks",
+                    "revisions": "https://en.wikipedia.org/wiki/The_Young_Bucks?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/The_Young_Bucks?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:The_Young_Bucks"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/The_Young_Bucks",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/The_Young_Bucks",
+                    "edit": "https://en.m.wikipedia.org/wiki/The_Young_Bucks?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:The_Young_Bucks"
+                }
+            },
+            "extract": "The Young Bucks are an American professional wrestling tag team and promoters, consisting of brothers Matthew and Nicholas Massie, who are known by their ring names Matt and Nick Jackson, respectively. They are signed to All Elite Wrestling (AEW), of which they are also executive vice presidents. As performers in AEW, they were the inaugural and two-time AEW World Trios Champions with Kenny Omega; the trio team together as The Elite. They are also former and record-setting two-time AEW World Tag Team Champions; their first reign is the title's longest reign at 302 days.",
+            "extract_html": "<p><b>The Young Bucks</b> are an American professional wrestling tag team and promoters, consisting of brothers <b>Matthew and Nicholas Massie</b>, who are known by their ring names <b>Matt and Nick Jackson</b>, respectively. They are signed to All Elite Wrestling (AEW), of which they are also executive vice presidents. As performers in AEW, they were the inaugural and two-time AEW World Trios Champions with Kenny Omega; the trio team together as The Elite. They are also former and record-setting two-time AEW World Tag Team Champions; their first reign is the title's longest reign at 302 days.</p>",
+            "normalizedtitle": "The Young Bucks"
+        },
+        {
+            "pageid": 25946496,
+            "ns": 0,
+            "index": 10,
+            "type": "standard",
+            "title": "Kazuchika_Okada",
+            "displaytitle": "<span class=\"mw-page-title-main\">Kazuchika Okada</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q1057868",
+            "titles": {
+                "canonical": "Kazuchika_Okada",
+                "normalized": "Kazuchika Okada",
+                "display": "<span class=\"mw-page-title-main\">Kazuchika Okada</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Kazuchika_Okada_All_In_crop.jpg/320px-Kazuchika_Okada_All_In_crop.jpg",
+                "width": 320,
+                "height": 545
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Kazuchika_Okada_All_In_crop.jpg",
+                "width": 1514,
+                "height": 2577
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1148812278",
+            "tid": "e736f7f0-d615-11ed-b527-9f6159896a5d",
+            "timestamp": "2023-04-08T14:01:39Z",
+            "description": "Japanese professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Kazuchika_Okada",
+                    "revisions": "https://en.wikipedia.org/wiki/Kazuchika_Okada?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Kazuchika_Okada?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Kazuchika_Okada"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Kazuchika_Okada",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Kazuchika_Okada",
+                    "edit": "https://en.m.wikipedia.org/wiki/Kazuchika_Okada?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Kazuchika_Okada"
+                }
+            },
+            "extract": "Kazuchika Okada  is a Japanese professional wrestler currently signed to New Japan Pro-Wrestling. Okada is a five-time IWGP Heavyweight Champion where his fourth reign with the championship is the longest in history at 720 days. He also holds the record for most successful title defenses with 12. Since the title's retirement, Okada is a record two-time IWGP World Heavyweight Champion.",
+            "extract_html": "<p><b>Kazuchika Okada</b><span style=\"font-weight:normal\"> </span> is a Japanese professional wrestler currently signed to New Japan Pro-Wrestling. Okada is a five-time IWGP Heavyweight Champion where his fourth reign with the championship is the longest in history at 720 days. He also holds the record for most successful title defenses with 12. Since the title's retirement, Okada is a record two-time IWGP World Heavyweight Champion.</p>",
+            "normalizedtitle": "Kazuchika Okada"
+        },
+        {
+            "pageid": 30253888,
+            "ns": 0,
+            "index": 13,
+            "type": "standard",
+            "title": "Chaos_(professional_wrestling)",
+            "displaytitle": "<span class=\"mw-page-title-main\">Chaos (professional wrestling)</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q5072778",
+            "titles": {
+                "canonical": "Chaos_(professional_wrestling)",
+                "normalized": "Chaos (professional wrestling)",
+                "display": "<span class=\"mw-page-title-main\">Chaos (professional wrestling)</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/4/46/NewChaoslogo.png",
+                "width": 306,
+                "height": 134
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/4/46/NewChaoslogo.png",
+                "width": 306,
+                "height": 134
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149041089",
+            "tid": "ff845e50-d87d-11ed-9683-9317b44abd88",
+            "timestamp": "2023-04-09T21:01:22Z",
+            "description": "Professional wrestling stable",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Chaos_(professional_wrestling)",
+                    "revisions": "https://en.wikipedia.org/wiki/Chaos_(professional_wrestling)?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Chaos_(professional_wrestling)?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Chaos_(professional_wrestling)"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Chaos_(professional_wrestling)",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Chaos_(professional_wrestling)",
+                    "edit": "https://en.m.wikipedia.org/wiki/Chaos_(professional_wrestling)?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Chaos_(professional_wrestling)"
+                }
+            },
+            "extract": "Chaos is a professional wrestling stable, primarily performing in the New Japan Pro-Wrestling (NJPW) promotion and All Elite Wrestling (AEW). The stable is currently led by Kazuchika Okada. The group was formed in 2009, when nearly all the members of the Great Bash Heel (G.B.H) stable turned on leader Togi Makabe and reformed under new leader Shinsuke Nakamura. Soon after, the new group was named Chaos, with Nakamura as the leader. As the leader of Chaos, Nakamura was one of NJPW's top wrestlers, winning the IWGP Heavyweight Championship and the IWGP Intercontinental Championship as well as the 2011 G1 Climax and the 2014 New Japan Cup.",
+            "extract_html": "<p><b>Chaos</b> is a professional wrestling stable, primarily performing in the New Japan Pro-Wrestling (NJPW) promotion and All Elite Wrestling (AEW). The stable is currently led by Kazuchika Okada. The group was formed in 2009, when nearly all the members of the Great Bash Heel (G.B.H) stable turned on leader Togi Makabe and reformed under new leader Shinsuke Nakamura. Soon after, the new group was named Chaos, with Nakamura as the leader. As the leader of Chaos, Nakamura was one of NJPW's top wrestlers, winning the IWGP Heavyweight Championship and the IWGP Intercontinental Championship as well as the 2011 G1 Climax and the 2014 New Japan Cup.</p>",
+            "normalizedtitle": "Chaos (professional wrestling)"
+        },
+        {
+            "pageid": 39871658,
+            "ns": 0,
+            "index": 7,
+            "type": "standard",
+            "title": "Bullet_Club",
+            "displaytitle": "<span class=\"mw-page-title-main\">Bullet Club</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q13617356",
+            "titles": {
+                "canonical": "Bullet_Club",
+                "normalized": "Bullet Club",
+                "display": "<span class=\"mw-page-title-main\">Bullet Club</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/f/fc/Bullet_Club_logo.jpg",
+                "width": 155,
+                "height": 200
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/f/fc/Bullet_Club_logo.jpg",
+                "width": 155,
+                "height": 200
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149227846",
+            "tid": "0345d320-d87e-11ed-8380-63920c4e9f43",
+            "timestamp": "2023-04-10T23:00:52Z",
+            "description": "Professional wrestling stable",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Bullet_Club",
+                    "revisions": "https://en.wikipedia.org/wiki/Bullet_Club?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Bullet_Club?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Bullet_Club"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Bullet_Club",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Bullet_Club",
+                    "edit": "https://en.m.wikipedia.org/wiki/Bullet_Club?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Bullet_Club"
+                }
+            },
+            "extract": "Bullet Club , sometimes shortened to BC, is a professional wrestling stable primarily appearing in the Japanese promotion New Japan Pro-Wrestling (NJPW). In the United States, the group currently appears on NJPW events run by the company's subsidiary, NJPW of America, as well as U.S. partner promotions Impact Wrestling, Major League Wrestling and All Elite Wrestling (AEW).",
+            "extract_html": "<p><b>Bullet Club</b><span style=\"font-weight:normal\"> </span>, sometimes shortened to <b>BC</b>, is a professional wrestling stable primarily appearing in the Japanese promotion New Japan Pro-Wrestling (NJPW). In the United States, the group currently appears on NJPW events run by the company's subsidiary, NJPW of America, as well as U.S. partner promotions Impact Wrestling, Major League Wrestling and All Elite Wrestling (AEW).</p>",
+            "normalizedtitle": "Bullet Club"
+        },
+        {
+            "pageid": 43806600,
+            "ns": 0,
+            "index": 6,
+            "type": "standard",
+            "title": "Adam_Page",
+            "displaytitle": "<span class=\"mw-page-title-main\">Adam Page</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q16525240",
+            "titles": {
+                "canonical": "Adam_Page",
+                "normalized": "Adam Page",
+                "display": "<span class=\"mw-page-title-main\">Adam Page</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Adam_Page%2C_July_2022_2_%28headshot%29.jpg/320px-Adam_Page%2C_July_2022_2_%28headshot%29.jpg",
+                "width": 320,
+                "height": 427
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Adam_Page%2C_July_2022_2_%28headshot%29.jpg",
+                "width": 850,
+                "height": 1134
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1147316132",
+            "tid": "ff625760-d87d-11ed-9e2e-2f5e8da49a96",
+            "timestamp": "2023-03-30T04:34:33Z",
+            "description": "American professional wrestler (born 1991)",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Adam_Page",
+                    "revisions": "https://en.wikipedia.org/wiki/Adam_Page?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Adam_Page?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Adam_Page"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Adam_Page",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Adam_Page",
+                    "edit": "https://en.m.wikipedia.org/wiki/Adam_Page?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Adam_Page"
+                }
+            },
+            "extract": "Stephen Blake Woltz, better known by his ring name \"Hangman\" Adam Page, is an American professional wrestler currently signed to All Elite Wrestling (AEW), where he is a former AEW World Champion and AEW World Tag Team Champion.",
+            "extract_html": "<p><b>Stephen Blake Woltz</b>, better known by his ring name <b>\"Hangman\" Adam Page</b>, is an American professional wrestler currently signed to All Elite Wrestling (AEW), where he is a former AEW World Champion and AEW World Tag Team Champion.</p>",
+            "normalizedtitle": "Adam Page"
+        },
+        {
+            "pageid": 45292876,
+            "ns": 0,
+            "index": 18,
+            "type": "standard",
+            "title": "Juice_Robinson",
+            "displaytitle": "<span class=\"mw-page-title-main\">Juice Robinson</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q3180169",
+            "titles": {
+                "canonical": "Juice_Robinson",
+                "normalized": "Juice Robinson",
+                "display": "<span class=\"mw-page-title-main\">Juice Robinson</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Juice_Robinson_2016.JPG/320px-Juice_Robinson_2016.JPG",
+                "width": 320,
+                "height": 400
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/9/93/Juice_Robinson_2016.JPG",
+                "width": 800,
+                "height": 1000
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149358513",
+            "tid": "33dcfcf0-d899-11ed-b0cd-cf79433778b2",
+            "timestamp": "2023-04-11T18:46:38Z",
+            "description": "American professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Juice_Robinson",
+                    "revisions": "https://en.wikipedia.org/wiki/Juice_Robinson?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Juice_Robinson?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Juice_Robinson"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Juice_Robinson",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Juice_Robinson",
+                    "edit": "https://en.m.wikipedia.org/wiki/Juice_Robinson?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Juice_Robinson"
+                }
+            },
+            "extract": "Joseph Ryan Robinson, better known by his ring name Juice Robinson, is an American professional wrestler, currently signed to All Elite Wrestling (AEW). Robinson is also a member of the Bullet Club stable and also wrestles in New Japan Pro Wrestling (NJPW).",
+            "extract_html": "<p><b>Joseph Ryan Robinson</b>, better known by his ring name <b>Juice Robinson</b>, is an American professional wrestler, currently signed to All Elite Wrestling (AEW). Robinson is also a member of the Bullet Club stable and also wrestles in New Japan Pro Wrestling (NJPW).</p>",
+            "normalizedtitle": "Juice Robinson"
+        },
+        {
+            "pageid": 48375552,
+            "ns": 0,
+            "index": 15,
+            "type": "standard",
+            "title": "Will_Ospreay",
+            "displaytitle": "<span class=\"mw-page-title-main\">Will Ospreay</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q21622285",
+            "titles": {
+                "canonical": "Will_Ospreay",
+                "normalized": "Will Ospreay",
+                "display": "<span class=\"mw-page-title-main\">Will Ospreay</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Will_Ospreay%2C_June_2022_%28cropped%29.jpg/320px-Will_Ospreay%2C_June_2022_%28cropped%29.jpg",
+                "width": 320,
+                "height": 380
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/0/09/Will_Ospreay%2C_June_2022_%28cropped%29.jpg",
+                "width": 1541,
+                "height": 1828
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1148178423",
+            "tid": "ffbb70b0-d608-11ed-9378-73b66a388e36",
+            "timestamp": "2023-04-04T14:53:02Z",
+            "description": "English professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Will_Ospreay",
+                    "revisions": "https://en.wikipedia.org/wiki/Will_Ospreay?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Will_Ospreay?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Will_Ospreay"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Will_Ospreay",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Will_Ospreay",
+                    "edit": "https://en.m.wikipedia.org/wiki/Will_Ospreay?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Will_Ospreay"
+                }
+            },
+            "extract": "William Peter Charles Ospreay is an English professional wrestler who is currently signed to New Japan Pro-Wrestling (NJPW), where he is the leader of the United Empire stable. He also wrestles for NJPW's United Kingdom based partner promotion Revolution Pro Wrestling (RevPro), where he is a former and longest reigning Undisputed British Heavyweight Champion.",
+            "extract_html": "<p><b>William Peter Charles Ospreay</b> is an English professional wrestler who is currently signed to New Japan Pro-Wrestling (NJPW), where he is the leader of the United Empire stable. He also wrestles for NJPW's United Kingdom based partner promotion Revolution Pro Wrestling (RevPro), where he is a former and longest reigning Undisputed British Heavyweight Champion.</p>",
+            "normalizedtitle": "Will Ospreay"
+        },
+        {
+            "pageid": 48622966,
+            "ns": 0,
+            "index": 12,
+            "type": "standard",
+            "title": "Los_Ingobernables_de_Japon",
+            "displaytitle": "<i>Los Ingobernables de Japon</i>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q27089333",
+            "titles": {
+                "canonical": "Los_Ingobernables_de_Japon",
+                "normalized": "Los Ingobernables de Japon",
+                "display": "<i>Los Ingobernables de Japon</i>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fe/Los_Ingobernables_de_Japon_logo.jpg/320px-Los_Ingobernables_de_Japon_logo.jpg",
+                "width": 320,
+                "height": 185
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/f/fe/Los_Ingobernables_de_Japon_logo.jpg",
+                "width": 398,
+                "height": 230
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1148342034",
+            "tid": "96a9a070-d620-11ed-868f-6f3ccfa43f5e",
+            "timestamp": "2023-04-05T15:59:54Z",
+            "description": "Professional wrestling stable",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Los_Ingobernables_de_Japon",
+                    "revisions": "https://en.wikipedia.org/wiki/Los_Ingobernables_de_Japon?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Los_Ingobernables_de_Japon?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Los_Ingobernables_de_Japon"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Los_Ingobernables_de_Japon",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Los_Ingobernables_de_Japon",
+                    "edit": "https://en.m.wikipedia.org/wiki/Los_Ingobernables_de_Japon?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Los_Ingobernables_de_Japon"
+                }
+            },
+            "extract": "Los Ingobernables de Japón , also shortened to L.I.J., is a Japanese professional wrestling stable, based in the New Japan Pro-Wrestling (NJPW) promotion and led by Tetsuya Naito. An offshoot of the Mexican stable Los Ingobernables from the Consejo Mundial de Lucha Libre (CMLL) promotion, the group was formed in November 2015 by Naito, Bushi and Evil, but came to also include Sanada, Hiromu Takahashi, Shingo Takagi and Titán. Through NJPW's working relationship with other companies, they have also appeared in CMLL and in the American Ring of Honor (ROH) promotion.",
+            "extract_html": "<p><i><b>Los Ingobernables de Japón</b></i><span style=\"font-weight:normal\"> </span>, also shortened to <i><b>L.I.J.</b></i>, is a Japanese professional wrestling stable, based in the New Japan Pro-Wrestling (NJPW) promotion and led by Tetsuya Naito. An offshoot of the Mexican stable <i>Los Ingobernables</i> from the Consejo Mundial de Lucha Libre (CMLL) promotion, the group was formed in November 2015 by Naito, Bushi and Evil, but came to also include Sanada, Hiromu Takahashi, Shingo Takagi and Titán. Through NJPW's working relationship with other companies, they have also appeared in CMLL and in the American Ring of Honor (ROH) promotion.</p>",
+            "normalizedtitle": "Los Ingobernables de Japon"
+        },
+        {
+            "pageid": 49433767,
+            "ns": 0,
+            "index": 2,
+            "type": "standard",
+            "title": "The_Elite_(professional_wrestling)",
+            "displaytitle": "<span class=\"mw-page-title-main\">The Elite (professional wrestling)</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q30597786",
+            "titles": {
+                "canonical": "The_Elite_(professional_wrestling)",
+                "normalized": "The Elite (professional wrestling)",
+                "display": "<span class=\"mw-page-title-main\">The Elite (professional wrestling)</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/EliteLogo.jpg/320px-EliteLogo.jpg",
+                "width": 320,
+                "height": 172
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/9/9f/EliteLogo.jpg",
+                "width": 1000,
+                "height": 537
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1147281603",
+            "tid": "01064360-d87e-11ed-999c-f1f6113d03eb",
+            "timestamp": "2023-03-29T22:51:14Z",
+            "description": "Professional wrestling stable",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/The_Elite_(professional_wrestling)",
+                    "revisions": "https://en.wikipedia.org/wiki/The_Elite_(professional_wrestling)?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/The_Elite_(professional_wrestling)?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:The_Elite_(professional_wrestling)"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/The_Elite_(professional_wrestling)",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/The_Elite_(professional_wrestling)",
+                    "edit": "https://en.m.wikipedia.org/wiki/The_Elite_(professional_wrestling)?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:The_Elite_(professional_wrestling)"
+                }
+            },
+            "extract": "The Elite is a professional wrestling stable currently appearing in the American professional wrestling promotion All Elite Wrestling (AEW). The group currently consists of Kenny Omega and The Young Bucks, and are typically accompanied by Don Callis, Brandon Cutler, and Michael Nakazawa. They were the inaugural and two-time AEW World Trios Champions. Omega also makes appearances for New Japan Pro-Wrestling (NJPW), where he is a two-time and current IWGP United States Heavyweight Champion.",
+            "extract_html": "<p><b>The Elite</b> is a professional wrestling stable currently appearing in the American professional wrestling promotion All Elite Wrestling (AEW). The group currently consists of Kenny Omega and The Young Bucks, and are typically accompanied by Don Callis, Brandon Cutler, and Michael Nakazawa. They were the inaugural and two-time AEW World Trios Champions. Omega also makes appearances for New Japan Pro-Wrestling (NJPW), where he is a two-time and current IWGP United States Heavyweight Champion.</p>",
+            "normalizedtitle": "The Elite (professional wrestling)"
+        },
+        {
+            "pageid": 51118769,
+            "ns": 0,
+            "index": 16,
+            "type": "standard",
+            "title": "King_of_Pro-Wrestling_(2016)",
+            "displaytitle": "<span class=\"mw-page-title-main\">King of Pro-Wrestling (2016)</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q27630543",
+            "titles": {
+                "canonical": "King_of_Pro-Wrestling_(2016)",
+                "normalized": "King of Pro-Wrestling (2016)",
+                "display": "<span class=\"mw-page-title-main\">King of Pro-Wrestling (2016)</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/a/a9/King_of_Pro-Wrestling_%282016%29.jpg",
+                "width": 199,
+                "height": 281
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/a/a9/King_of_Pro-Wrestling_%282016%29.jpg",
+                "width": 199,
+                "height": 281
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1095453505",
+            "tid": "c157f0a0-c89d-11ed-8767-65aea2a5da4d",
+            "timestamp": "2022-06-28T13:05:00Z",
+            "description": "2016 New Japan Pro-Wrestling event",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/King_of_Pro-Wrestling_(2016)",
+                    "revisions": "https://en.wikipedia.org/wiki/King_of_Pro-Wrestling_(2016)?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/King_of_Pro-Wrestling_(2016)?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:King_of_Pro-Wrestling_(2016)"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/King_of_Pro-Wrestling_(2016)",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/King_of_Pro-Wrestling_(2016)",
+                    "edit": "https://en.m.wikipedia.org/wiki/King_of_Pro-Wrestling_(2016)?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:King_of_Pro-Wrestling_(2016)"
+                }
+            },
+            "extract": "King of Pro-Wrestling (2016) was a professional wrestling event promoted by New Japan Pro-Wrestling (NJPW), which took place on October 10, 2016, in Tokyo at Ryōgoku Kokugikan. It was NJPW's biggest show between August's G1 Climax and January's Wrestle Kingdom 11 in Tokyo Dome and featured nine matches with four of them contested for championships, main evented by Kazuchika Okada defending the IWGP Heavyweight Championship against Pro Wrestling Noah representative Naomichi Marufuji. This was the fifth event under the King of Pro-Wrestling name.",
+            "extract_html": "<p><b>King of Pro-Wrestling (2016)</b> was a professional wrestling event promoted by New Japan Pro-Wrestling (NJPW), which took place on October 10, 2016, in Tokyo at Ryōgoku Kokugikan. It was NJPW's biggest show between August's G1 Climax and January's Wrestle Kingdom 11 in Tokyo Dome and featured nine matches with four of them contested for championships, main evented by Kazuchika Okada defending the IWGP Heavyweight Championship against Pro Wrestling Noah representative Naomichi Marufuji. This was the fifth event under the King of Pro-Wrestling name.</p>",
+            "normalizedtitle": "King of Pro-Wrestling (2016)"
+        },
+        {
+            "pageid": 51136272,
+            "ns": 0,
+            "index": 3,
+            "type": "standard",
+            "title": "Golden_Lovers",
+            "displaytitle": "<span class=\"mw-page-title-main\">Golden Lovers</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q11303901",
+            "titles": {
+                "canonical": "Golden_Lovers",
+                "normalized": "Golden Lovers",
+                "display": "<span class=\"mw-page-title-main\">Golden Lovers</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Omega_and_Ibushi_reunited%2C_2018.png/320px-Omega_and_Ibushi_reunited%2C_2018.png",
+                "width": 320,
+                "height": 180
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Omega_and_Ibushi_reunited%2C_2018.png",
+                "width": 1392,
+                "height": 783
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1063015802",
+            "tid": "98425270-cb57-11ed-bd15-7711093af73c",
+            "timestamp": "2021-12-31T19:33:48Z",
+            "description": "Professional wrestling tag team",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Golden_Lovers",
+                    "revisions": "https://en.wikipedia.org/wiki/Golden_Lovers?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Golden_Lovers?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Golden_Lovers"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Golden_Lovers",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Golden_Lovers",
+                    "edit": "https://en.m.wikipedia.org/wiki/Golden_Lovers?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Golden_Lovers"
+                }
+            },
+            "extract": "Golden☆Lovers  was the professional wrestling tag team of Kenny Omega and Kota Ibushi. The team was formed in January 2009 in the Japanese DDT Pro-Wrestling promotion, where, over the next five years, they won the KO-D Tag Team Championship on two occasions. The team also made appearances for New Japan Pro-Wrestling (NJPW), where they won the IWGP Junior Heavyweight Tag Team Championship once. The team disbanded when Omega left DDT in October 2014. Omega and Ibushi reunited at The New Beginning in Sapporo in January 2018.",
+            "extract_html": "<p><b>Golden☆Lovers</b><span style=\"font-weight:normal\"> </span> was the professional wrestling tag team of Kenny Omega and Kota Ibushi. The team was formed in January 2009 in the Japanese DDT Pro-Wrestling promotion, where, over the next five years, they won the KO-D Tag Team Championship on two occasions. The team also made appearances for New Japan Pro-Wrestling (NJPW), where they won the IWGP Junior Heavyweight Tag Team Championship once. The team disbanded when Omega left DDT in October 2014. Omega and Ibushi reunited at The New Beginning in Sapporo in January 2018.</p>",
+            "normalizedtitle": "Golden Lovers"
+        },
+        {
+            "pageid": 52801070,
+            "ns": 0,
+            "index": 4,
+            "type": "standard",
+            "title": "Jay_White",
+            "displaytitle": "<span class=\"mw-page-title-main\">Jay White</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q28151840",
+            "titles": {
+                "canonical": "Jay_White",
+                "normalized": "Jay White",
+                "display": "<span class=\"mw-page-title-main\">Jay White</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Forbidden_Door_%28AEW_x_NJPW%29_%2852292915864%29.jpg/320px-Forbidden_Door_%28AEW_x_NJPW%29_%2852292915864%29.jpg",
+                "width": 320,
+                "height": 480
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/commons/4/45/Forbidden_Door_%28AEW_x_NJPW%29_%2852292915864%29.jpg",
+                "width": 2557,
+                "height": 3835
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149247943",
+            "tid": "0cbc0140-d87e-11ed-b9de-a1cfc536615a",
+            "timestamp": "2023-04-11T01:47:47Z",
+            "description": "New Zealand professional wrestler",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Jay_White",
+                    "revisions": "https://en.wikipedia.org/wiki/Jay_White?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Jay_White?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Jay_White"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Jay_White",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Jay_White",
+                    "edit": "https://en.m.wikipedia.org/wiki/Jay_White?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Jay_White"
+                }
+            },
+            "extract": "Jamie White, better known by the ring name Jay White, is a New Zealand-Dutch professional wrestler currently signed to All Elite Wrestling (AEW). He is best known for his tenure with New Japan Pro-Wrestling (NJPW).",
+            "extract_html": "<p><b>Jamie White</b>, better known by the ring name <b>Jay White</b>, is a New Zealand-Dutch professional wrestler currently signed to All Elite Wrestling (AEW). He is best known for his tenure with New Japan Pro-Wrestling (NJPW).</p>",
+            "normalizedtitle": "Jay White"
+        },
+        {
+            "pageid": 54030680,
+            "ns": 0,
+            "index": 14,
+            "type": "standard",
+            "title": "IWGP_United_States_Heavyweight_Championship",
+            "displaytitle": "<span class=\"mw-page-title-main\">IWGP United States Heavyweight Championship</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q29913730",
+            "titles": {
+                "canonical": "IWGP_United_States_Heavyweight_Championship",
+                "normalized": "IWGP United States Heavyweight Championship",
+                "display": "<span class=\"mw-page-title-main\">IWGP United States Heavyweight Championship</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/thumb/3/32/IWGP_United_States_Championship.PNG/320px-IWGP_United_States_Championship.PNG",
+                "width": 320,
+                "height": 157
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/3/32/IWGP_United_States_Championship.PNG",
+                "width": 392,
+                "height": 192
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1149226294",
+            "tid": "59531260-d7f1-11ed-8df0-f745aa93c55b",
+            "timestamp": "2023-04-10T22:45:07Z",
+            "description": "Professional wrestling championship",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/IWGP_United_States_Heavyweight_Championship",
+                    "revisions": "https://en.wikipedia.org/wiki/IWGP_United_States_Heavyweight_Championship?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/IWGP_United_States_Heavyweight_Championship?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:IWGP_United_States_Heavyweight_Championship"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/IWGP_United_States_Heavyweight_Championship",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/IWGP_United_States_Heavyweight_Championship",
+                    "edit": "https://en.m.wikipedia.org/wiki/IWGP_United_States_Heavyweight_Championship?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:IWGP_United_States_Heavyweight_Championship"
+                }
+            },
+            "extract": "The IWGP United States Heavyweight Championship  is a professional wrestling championship owned and promoted by the New Japan Pro-Wrestling (NJPW) promotion. \"IWGP\" is the acronym of NJPW's governing body, the International Wrestling Grand Prix . The current champion is Kenny Omega, who is in his second reign.",
+            "extract_html": "<p>The <b>IWGP United States Heavyweight Championship</b><span style=\"font-weight:normal\"> </span> is a professional wrestling championship owned and promoted by the New Japan Pro-Wrestling (NJPW) promotion. \"IWGP\" is the acronym of NJPW's governing body, the International Wrestling Grand Prix<span style=\"font-weight:normal\"> </span>. The current champion is Kenny Omega, who is in his second reign.</p>",
+            "normalizedtitle": "IWGP United States Heavyweight Championship"
+        },
+        {
+            "pageid": 54460727,
+            "ns": 0,
+            "index": 17,
+            "type": "standard",
+            "title": "Power_Struggle_(2017)",
+            "displaytitle": "<span class=\"mw-page-title-main\">Power Struggle (2017)</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q48835480",
+            "titles": {
+                "canonical": "Power_Struggle_(2017)",
+                "normalized": "Power Struggle (2017)",
+                "display": "<span class=\"mw-page-title-main\">Power Struggle (2017)</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/6/6a/Power_Struggle_%282017%29.jpg",
+                "width": 188,
+                "height": 264
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/6/6a/Power_Struggle_%282017%29.jpg",
+                "width": 188,
+                "height": 264
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1146392567",
+            "tid": "e6e88200-ca5d-11ed-a8e4-cd78945ff80c",
+            "timestamp": "2023-03-24T16:06:54Z",
+            "description": "2017 New Japan Pro-Wrestling event",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Power_Struggle_(2017)",
+                    "revisions": "https://en.wikipedia.org/wiki/Power_Struggle_(2017)?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Power_Struggle_(2017)?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Power_Struggle_(2017)"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Power_Struggle_(2017)",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Power_Struggle_(2017)",
+                    "edit": "https://en.m.wikipedia.org/wiki/Power_Struggle_(2017)?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Power_Struggle_(2017)"
+                }
+            },
+            "extract": "Power Struggle (2017) was a professional wrestling event promoted by New Japan Pro-Wrestling (NJPW). The event took place on November 5, 2017, in Osaka, Osaka, at the Osaka Prefectural Gymnasium. It was the seventh event under the Power Struggle name. The event featured ten matches, headlined by Hiroshi Tanahashi defending the IWGP Intercontinental Championship against Kota Ibushi.",
+            "extract_html": "<p><b>Power Struggle (2017)</b> was a professional wrestling event promoted by New Japan Pro-Wrestling (NJPW). The event took place on November 5, 2017, in Osaka, Osaka, at the Osaka Prefectural Gymnasium. It was the seventh event under the Power Struggle name. The event featured ten matches, headlined by Hiroshi Tanahashi defending the IWGP Intercontinental Championship against Kota Ibushi.</p>",
+            "normalizedtitle": "Power Struggle (2017)"
+        },
+        {
+            "pageid": 59578955,
+            "ns": 0,
+            "index": 5,
+            "type": "standard",
+            "title": "Wrestle_Kingdom_14",
+            "displaytitle": "<span class=\"mw-page-title-main\">Wrestle Kingdom 14</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q65091593",
+            "titles": {
+                "canonical": "Wrestle_Kingdom_14",
+                "normalized": "Wrestle Kingdom 14",
+                "display": "<span class=\"mw-page-title-main\">Wrestle Kingdom 14</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/b/b8/WrestleKingdom_14.jpg",
+                "width": 266,
+                "height": 374
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/b/b8/WrestleKingdom_14.jpg",
+                "width": 266,
+                "height": 374
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1134625134",
+            "tid": "6ad26f70-d433-11ed-bbec-3725c8e3b848",
+            "timestamp": "2023-01-19T17:02:31Z",
+            "description": "2020 New Japan Pro-Wrestling event",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_14",
+                    "revisions": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_14?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_14?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Wrestle_Kingdom_14"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Wrestle_Kingdom_14",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Wrestle_Kingdom_14",
+                    "edit": "https://en.m.wikipedia.org/wiki/Wrestle_Kingdom_14?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Wrestle_Kingdom_14"
+                }
+            },
+            "extract": "Wrestle Kingdom 14 in Tokyo Dome was a two-night professional wrestling pay-per-view (PPV) event produced by New Japan Pro-Wrestling (NJPW). The event took place on January 4 and 5, 2020, at the Tokyo Dome, in Tokyo, Japan. It was the 29th January 4 Tokyo Dome Show and the 14th promoted under the Wrestle Kingdom name; it was also the first time the event was held over two days, instead of taking place solely on January 4.",
+            "extract_html": "<p><b>Wrestle Kingdom 14 in Tokyo Dome</b> was a two-night professional wrestling pay-per-view (PPV) event produced by New Japan Pro-Wrestling (NJPW). The event took place on January 4 and 5, 2020, at the Tokyo Dome, in Tokyo, Japan. It was the 29th January 4 Tokyo Dome Show and the 14th promoted under the Wrestle Kingdom name; it was also the first time the event was held over two days, instead of taking place solely on January 4.</p>",
+            "normalizedtitle": "Wrestle Kingdom 14"
+        },
+        {
+            "pageid": 71582473,
+            "ns": 0,
+            "index": 9,
+            "type": "standard",
+            "title": "Wrestle_Kingdom_17",
+            "displaytitle": "<span class=\"mw-page-title-main\">Wrestle Kingdom 17</span>",
+            "namespace": {
+                "id": 0,
+                "text": ""
+            },
+            "wikibase_item": "Q113801048",
+            "titles": {
+                "canonical": "Wrestle_Kingdom_17",
+                "normalized": "Wrestle Kingdom 17",
+                "display": "<span class=\"mw-page-title-main\">Wrestle Kingdom 17</span>"
+            },
+            "thumbnail": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/2/20/Wrestle_Kingdom_17_in_Tokyo_Dome_poster.jpg",
+                "width": 265,
+                "height": 380
+            },
+            "originalimage": {
+                "source": "https://upload.wikimedia.org/wikipedia/en/2/20/Wrestle_Kingdom_17_in_Tokyo_Dome_poster.jpg",
+                "width": 265,
+                "height": 380
+            },
+            "lang": "en",
+            "dir": "ltr",
+            "revision": "1148627383",
+            "tid": "cd849950-d52c-11ed-bee3-0da7e9faa591",
+            "timestamp": "2023-04-07T10:13:08Z",
+            "description": "2023 New Japan Pro-Wrestling event",
+            "description_source": "local",
+            "content_urls": {
+                "desktop": {
+                    "page": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_17",
+                    "revisions": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_17?action=history",
+                    "edit": "https://en.wikipedia.org/wiki/Wrestle_Kingdom_17?action=edit",
+                    "talk": "https://en.wikipedia.org/wiki/Talk:Wrestle_Kingdom_17"
+                },
+                "mobile": {
+                    "page": "https://en.m.wikipedia.org/wiki/Wrestle_Kingdom_17",
+                    "revisions": "https://en.m.wikipedia.org/wiki/Special:History/Wrestle_Kingdom_17",
+                    "edit": "https://en.m.wikipedia.org/wiki/Wrestle_Kingdom_17?action=edit",
+                    "talk": "https://en.m.wikipedia.org/wiki/Talk:Wrestle_Kingdom_17"
+                }
+            },
+            "extract": "Wrestle Kingdom 17 was a two-day professional wrestling pay-per-view (PPV) event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The first day of the event took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan and the second day of the event took place on January 21, 2023, at the Yokohama Arena in Yokohama, Japan. It is the 32nd January 4 Tokyo Dome Show and the 17th promoted under the Wrestle Kingdom name. The event was held in honor of the NJPW founder Antonio Inoki, who died on October 1, 2022.",
+            "extract_html": "<p><b>Wrestle Kingdom 17</b> was a two-day professional wrestling pay-per-view (PPV) event co-produced by the New Japan Pro-Wrestling (NJPW) and Pro Wrestling Noah (Noah) promotions. The first day of the event took place on January 4, 2023, at the Tokyo Dome in Tokyo, Japan and the second day of the event took place on January 21, 2023, at the Yokohama Arena in Yokohama, Japan. It is the 32nd January 4 Tokyo Dome Show and the 17th promoted under the Wrestle Kingdom name. The event was held in honor of the NJPW founder Antonio Inoki, who died on October 1, 2022.</p>",
+            "normalizedtitle": "Wrestle Kingdom 17"
+        }
+    ]
+}
