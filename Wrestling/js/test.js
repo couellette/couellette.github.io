@@ -2,40 +2,58 @@ body = d3.select("body")
 header = body.append("header")
 header.append("div").classed("logo", true)
 header.append("div").classed("name", true).html("Wrester DB")
-// body.append("h1").html("Find your favourite wrestler")
+    // body.append("h1").html("Find your favourite wrestler")
 search = header.append('div').classed("query", true).append("input").attr("id", "searched").attr("placeholder", "Search by wrestler")
 app = body.append("div").classed("app-container", true)
+const date = new Date();
+let currentDay = String(date.getDate()).padStart(2, '1');
+let currentMonth = String(date.getMonth() + 1).padStart(2, "0");
+let currentYear = date.getFullYear();
+let currentDate = `${currentYear}-${currentMonth}-${parseInt(currentDay)+1}`;
 
-       const date = new Date();
-    let currentDay = String(date.getDate()).padStart(2, '1');
-    let currentMonth = String(date.getMonth() + 1).padStart(2, "0");
-    let currentYear = date.getFullYear();
-    let currentDate = `${currentYear}-${currentMonth}-${parseInt(currentDay)+1}`;
 
-
-     function addMonths(date, months) {
-        var d = date.getDate();
-        date.setMonth(date.getMonth() + +months);
-        if (date.getDate() != d) {
-            date.setDate(0);
-        }
-        return date;
+function addMonths(date, months) {
+    var d = date.getDate();
+    date.setMonth(date.getMonth() + +months);
+    if (date.getDate() != d) {
+        date.setDate(0);
     }
-   var dateRange = addMonths(new Date(currentDate), -1).toISOString().split('T')[0]
-        // console.log(dateRange)
-var newsFrontPage = 'data/news3.json'
+    return date;
+}
+var dateRange = addMonths(new Date(currentDate), -1).toISOString().split('T')[0]
+    // console.log(dateRange)
+
+newsKey = 'A2H6ko9vU6fppn1n3OzpfQwSl1PtNogzlNmtGdipXAg'
+var myHeaders = new Headers();
+myHeaders.append("x-api-key", newsKey);
+
+
+var requestOptions = {
+    method: 'GET',
+    headers: myHeaders,
+    redirect: 'follow'
+};
+
+// var newsFrontPage = 'data/newsCatcher.json'
+newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew AND wwe AND roh'+'&page_size=10'
+
 console.log(dateRange)
 Promise.all([
- fetch(newsFrontPage)
+    fetch(newsFrontPage, requestOptions),
     // fetch('https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q=aew+OR+wwe+OR+roh&from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=45')
 ]).then(function(responses) {
     return Promise.all(responses.map(function(response) {
         return response.json();
     }));
 }).then(function(data) {
-    console.log(data[0])
-    // articlesData = data[0].articles
-   articlesData = data[0]
+    console.log(data[0].articles)
+        // articlesData = data[0].articles
+    articlesData = data[0].articles
+    articlesData = articlesData.filter(function(d) {
+        format = d.media
+
+        return format.substr(format.length - 3) === 'jpg'
+    })
     console.log(articlesData)
     news = app.append("div").classed("news", true)
     headline = news.append("div").classed("news-label", true).html("Top News In Wrestling")
@@ -43,11 +61,11 @@ Promise.all([
     news.append("div").classed("news-container", true)
 
     articles = news.selectAll("body").data(articlesData).enter().append("div").classed("unique-news", true)
-    articles.append("div").classed("article-image", true).style("background", d => "url(" + d.urlToImage + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
-    articles.append("div").classed("article-source", true).html(d => d.source.name)
-    articles.append("div").classed("article-date", true).html(d => d.publishedAt.split('T')[0])
+    articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
+    articles.append("div").classed("article-source", true).html(d => d.rights)
+    articles.append("div").classed("article-date", true).html(d => d.published_date.split(' ')[0])
     articles.append("div").classed("article-title", true).html(d => d.title)
-    articles.append("div").classed("article-description", true).html(d => d.description)
+    articles.append("div").classed("article-description", true).html(d => d.excerpt)
 
 
     search.on("keypress", function(e) {
@@ -67,11 +85,10 @@ function run(ogquery) {
             run(ogquery)
         }
     })
-
+    youtubeKey = 'AIzaSyDukkqsudKv7UXgixVY839GN1UCrT_Sx6I'
     query = titleCase(ogquery).replace(/ /g, "_")
     app.remove()
     d3.select("h1").remove()
-
 
 
     const date = new Date();
@@ -104,9 +121,12 @@ function run(ogquery) {
         return splitStr.join(' ');
     }
     news = 'data/news.json'
-    youtube = 'data/video.json'
-    //    news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
-    // youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
+        // youtube = 'data/video.json'
+        //    news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
+    news = 'https://api.newscatcherapi.com/v2/search?q=' + ogquery +'&page_size=10'
+    youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
+
+
 
     search(query, ogquery, news)
 
@@ -116,8 +136,9 @@ function run(ogquery) {
             fetch('https://api.wikimedia.org/core/v1/wikipedia/en/search/page?q=' + query + '&limit=1'),
             fetch('https://en.wikipedia.org/api/rest_v1/page/media-list/' + query),
             fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
-            fetch(news),
-            fetch(youtube)
+            fetch(news, requestOptions),
+            fetch(youtube),
+            // fetch('http://localhost:7777/data/video.json')
         ]).then(function(responses) {
             return Promise.all(responses.map(function(response) {
                 return response.json();
@@ -133,12 +154,18 @@ function run(ogquery) {
                 return format.substr(format.length - 3) === 'jpg'
             })
 
+
             mainData = data[0].pages[0]
             otherData = data[2].pages.filter(item => Boolean(item.thumbnail))
             otherData = otherData.filter(d => d.normalizedtitle.trim().split(/\s+/).every(e => e.length >= 2))
             extraData = d.slice(1)
             articlesData = data[3].articles
+            console.log(data[3])
+            articlesData = articlesData.filter(function(d) {
+                format = d.media
 
+                return format.substr(format.length - 3) === 'jpg'
+            })
             app = body.append("div").classed("app-container", true)
 
             background = app.append("div").classed("collage", true)
@@ -182,11 +209,11 @@ function run(ogquery) {
             news.append("div").classed("news-container", true)
 
             articles = news.selectAll("body").data(articlesData).enter().append("div").classed("unique-news", true)
-            articles.append("div").classed("article-image", true).style("background", d => "url(" + d.urlToImage + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
-            articles.append("div").classed("article-source", true).html(d => d.source.name)
-            articles.append("div").classed("article-date", true).html(d => d.publishedAt.split('T')[0])
+            articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
+            articles.append("div").classed("article-source", true).html(d => d.rights)
+            articles.append("div").classed("article-date", true).html(d => d.published_date.split(' ')[0])
             articles.append("div").classed("article-title", true).html(d => d.title)
-            articles.append("div").classed("article-description", true).html(d => d.description)
+            articles.append("div").classed("article-description", true).html(d => d.excerpt)
 
             also = app.append("div").classed("also_interested", true)
             also.append("div").classed("footer-label", true).html("You may also be interested in")
