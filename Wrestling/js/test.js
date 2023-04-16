@@ -35,7 +35,7 @@ var requestOptions = {
 };
 
 // var newsFrontPage = 'data/newsCatcher.json'
-newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew AND wwe AND roh'+'&page_size=10'
+newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
 
 console.log(dateRange)
 Promise.all([
@@ -123,7 +123,7 @@ function run(ogquery) {
     news = 'data/news.json'
         // youtube = 'data/video.json'
         //    news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
-    news = 'https://api.newscatcherapi.com/v2/search?q=' + ogquery +'&page_size=10'
+    news = 'https://api.newscatcherapi.com/v2/search?q=' + ogquery +'&page_size=10&lang=en'
     youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
 
 
