@@ -3,4 +3,4 @@
 
 # news-browser
 
-A wrestling content compliler for the [Newscatcher Free News API](https://free-docs.newscatcherapi.com/)
+A wrestling new aggregator as a passion project of mine provided by the [Newscatcher Free News API](https://free-docs.newscatcherapi.com/)
