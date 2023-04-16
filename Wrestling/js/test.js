@@ -1,6 +1,6 @@
 body = d3.select("body")
 header = body.append("header")
-header.append("div").classed("logo", true)
+header.append("div").classed("logo", true).attr("onClick","window.location.href = '/Wrestling';")
 header.append("div").classed("name", true).html("Wrester DB")
     // body.append("h1").html("Find your favourite wrestler")
 search = header.append('div').classed("query", true).append("input").attr("id", "searched").attr("placeholder", "Search by wrestler")
