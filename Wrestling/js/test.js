@@ -61,7 +61,7 @@ Promise.all([
     news.append("div").classed("news-container", true)
 
     articles = news.selectAll("body").data(articlesData).enter().append("div").classed("unique-news", true)
-    articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
+    articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.link + "','mywindow')")
     articles.append("div").classed("article-source", true).html(d => d.rights)
     articles.append("div").classed("article-date", true).html(d => d.published_date.split(' ')[0])
     articles.append("div").classed("article-title", true).html(d => d.title)
@@ -209,7 +209,7 @@ function run(ogquery) {
             news.append("div").classed("news-container", true)
 
             articles = news.selectAll("body").data(articlesData).enter().append("div").classed("unique-news", true)
-            articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.url + "','mywindow')")
+            articles.append("div").classed("article-image", true).style("background", d => "url(" + d.media + ")").style("background-size", "cover").attr("onclick", d => "window.open('" + d.link + "','mywindow')")
             articles.append("div").classed("article-source", true).html(d => d.rights)
             articles.append("div").classed("article-date", true).html(d => d.published_date.split(' ')[0])
             articles.append("div").classed("article-title", true).html(d => d.title)
