@@ -297,6 +297,12 @@ a {
     color: red;
     cursor: pointer;
 }
+input#autoComplete {
+    border-radius: 10px!important;
+    margin: 8px;
+    height: 45px;
+    width: calc(100% - 2px);
+}
 @media only screen and (max-width: 1025px) {
 body {
     overflow-y: scroll;
@@ -345,6 +351,13 @@ body {
     margin: 0 0 10px 0;
     width: -webkit-fill-available;
 }
+.form-group {
+    width: calc(100% - 105px);
+    margin-top: 14px;
+}
+input[type="text"] {
+    width: calc(100% - 115px);
+}
 .news {
     overflow: hidden;
     border: none;
@@ -353,6 +366,15 @@ body {
 @media only screen and (max-width: 724px) {
 .related-videos-container {
     display: none;
+}
+    .excerpt {
+    padding: 0;
+    margin: 5px 0;
+}
+    .ring_name {
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    padding: 0;
 }
 .video-container {
     position: relative;
@@ -411,18 +433,18 @@ header {
     height: 190px;
 }
 .details {
-    display: block;
+    display: flex;
+    position: relative;
+    height: 200px;
 }
 .headshot {
-    height: 320px;
+    height: 150px;
     width: calc(100% - 20px);
 }
 .bio {
     width: calc(100% - 20px);
 }
-.description {
-    width: 100%;
-}
+.description {font-size: 11px;position: absolute;left: 0;bottom: 0;width: 100%;}
 .name {
     display: none;
 }
