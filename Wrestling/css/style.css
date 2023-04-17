@@ -4,7 +4,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
     color: white;
-    background: black;
+    background: #f1f1f1;
     opacity: 1;
     transition: ease-in-out;
 }
@@ -444,7 +444,13 @@ header {
 .bio {
     width: calc(100% - 20px);
 }
-.description {font-size: 11px;position: absolute;left: 0;bottom: 0;width: 100%;}
+.description {
+    font-size: 11px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: inherit;
+}
 .name {
     display: none;
 }

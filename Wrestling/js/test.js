@@ -30,7 +30,7 @@ Promise.all([
             input: {
                 selection: (event) => {
                     const ogquery = event.detail.selection.value;
-                   run(ogquery)
+                    run(ogquery)
 
                     autoCompleteJS.input.value = ogquery;
                 }
@@ -104,9 +104,9 @@ Promise.all([
 
         search.on("keypress", function(e) {
             ogquery = d3.select("#autoComplete").node().value
-         console.log(ogquery)
+            console.log(ogquery)
             if (e.charCode === 13) {
-              console.log(ogquery)
+                console.log(ogquery)
 
                 run(ogquery)
             }
@@ -176,7 +176,7 @@ Promise.all([
                 fetch('https://en.wikipedia.org/api/rest_v1/page/related/' + query),
                 fetch(news, requestOptions),
                 fetch(youtube),
-                // fetch('http://localhost:7777/data/video.json')
+                // fetch('data/video.json')
             ]).then(function(responses) {
                 return Promise.all(responses.map(function(response) {
                     return response.json();
@@ -198,7 +198,6 @@ Promise.all([
                 otherData = otherData.filter(d => d.normalizedtitle.trim().split(/\s+/).every(e => e.length >= 2))
                 extraData = d.slice(1)
                 articlesData = data[3].articles
-                console.log(data[3])
                 articlesData = articlesData.filter(function(d) {
                     format = d.media
 
@@ -217,14 +216,21 @@ Promise.all([
                     .style("width", "33.3%")
                     .style("background-size", "cover")
                     .style("background-position-y", "top")
+                if (data[0].pages.length > 0) {
+                    details = app.append("div").classed("details", true)
 
-                details = app.append("div").classed("details", true)
-
-                image = details.append("div").classed("headshot", true).style("background", "url(" + mainData.thumbnail.url.replace("/60px", "/400px") + ")").style("background-size", "cover").style("background-position", "top")
-                bio = details.append("div").classed("bio", true)
-                bio.append("div").classed("ring_name", true).html(mainData.title)
-                bio.append("div").classed("description", true).html(mainData.description)
-                bio.append("div").classed("excerpt", true).html(mainData.excerpt + '...<a href="https://en.wikipedia.org/wiki/' + mainData.key + '" target="_blank">Read More</a>')
+                    image = details.append("div").classed("headshot", true).style("background", function() {
+                            if (mainData.thumbnail === null) {
+                                return "url('images/profile.jpeg')"
+                            } else
+                                return "url(" + mainData.thumbnail.url.replace("/60px", "/400px") + ")"
+                        })
+                        .style("background-size", "cover").style("background-position", "top")
+                    bio = details.append("div").classed("bio", true)
+                    bio.append("div").classed("ring_name", true).html(mainData.title)
+                    bio.append("div").classed("description", true).html(mainData.description)
+                    bio.append("div").classed("excerpt", true).html(mainData.excerpt + '...<a href="https://en.wikipedia.org/wiki/' + mainData.key + '" target="_blank">Read More</a>')
+                }
 
 
 
