@@ -301,7 +301,9 @@ input#autoComplete {
     border-radius: 10px!important;
     margin: 8px;
     height: 45px;
-    width: calc(100% - 2px);
+    width: auto;
+    position: absolute;
+    top: -15px;
 }
 @media only screen and (max-width: 1025px) {
 body {
