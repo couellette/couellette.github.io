@@ -341,7 +341,12 @@ body {
 }
 @media only screen and (max-width: 850px) {
 .related-videos {
-    width: 100%;
+    border: none;
+    margin: 0 0 10px 0;
+    width: auto;
+}
+.news {
+    overflow: hidden;
     border: none;
 }
 }
@@ -352,12 +357,10 @@ body {
 .video-container {
     position: relative;
     height: auto;
-    width: calc(100% - 20px);
+    width: calc(100% - 0px);
     left: auto;
     top: auto;
-    margin: 10px;
-    padding: 0;
-    overflow: auto;
+    margin: 0 auto;
 }
 .video-image {
     height: 400px;
@@ -388,6 +391,16 @@ header {
 @media only screen and (max-width: 723px) {
 .video-source {
     height: auto;
+}
+.video-container {
+    position: relative;
+    height: auto;
+    width: calc(100% - 20px);
+    left: auto;
+    top: auto;
+    margin: 10px;
+    padding: 0;
+    overflow: auto;
 }
 .video-image {
     height: 190px;
