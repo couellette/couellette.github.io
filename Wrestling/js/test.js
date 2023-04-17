@@ -18,7 +18,7 @@ Promise.all([
     wrestlerNames = data[0]
 
     const autoCompleteJS = new autoComplete({
-        placeHolder: "Search by Wreslter",
+        placeHolder: "Search by Wrestler",
         data: {
             src: wrestlerNames,
             cache: true,
