@@ -343,7 +343,7 @@ body {
 .related-videos {
     border: none;
     margin: 0 0 10px 0;
-    width: auto;
+    width: -webkit-fill-available;
 }
 .news {
     overflow: hidden;
