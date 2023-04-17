@@ -407,7 +407,10 @@ header {
     z-index: 100;
 }
 .app-container {
-    margin-top: 75px;
+    margin-top: 70px;
+}
+.news-container {
+    display: none;
 }
 }
 @media only screen and (max-width: 723px) {
