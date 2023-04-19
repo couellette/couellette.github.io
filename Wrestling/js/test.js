@@ -69,8 +69,8 @@ Promise.all([
         redirect: 'follow'
     };
 
-    var newsFrontPage = 'data/newsCatcher.json'
-        // newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
+    // var newsFrontPage = 'data/newsCatcher.json'
+        newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
 
     console.log(dateRange)
     Promise.all([
