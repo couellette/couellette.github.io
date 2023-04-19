@@ -81,7 +81,7 @@ Promise.all([
             return response.json();
         }));
     }).then(function(data) {
-        console.log(data[0].articles)
+        console.log(data[0])
             // articlesData = data[0].articles
         articlesData = data[0].articles
         articlesData = articlesData.filter(function(d) {
