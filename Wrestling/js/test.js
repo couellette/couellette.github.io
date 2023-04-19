@@ -11,7 +11,8 @@ Promise.all([
     header.append("div").classed("name", true).html("Wrester DB")
         // body.append("h1").html("Find your favourite wrestler")
     search = header.append('div').attr("id", "query").classed("autoComplete_wrapper", true)
-        .append("input").attr("type", "search").attr("dir", "ltr").attr("spellcheck", "false").attr("autocomplete", "false").attr("autocapitalize", "off").attr("id", "autoComplete")
+        
+        searchBar  = search.append("input").attr("type", "search").attr("dir", "ltr").attr("spellcheck", "false").attr("autocomplete", "false").attr("autocapitalize", "off").attr("id", "autoComplete")
         // <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
 
 
@@ -68,8 +69,8 @@ Promise.all([
         redirect: 'follow'
     };
 
-    // var newsFrontPage = 'data/newsCatcher.json'
-        newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
+    var newsFrontPage = 'data/newsCatcher.json'
+        // newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
 
     console.log(dateRange)
     Promise.all([
@@ -102,9 +103,10 @@ Promise.all([
         articles.append("div").classed("article-description", true).html(d => d.excerpt)
 
 
-        search.on("keypress", function(e) {
+        searchBar.on("keypress", function(e) {
             ogquery = d3.select("#autoComplete").node().value
             console.log(ogquery)
+            console.log(e.charCode)
             if (e.charCode === 13) {
                 console.log(ogquery)
 
