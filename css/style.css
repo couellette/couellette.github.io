@@ -2394,7 +2394,7 @@ video#bgvid {
     width: 300px;
     height: 400px;
     background: white;
-    margin-top: -472px;
+    margin-top: -495px;
     position: fixed;
     right: 30px;
     border-radius: 10px;
@@ -2485,8 +2485,9 @@ input {
     transform: translate(36%, 0);
 }
 .messageContainer {
-    height: calc(100% + 50px);
-    padding-bottom: 150px;
+    /* height: calc(100% + 50px); */
+    /* padding-bottom: 150px; */
+    height: max-content;
 }
 #gptResponse {
     top: 0px;

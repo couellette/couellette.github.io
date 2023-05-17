@@ -1,3 +1,5 @@
+apiKEY = "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"
+
 body = d3.select("body")
 chatContainer = body.append("div").classed("chatContainer", true)
 chatTile = chatContainer.append("div").classed("chatTile", true)
@@ -33,7 +35,7 @@ function beginChat() {
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             myHeaders.append("Accept", "application/json");
-            myHeaders.append("Authorization", "Bearer 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");
+            myHeaders.append("Authorization", "Bearer "+ apiKEY);
 
             var raw = JSON.stringify({
                 "model": "gpt-3.5-turbo",
@@ -43,7 +45,7 @@ function beginChat() {
                 },
                 {
                     "role": "system",
-                    "content": "be descriptive as if the person has no prior context of Corey.  Someone is asking question because they want to know more.  Make Corey marketable"
+                    "content": "be descriptive as if the person has no prior context of Corey.  Someone is asking question because they want to know more.  Make Corey marketable but stick to the context of the question and don't make things up"
                 }, {
                     "role": "system",
                     "content": "A passionate and curious leader, with a data driven mindset spanning across Product, Data Visualization, Design, Development, and UX."
