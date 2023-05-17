@@ -1,4 +1,4 @@
-apiKEY = "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"
+apiKEY = process.env.OPENAPI
 
 body = d3.select("body")
 chatContainer = body.append("div").classed("chatContainer", true)
