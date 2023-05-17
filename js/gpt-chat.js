@@ -1,4 +1,4 @@
-apiKEY = process.env.OPENAPI
+apiKEY = OPENAI
 
 body = d3.select("body")
 chatContainer = body.append("div").classed("chatContainer", true)
