@@ -33,7 +33,7 @@ function beginChat() {
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             myHeaders.append("Accept", "application/json");
-            myHeaders.append("Authorization", "Bearer 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");
+            myHeaders.append("Authorization", "Bearer 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");
 
             var raw = JSON.stringify({
                 "model": "gpt-3.5-turbo",
