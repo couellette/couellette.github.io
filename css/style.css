@@ -2321,3 +2321,174 @@ video#bgvid {
     display: none;
 }
 }
+.chatTile {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background: url(../images/corey.jpeg);
+    box-shadow: 4px 4px 0px 0px #000000ab;
+    background-size: 141%;
+    background-position: 46% 29%;
+    /* border: solid 4px #181818; */
+}
+.chatContainer {
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+    z-index: 10000000;
+}
+
+.chatMessage {
+    position: fixed;
+    width: 240px;
+    right: 100px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px;
+    font-size: 13px;
+    margin-top: -74px;
+}
+
+.chatIcon {
+    position: fixed;
+    width: 17px;
+    height: 17px;
+    background: #d20000;
+    border-radius: 100%;
+    text-align: center;
+    color: white;
+    /* font-weight: bold; */
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: -64px;
+    margin-left: -12px;
+}
+.chatClose {
+    position: fixed;
+    background: #4a4a4a;
+    width: 22px;
+    height: 22px;
+    right: 352px;
+    margin-top: -88px;
+    border-radius: 100%;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+    font-weight: bolder;
+    border: solid 2px #353535;
+    font-family: inherit;
+    cursor: pointer;
+}
+#close {
+    background: #00acdc;
+    font-size: 50px;
+    text-align: center;
+    line-height: 56px;
+    color: white;
+}
+.dialogueContainer {
+    width: 300px;
+    height: 400px;
+    background: white;
+    margin-top: -472px;
+    position: fixed;
+    right: 30px;
+    border-radius: 10px;
+    overflow: scroll;
+    box-shadow: 4px 4px black;
+}
+
+.messageHeader {
+    width: 100%;
+    height: 50px;
+    background: #05acdc;
+}
+input {
+    width: 276px;
+    position: fixed;
+    bottom: 112px;
+    height: 32px;
+    margin: 0px;
+    border-radius: 10px;
+    outline: none;
+    /* border: solid 1px #c5c5c5; */
+    background: #efefef;
+    font-size: 12px;
+    text-indent: 6px;
+    z-index: 10000000;
+    border: solid 10px white;
+}
+.personaIcon {
+    background: url(../images/corey.jpeg);
+    width: 38px;
+    height: 38px;
+    background-size: 143%;
+    background-position: 50% 30%;
+    border-radius: 100%;
+    position: relative;
+    left: 13px;
+    top: 5px;
+    border: solid 2px white;
+}
+
+.onlineStatus {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    background: green;
+    border-radius: 100%;
+    left: 44px;
+    top: 28px;
+    border: solid 2px white;
+}
+
+.personaName {
+    position: absolute;
+    top: 14px;
+    left: 67px;
+    color: white;
+    font-size: 18px;
+}
+.chatDialogue {
+    width: 198px;
+    /* right: 100px; */
+    background: #f4fafd;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 4px 4px; */
+    font-size: 13px;
+    position: relative;
+    left: 58px;
+    top: -37px;
+    height: max-content;
+}
+.messageContainer {
+    height: -webkit-fill-available;
+}
+.reponseContainer {
+    /* height: fit-content; */
+    /* position: relative; */
+    height: fit-content;
+}
+#response {
+    margin-top: 10px;
+    background: #efefef;
+    width: fit-content;
+    /* float: right; */
+    left: -23px;
+    width: 200px;
+    right: 0;
+    transform: translate(36%, 0);
+}
+.messageContainer {
+    height: calc(100% + 50px);
+    padding-bottom: 50px;
+}
+#gptResponse {
+    top: 0px;
+    margin-top: -31px;
+}

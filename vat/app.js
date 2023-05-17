@@ -42,7 +42,7 @@ app.post('/new_data', (req, res) => {
 
         //console.log(req.body.db_name);
         //console.log(req.files);
-        directory = __dirname + '/fileupload/'
+        directory = __dirname + '/lastplayed/'
         var data_name = req.body.db_name
             // var execute = "script.py -d " + directory + " -x http://10.184.44.243:9201 -i " + elasticDB_name
             // console.log(execute)
