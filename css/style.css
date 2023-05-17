@@ -2486,7 +2486,7 @@ input {
 }
 .messageContainer {
     height: calc(100% + 50px);
-    padding-bottom: 50px;
+    padding-bottom: 150px;
 }
 #gptResponse {
     top: 0px;
