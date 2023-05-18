@@ -26,7 +26,7 @@ function beginChat() {
     uniqueMessage = messageContainer.append("div").classed("reponseContainer", true)
     uniqueMessage.append("div").classed("personaIcon", true)
     uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on Corey Ouellette - let me know if I can help you learn more about Corey")
-    input = dialogueContainer.append("input").classed("chatBotMessage", true).attr("type", "text").attr("placeholder", "Type quesiton here")
+    input = dialogueContainer.append("input").classed("chatBotMessage", true).attr("type", "text").attr("placeholder", "Type your question here")
 
 
     $(".chatBotMessage").keyup(function(e) {
