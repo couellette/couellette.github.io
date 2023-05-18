@@ -25,7 +25,7 @@ function beginChat() {
     messageContainer = dialogueContainer.append("div").classed("messageContainer", true).attr("id","dialogue")
     uniqueMessage = messageContainer.append("div").classed("reponseContainer", true)
     uniqueMessage.append("div").classed("personaIcon", true)
-    uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on, and by Corey Ouellette - let me know if I can help you learn more about Corey")
+    uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on Corey Ouellette - let me know if I can help you learn more about Corey")
     input = dialogueContainer.append("input").classed("chatBotMessage", true).attr("type", "text").attr("placeholder", "Type your question here")
 
 
