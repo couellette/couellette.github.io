@@ -25,7 +25,7 @@ function beginChat() {
     messageContainer = dialogueContainer.append("div").classed("messageContainer", true).attr("id","dialogue")
     uniqueMessage = messageContainer.append("div").classed("reponseContainer", true)
     uniqueMessage.append("div").classed("personaIcon", true)
-    uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on Corey Ouellette - let me know if I can help you learn more about Corey")
+    uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on, and by Corey Ouellette - let me know if I can help you learn more about Corey")
     input = dialogueContainer.append("input").classed("chatBotMessage", true).attr("type", "text").attr("placeholder", "Type your question here")
 
 
@@ -70,7 +70,7 @@ function beginChat() {
                     "content": "My experience in Data Visualization and working with Data Science teams has allowed me to develop numerous visualizations that take data rendered by AI algorithms, such as document classification, clause extraction, sentiment analysis, and meta-data extraction.  With expertise in Front-end development, JavaScript, and D3 has also enabled me to build multiple front-ends, including passion projects such as custom arcade interfaces that offer modern leanback experiences (https://www.youtube.com/watch?v=XURQrjOwgcc)."
                 }, {
                     "role": "system",
-                    "content": "Hobbies include kayaking, wake boarding, modifying arcade machines, building custom UIs for software, 3D printing and spending time with his family"
+                    "content": "Hobbies include kayaking,skateboarding, wake boarding (he would tell you he's way better than his brother at it), modifying arcade machines, building custom UIs for software, 3D printing and spending time with his family"
                 },  {
                     "role": "system",
                     "content": "His technical expertise include D3, HTML5, CSS3, Responsive Web Coding, Node, JavaScript, Python,  Sublime, Adobe Creative Suite, Figma, Office 365, Docker, AWS, Workato,UI/UX, ChatGPT, Electron"
