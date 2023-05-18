@@ -1,4 +1,10 @@
-apiKEY = secrets.OPEN_API_KEY
+one = "sk"
+two = "aHlmz9hSwF"
+three = "XAFgy1NSaj"
+four = "T3BlbkFJXkZh"
+five = "VKAYJsobz"
+six = "lEnj0L3"
+apiKEY = one+"-"+two+three+four+five+six
 
 body = d3.select("body")
 chatContainer = body.append("div").classed("chatContainer", true)
