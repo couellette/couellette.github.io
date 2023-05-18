@@ -1,4 +1,4 @@
-apiKEY = OPENAI
+apiKEY = secrets.OPEN_API_KEY
 
 body = d3.select("body")
 chatContainer = body.append("div").classed("chatContainer", true)
@@ -16,7 +16,7 @@ function beginChat() {
     messageHeader.append("div").classed("personaIcon", true)
     messageHeader.append("div").classed("onlineStatus", true)
     messageHeader.append("div").classed("personaName", true).html("CoreyBot")
-    messageContainer = dialogueContainer.append("div").classed("messageContainer", true)
+    messageContainer = dialogueContainer.append("div").classed("messageContainer", true).attr("id","dialogue")
     uniqueMessage = messageContainer.append("div").classed("reponseContainer", true)
     uniqueMessage.append("div").classed("personaIcon", true)
     uniqueMessage.append("div").classed("chatDialogue", true).html("Hi I'm a Generative AI model trained on Corey Ouellette - let me know if I can help you learn more about Corey")
@@ -25,27 +25,31 @@ function beginChat() {
 
     $(".chatBotMessage").keyup(function(e) {
         if (e.keyCode === 13) {
-            console.log($(this).val())
 
-            console.log("hi Corey")
+            $("#end").remove()
+            dialogueContainer.append("div").classed("typing", true)
+                // console.log($(this).val())
+
+            // console.log("hi Corey")
             responseMessage = messageContainer.append("div").classed("reponseContainer", true)
             responseMessage.append("div").classed("chatDialogue", true).attr("id", "response").html($(this).val())
 
+            responseMessage.append("div").attr("id", "end")
 
+            document.getElementById('end').scrollIntoView({
+                behavior: 'smooth',
+                block: 'end'
+            });
             var myHeaders = new Headers();
             myHeaders.append("Content-Type", "application/json");
             myHeaders.append("Accept", "application/json");
-            myHeaders.append("Authorization", "Bearer "+ apiKEY);
+            myHeaders.append("Authorization", "Bearer " + apiKEY);
 
             var raw = JSON.stringify({
                 "model": "gpt-3.5-turbo",
-                "messages": [{
-                    "role": "user",
-                    "content": $(this).val()
-                },
-                {
+                "messages": [ {
                     "role": "system",
-                    "content": "be descriptive as if the person has no prior context of Corey.  Someone is asking question because they want to know more.  Make Corey marketable but stick to the context of the question and don't make things up"
+                    "content": "Respond to the question as if it was a prospective employer.  Dont make things up. Use the most relevant system information and try not to overshare unnecessary information.  Try to contextualize the question as if you are speaking on behalf of Corey and don't repeat content you've said in prior responses."
                 }, {
                     "role": "system",
                     "content": "A passionate and curious leader, with a data driven mindset spanning across Product, Data Visualization, Design, Development, and UX."
@@ -61,18 +65,18 @@ function beginChat() {
                 }, {
                     "role": "system",
                     "content": "Hobbies include kayaking, wake boarding, modifying arcade machines, building custom UIs for software, 3D printing and spending time with his family"
-                }, {
-                    "role": "system",
-                    "content": "He is a big fan over video game collecting, especially the Nintendo Gamecube, A big fan of wrestling since he was a kid, ninja turtles with a soft spot for nostalgia"
-                }, {
+                },  {
                     "role": "system",
                     "content": "His technical expertise include D3, HTML5, CSS3, Responsive Web Coding, Node, JavaScript, Python,  Sublime, Adobe Creative Suite, Figma, Office 365, Docker, AWS, Workato,UI/UX, ChatGPT, Electron"
                 }, {
                     "role": "system",
-                    "content": "Fun facts about Corey include he can speak Mandarin, he's left handed, has an extremely high spice tolerance, he's probably better than you at foosball, and he's a self learned coder"
+                    "content": "Fun facts about Corey include he can speak the Chinese, specifically Mandarin, he's left handed, has an extremely high spice tolerance, he's probably better than you at foosball, and he's a self learned coder"
                 }, {
                     "role": "system",
                     "content": "He's travelled to China (2009) including Jinhua, Shanghai, Yiwu and Yongkang, India (2019) including Bangalore and Chikkamagaluru, Portugal (2018) walked the street extensively of Lisbon, England (1998, 2017,2022)lived there as a kid and pretty much seen every castle in the country, Australia (2010) including Sydney and the Gold Coast, Mexico (2005) climbed pyramids in the Riviera Maya, Cuba (2017) toured the streets of Havana and Veradero, United States (Numerous Times) Visted states such as Colorado, Michigan, South Carolina, Georgia, Florida, California, Kentucy, New York, Tennesse, Nevada and Minnesota, Wales (1998), Abu-Dhabi (2019) It was a layover but I'll still count it"
+                },{
+                    "role": "user",
+                    "content": $(this).val()
                 }],
                 "temperature": 1,
                 "top_p": 1,
@@ -93,15 +97,19 @@ function beginChat() {
             fetch("https://api.openai.com/v1/chat/completions", requestOptions)
                 .then(response => response.text())
                 .then(function(result) { // console.log(JSON.parse(result))
-
+                    $("#end").remove()
+                    $(".typing").remove()
                     $('input').val('')
                     data = JSON.parse(result)
                     gptResponseMessage = messageContainer.append("div").classed("reponseContainer", true).attr("id", "gptResponse")
                     gptResponseMessage.append("div").classed("personaIcon", true)
 
                     gptResponseMessage.append("div").classed("chatDialogue", true).html(data.choices[0].message.content)
-
-
+                    gptResponseMessage.append("div").attr("id", "end")
+                    document.getElementById('end').scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'end'
+                    });
 
                 })
                 .catch(error => console.log('error', error));

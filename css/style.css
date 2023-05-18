@@ -2337,7 +2337,7 @@ video#bgvid {
 .chatContainer {
     position: absolute;
     right: 30px;
-    bottom: 40px;
+    bottom: 99px;
     z-index: 10000000;
 }
 
@@ -2351,6 +2351,7 @@ video#bgvid {
     box-shadow: 4px 4px;
     font-size: 13px;
     margin-top: -74px;
+    bottom: 40px;
 }
 
 .chatIcon {
@@ -2366,6 +2367,7 @@ video#bgvid {
     line-height: 17px;
     margin-top: -64px;
     margin-left: -12px;
+    bottom: 90px;
 }
 .chatClose {
     position: fixed;
@@ -2382,6 +2384,7 @@ video#bgvid {
     border: solid 2px #353535;
     font-family: inherit;
     cursor: pointer;
+    bottom: 99px;
 }
 #close {
     background: #00acdc;
@@ -2392,7 +2395,7 @@ video#bgvid {
 }
 .dialogueContainer {
     width: 300px;
-    height: 400px;
+    height: 420px;
     background: white;
     margin-top: -495px;
     position: fixed;
@@ -2403,14 +2406,18 @@ video#bgvid {
 }
 
 .messageHeader {
-    width: 100%;
+    width: inherit;
     height: 50px;
     background: #05acdc;
+    position: fixed;
+    z-index: 10;
+    border-radius: 10px 10px 0 0;
+    margin: 20p;
 }
 input {
     width: 276px;
     position: fixed;
-    bottom: 112px;
+    bottom: 110px;
     height: 32px;
     margin: 0px;
     border-radius: 10px;
@@ -2421,6 +2428,7 @@ input {
     text-indent: 6px;
     z-index: 10000000;
     border: solid 10px white;
+    box-shadow: 4px 4px black;
 }
 .personaIcon {
     background: url(../images/corey.jpeg);
@@ -2488,8 +2496,20 @@ input {
     /* height: calc(100% + 50px); */
     /* padding-bottom: 150px; */
     height: max-content;
+    margin-top: 56px;
 }
 #gptResponse {
     top: 0px;
     margin-top: -31px;
+}
+.typing {
+    background: url(../images/typing.gif);
+    width: 42px;
+    height: 29px;
+    background-size: contain;
+    position: fixed;
+    /* bottom: 31px; */
+    /* left: 20px; */
+    margin-left: 12px;
+    bottom: 180px;
 }

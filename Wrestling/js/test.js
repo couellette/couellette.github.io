@@ -11,8 +11,8 @@ Promise.all([
     header.append("div").classed("name", true).html("Wrester DB")
         // body.append("h1").html("Find your favourite wrestler")
     search = header.append('div').attr("id", "query").classed("autoComplete_wrapper", true)
-        
-        searchBar  = search.append("input").attr("type", "search").attr("dir", "ltr").attr("spellcheck", "false").attr("autocomplete", "false").attr("autocapitalize", "off").attr("id", "autoComplete")
+
+    searchBar = search.append("input").attr("type", "search").attr("dir", "ltr").attr("spellcheck", "false").attr("autocomplete", "false").attr("autocapitalize", "off").attr("id", "autoComplete")
         // <input id="autoComplete" type="search" dir="ltr" spellcheck=false autocorrect="off" autocomplete="off" autocapitalize="off">
 
 
@@ -70,7 +70,7 @@ Promise.all([
     };
 
     // var newsFrontPage = 'data/newsCatcher.json'
-        newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
+    newsFrontPage = 'https://api.newscatcherapi.com/v2/search?q=aew OR wwe OR roh OR nxt&page_size=10&lang=en'
 
     console.log(dateRange)
     Promise.all([
@@ -121,6 +121,8 @@ Promise.all([
         searched.on("keypress", function(e) {
             ogquery = d3.select("#autoComplete").node().value
             if (e.charCode === 13) {
+                var objDiv = document.getElementById(".dialogueContainer");
+                objDiv.scrollTop = objDiv.scrollHeight;
                 run(ogquery)
             }
         })
@@ -160,10 +162,10 @@ Promise.all([
             return splitStr.join(' ');
         }
         // var news = 'data/newsCatcher.json'
-            // news = 'data/news.json'
-            // youtube = 'data/video.json'
-               // news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
-            news = 'https://api.newscatcherapi.com/v2/search?q=' + ogquery +'&page_size=10&lang=en'
+        // news = 'data/news.json'
+        // youtube = 'data/video.json'
+        // news = 'https://newsapi.org/v2/everything?domains=tmz.com,youtube.com,bleacherreport.com,cbc.ca,forbes.com,411mania.com,ewrestlingnews.com,tjrwrestling.net,biztok.com,bleedingcool.com,ibtimes.com,nypost.com,espn.com,gameinformer.com,dailymail.co.uk&searchIn=title,description&q="' + ogquery + '",' + ogquery + ' &from=' + dateRange + '&sortBy=popularity&apiKey=' + newsKey + 'a&language=en&pageSize=6'
+        news = 'https://api.newscatcherapi.com/v2/search?q=' + ogquery + '&page_size=10&lang=en'
         youtube = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=6&order=relevance&q=' + ogquery + '&chart=mostPopular&key=' + youtubeKey
 
 
