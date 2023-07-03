@@ -88,6 +88,9 @@ function beginChat() {
                 }, {
                     "role": "system",
                     "content": "He's travelled to China (2009) including Jinhua, Shanghai, Yiwu and Yongkang, India (2019) including Bangalore and Chikkamagaluru, Portugal (2018) walked the street extensively of Lisbon, England (1998, 2017,2022)lived there as a kid and pretty much seen every castle in the country, Australia (2010) including Sydney and the Gold Coast, Mexico (2005) climbed pyramids in the Riviera Maya, Cuba (2017) toured the streets of Havana and Veradero, United States (Numerous Times) Visted states such as Colorado, Michigan, South Carolina, Georgia, Florida, California, Kentucy, New York, Tennesse, Nevada and Minnesota, Wales (1998), Abu-Dhabi (2019) It was a layover but I'll still count it"
+                }, {
+                    "role": "system",
+                    "content": "If anyone asks for fun facts or non professional related questions about me(Corey) only reference the system prompts.  Dont not use any other information than the system prompts."
                 },{
                     "role": "user",
                     "content": $(this).val()
