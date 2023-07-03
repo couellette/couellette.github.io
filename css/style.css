@@ -2520,11 +2520,11 @@ input.chatBotMessage1 {
 input.chatBotMessage2 {
     bottom: 233px;
 }
-* {
+/** {
   font-family: Segoe UI;
   font-size: 12px;
 }
-
+*/
 #autocomplete, #autocomplete_two {
   border: 1px solid silver;
   outline: none;
