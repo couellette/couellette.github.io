@@ -132,6 +132,7 @@ sup {
     cursor: pointer;
     background: #fff7e8;
     color:  #912d1d;
+    /* height: 76px; */
     font-weight: 700;
 }
 .backButton {
@@ -197,7 +198,7 @@ sup {
     padding: 0px 54px;
     font-weight: 700;
     border-radius: 10px;
-    background: #fee9c7;
+    background: #ffffff;
     height: 21svh;
     line-height: 19svh;
 }
@@ -205,6 +206,7 @@ sup {
     body {
     background: #feeac3;
 }
+
 .lettersPage div:first-child {
     margin-left: 2dvw!important;
 }
@@ -250,7 +252,13 @@ sup {
     border-bottom: solid 5px #0e466f;
 }
 
-
+.storyPage {
+    height: calc(100svh - 388px);
+    padding-bottom: 7px;
+}
+.storyImage {
+    height: inherit;
+}
 .upper, .lower, .word {
         margin: auto;
         /* padding: 44px 0; */
@@ -297,12 +305,11 @@ sup {
 }
 @media only screen and (max-width: 450px) {
     .storyImage img {
-    height: 46svh;
-
+    height: -webkit-fill-available;
 }
 .nextButton, .backButton {
-    height: 75px;
-    width: 48%;
+    height: 70px;
+    width: 47%;
     font-size: 1.5em !important;
     line-height: 75px !important;
 }
@@ -333,7 +340,7 @@ header div {
 }
 @media only screen and (max-width: 375px) {
         .storyImage img {
-        height: 40svh;
+        height: -webkit-fill-available;
     }
 }
 @media only screen and (max-width: 800px) {
@@ -343,7 +350,7 @@ header div {
         height: 17svh;
         line-height: 16svh;
     }
-.lettersPage div {line-height: 100px;}
+.lettersPage div {/* line-height: 87px; */}
        .eachLetter {
         font-size: 40px;
         /* width: 17px; */
