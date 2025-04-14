@@ -48,12 +48,13 @@ header div {
 .app {
     display: flex;
     background: #ffe9bc8a;
+    max-height: -webkit-fill-available;
 }
 .storyPage, .lettersPage {
     width: 50%;
     font-size: 30px;
     border: solid 5px #0e4d6f;
-    height: calc(100svh - 80px);
+    height: -webkit-fill-available;
     background: linear-gradient(#fff3dcf5, #fff3dce6), url(../data/img/cover3.png);
     background-size: cover;
 }
