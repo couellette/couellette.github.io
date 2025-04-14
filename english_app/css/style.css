@@ -329,10 +329,13 @@ header div {
         height: 40svh;
     }
 }
-@media only screen and (max-width: 600px) {
-.upper, .lower, .word {
-    padding: 8px;
-}
+@media only screen and (max-width: 675px) {
+    .upper, .lower, .word {
+        /* padding: 8px; */
+        font-size: 2em !important;
+        height: 17svh;
+        line-height: 16svh;
+    }
 .lettersPage div {
 }
 }
