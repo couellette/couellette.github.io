@@ -282,12 +282,38 @@ sup {
     font-size: 57px;
 }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
     .storyImage img {
-    height: 38.3svh;
+    height: 46svh;
 
 }
 header div {
     font-size: 46px;
 }
+    .appContainer {
+        height: 81vh;
+
+    }
+        .lettersPage div:first-child, .lettersPage div:nth-child(2) {
+        width: calc(51svw - 15px);
+        margin: 1svw;
+    }
+        .lettersPage {
+        height: 216px;
+    }
+        .lettersPage div:nth-child(3) {
+        width: calc(96svw - 10px) !important;
+        margin: 2svw;
+
+    }
+    .select {
+    width: 52px;
+    height: 52px;
+
+}
+}
+@media only screen and (max-width: 375px) {
+        .storyImage img {
+        height: 40svh;
+    }
 }
