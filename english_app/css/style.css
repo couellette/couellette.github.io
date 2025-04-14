@@ -104,7 +104,7 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: calc(100vh - 174px);
+    height: 68.3svh;
     /* margin: 0 auto; */
     border-radius: 10px;
     border: solid 5px #912d1d;
@@ -190,7 +190,7 @@ sup {
     border-radius: 10px;
     background: #fee9c7;
 }
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
     body {
     background: #feeac3;
 }
