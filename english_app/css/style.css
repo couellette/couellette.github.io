@@ -205,6 +205,9 @@ sup {
     body {
     background: #feeac3;
 }
+.lettersPage div:first-child {
+    margin-left: 2dvw;
+}
     .appContainer {
         background: url(../data/img/app_bkrd.png);
         height: 100vh;
@@ -263,7 +266,7 @@ sup {
         width: calc(50svw - 15px);
         margin: 1svw;
         height: 86px;
-        line-height: 71px;
+        line-height: 78px;
         box-sizing: border-box;
     }
     .lettersPage div:nth-child(2) {
@@ -273,7 +276,7 @@ sup {
         width: calc(98svw - 10px)!important;
         margin: 1svw;
         height: 93px;
-        line-height: normal;
+        line-height: 95px;
     }
     .storyImage img {
        height: calc(100svh - 417px)
@@ -339,8 +342,7 @@ header div {
         height: 17svh;
         line-height: 16svh;
     }
-.lettersPage div {
-}
+.lettersPage div {line-height: 100px;}
        .eachLetter {
         font-size: 40px;
         /* width: 17px; */
