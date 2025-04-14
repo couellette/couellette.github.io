@@ -28,7 +28,7 @@ header div {
     background: #0e4d6fad;
     right: -250px;
     top: 70px;
-    height: calc(100dvh - 179px);
+    height: calc(100svh - 179px);
     transition: ease-in-out .5s;
     overflow: scroll;
 }
@@ -53,13 +53,13 @@ header div {
     width: 50%;
     font-size: 30px;
     border: solid 5px #0e4d6f;
-    height: calc(100dvh - 80px);
+    height: calc(100svh - 80px);
     background: linear-gradient(#fff3dcf5, #fff3dce6), url(../data/img/cover3.png);
     background-size: cover;
 }
 .appContainer {
     background: url(../data/img/app_bkrd.png);
-    height: 100dvh;
+    height: 100svh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -103,7 +103,7 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: calc(100dvh - 174px);
+    height: calc(100svh - 174px);
     /* margin: 0 auto; */
     border-radius: 10px;
     border: solid 5px #912d1d;
@@ -194,8 +194,8 @@ sup {
 }
     .appContainer {
         background: url(../data/img/app_bkrd.png);
-        height: 100dvh;
-        background-size: 100dvh;
+        height: 100svh;
+        background-size: 100svh;
         background-position: center 64px;
         background-repeat: no-repeat;
     }
@@ -260,7 +260,7 @@ sup {
         width: 40%;
     }
 .letterSelection {
-    height: calc(100dvh - 145px);
+    height: calc(100svh - 145px);
 }
 .eachLetter {
     width: 38px;
