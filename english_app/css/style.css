@@ -102,9 +102,9 @@ sup {
     font-weight: 800;
 }
 .lettersPage div {
-    font-size: 4em;
+    font-size: 3em;
     text-align: center;
-    line-height: 75px;
+    /* line-height: 75px; */
 }
 .storyImage img {
     height: calc(100svh - 208px);
@@ -190,11 +190,13 @@ sup {
 .upper, .lower, .word {
     border: solid 5px;
     width: fit-content;
-    margin: 2dvh auto;
-    padding: 5dvh;
+    margin: 2.5dvh auto;
+    padding: 0px 54px;
     font-weight: 700;
     border-radius: 10px;
     background: #fee9c7;
+    height: 21svh;
+    line-height: 19svh;
 }
 @media (orientation: portrait) {
     body {
@@ -332,6 +334,5 @@ header div {
     padding: 8px;
 }
 .lettersPage div {
-    /*font-size: 3em;*/
 }
 }
