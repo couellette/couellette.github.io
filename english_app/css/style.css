@@ -103,13 +103,12 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: 79vh;
+    height: calc(100vh - 174px);
     /* margin: 0 auto; */
     border-radius: 10px;
     border: solid 5px #912d1d;
     margin-top: 6px;
 }
-
 .nextButton {
     border: solid 5px #912d1d;
     width: max-content;
