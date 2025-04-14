@@ -17,6 +17,7 @@ Promise.all([
 
     console.log(letters)
     app = d3.select("body").append("div").classed("appContainer", true)
+    d3.select("body").append("div").attr("id", "chatContainer");
         // logoSection = app.append("div").classed("logoContainer", true).html("English<sup>英语</sup><br />NOW<sup>现在</sup>")
     beginSection = app.append("div").classed("beginContainer", true)
     appStart = beginSection.selectAll("body").data(letters).enter().append("div")
@@ -210,46 +211,56 @@ $(".letterSelection").toggleClass("selected")
     })
 
     function vocalize(textForTTS) {
-        console.log(textForTTS)
-
-        fetch("https://api.openai.com/v1/audio/speech", {
-                method: "POST",
-                headers: {
-                    "Authorization": "Bearer " + apiKEY,
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    model: "gpt-4o-mini-tts",
-                    // "input": sound, <-- If your API doesn't need this, omit it
-                    voice: "alloy",
-                    instructions: "Speak as if you're teaching 5 year old Chinese kids how to speak English.  Speak in a slow, easy to understand, positive tone...",
-                    input: textForTTS, // <--- The actual text TTS will read out
-                    response_format: "mp3"
-                })
+    console.log(textForTTS);
+// $('#chatContainer').find('audio') 
+$('#chatContainer').empty() 
+// $('#chatContainer').append($audio);
+    fetch("https://api.openai.com/v1/audio/speech", {
+            method: "POST",
+            headers: {
+                "Authorization": "Bearer " + apiKEY,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                model: "gpt-4o-mini-tts",
+                voice: "alloy",
+                instructions: "Speak as if you're teaching 5 year old Chinese kids how to speak English.  Speak in a slow, easy to understand, positive tone...",
+                input: textForTTS,
+                response_format: "mp3"
             })
-            .then(response => {
-                if (!response.ok) throw new Error("Failed to fetch audio");
-                return response.blob();
-            })
-            .then(blob => {
-                const audioUrl = URL.createObjectURL(blob);
+        })
+        .then(response => {
+            if (!response.ok) throw new Error("Failed to fetch audio");
+            return response.blob();
+        })
+        .then(blob => {
+            const audioUrl = URL.createObjectURL(blob);
 
-                const $audio = $('<audio>', {
-                    controls: true,
-                    autoplay: true
-                });
+            // --- STOP AND REMOVE ANY PREVIOUS AUDIO BEFORE STARTING NEW ---
+            // Find any existing <audio> tags in #chatContainer
+            $('#chatContainer').find('audio').each(function() {
+                this.pause();
+                this.currentTime = 0;
+            });
+            // Clear them from the container (optional, if you just want one player)
+            $('#chatContainer').empty();
+            // -------------------------------------------------------------
 
-                d3.select($audio[0])
-                    .append("source")
-                    .attr("src", audioUrl)
-                    .attr("type", "audio/mpeg");
-
-                $('#chatContainer').empty().append($audio);
-            })
-            .catch(error => {
-                console.error("Error fetching audio:", error);
+            // Create and append the new audio element
+            const $audio = $('<audio>', {
+                controls: true,
+                autoplay: true
             });
 
+            d3.select($audio[0])
+                .append("source")
+                .attr("src", audioUrl)
+                .attr("type", "audio/mpeg");
 
-    }
+            $('#chatContainer').append($audio);
+        })
+        .catch(error => {
+            console.error("Error fetching audio:", error);
+        });
+}
 })

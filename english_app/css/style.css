@@ -11,6 +11,9 @@ header div {
     line-height: 70px;
     margin-left: 10px;
 }
+#chatContainer {
+    display: none;
+}
 .select {
     background: url(../data/img/choose.png);
     width: 60px;
