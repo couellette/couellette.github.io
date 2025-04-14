@@ -107,8 +107,8 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: calc(100svh - 417px);
-    /* margin: 0 auto; */
+    height: calc(100svh - 208px);
+    margin: 0 auto;
     border-radius: 10px;
     border: solid 5px #912d1d;
     margin-top: 6px;
@@ -271,7 +271,7 @@ sup {
         line-height: normal;
     }
     .storyImage img {
-        /* height: 69dvw; */
+       height: calc(100svh - 417px)
     }
         .nextButton, .backButton {
         line-height: 48px !important;
