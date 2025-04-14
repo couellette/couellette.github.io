@@ -186,7 +186,7 @@
   {
     "letterUpperCase": "I",
     "letterLowerCase": "i",
-    "letterSound": "i (as in “sit”)",
+    "letterSound": "ih (as in “sit”)",
     "words": [
       {
         "word": "Ice",
@@ -209,7 +209,7 @@
   {
     "letterUpperCase": "J",
     "letterLowerCase": "j",
-    "letterSound": "j (as in “jump”)",
+    "letterSound": "juh (as in “jump”)",
     "words": [
       {
         "word": "Jam",
@@ -232,7 +232,7 @@
   {
     "letterUpperCase": "K",
     "letterLowerCase": "k",
-    "letterSound": "k (as in “kite”)",
+    "letterSound": "kuh (as in “kite”)",
     "words": [
       {
         "word": "Kit",
@@ -324,7 +324,7 @@
   {
     "letterUpperCase": "O",
     "letterLowerCase": "o",
-    "letterSound": "o (as in “hot”)",
+    "letterSound": "auh (as in “hot”)",
     "words": [
       {
         "word": "Ox",
@@ -462,7 +462,7 @@
   {
     "letterUpperCase": "U",
     "letterLowerCase": "u",
-    "letterSound": "u (as in “up”)",
+    "letterSound": "uh (as in “up”)",
     "words": [
       {
         "word": "Up",
@@ -554,7 +554,7 @@
   {
     "letterUpperCase": "Y",
     "letterLowerCase": "y",
-    "letterSound": "y (as in “yes”)",
+    "letterSound": "yuh (as in “yes”)",
     "words": [
       {
         "word": "Yes",

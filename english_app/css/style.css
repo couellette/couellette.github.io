@@ -14,6 +14,9 @@ header div {
 #chatContainer {
     display: none;
 }
+.hide {
+    display: none;
+}
 .select {
     background: url(../data/img/choose.png);
     width: 60px;
@@ -31,7 +34,7 @@ header div {
     background: #0e4d6fad;
     right: -250px;
     top: 70px;
-    height: calc(100vh - 179px);
+    height: calc(100svh - 179px);
     transition: ease-in-out .5s;
     overflow: scroll;
 }
@@ -338,4 +341,12 @@ header div {
     }
 .lettersPage div {
 }
+       .eachLetter {
+        font-size: 40px;
+        /* width: 17px; */
+        padding: 12px 20px;
+        width: fit-content;
+        width: 36px;
+        text-align: center;
+    }
 }
