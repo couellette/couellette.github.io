@@ -291,6 +291,7 @@ sup {
     height: 46svh;
 
 }
+
 header div {
     font-size: 46px;
 }
@@ -320,4 +321,12 @@ header div {
         .storyImage img {
         height: 40svh;
     }
+}
+@media only screen and (max-width: 600px) {
+.upper, .lower, .word {
+    padding: 8px;
+}
+.lettersPage div {
+    font-size: 3em;
+}
 }
