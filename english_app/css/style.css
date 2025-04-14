@@ -291,7 +291,12 @@ sup {
     height: 46svh;
 
 }
-
+.nextButton, .backButton {
+    height: 75px;
+    width: 48%;
+    font-size: 1.5em !important;
+    line-height: 75px !important;
+}
 header div {
     font-size: 46px;
 }
@@ -327,6 +332,6 @@ header div {
     padding: 8px;
 }
 .lettersPage div {
-    font-size: 3em;
+    /*font-size: 3em;*/
 }
 }
