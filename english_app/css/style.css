@@ -28,7 +28,7 @@ header div {
     background: #0e4d6fad;
     right: -250px;
     top: 70px;
-    height: calc(100svh - 179px);
+    height: calc(100vh - 179px);
     transition: ease-in-out .5s;
     overflow: scroll;
 }
@@ -60,7 +60,7 @@ header div {
 }
 .appContainer {
     background: url(../data/img/app_bkrd.png);
-    height: 100svh;
+    height: 100vh;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -104,12 +104,13 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: calc(100svh - 174px);
+    height: calc(100vh - 174px);
     /* margin: 0 auto; */
     border-radius: 10px;
     border: solid 5px #912d1d;
     margin-top: 6px;
 }
+
 .nextButton {
     border: solid 5px #912d1d;
     width: max-content;
@@ -135,7 +136,7 @@ sup {
     padding: 10px 15px;
     font-size: 2em !important;
     text-transform: uppercase;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     /* left: 0; */
     left: 0;
@@ -183,8 +184,8 @@ sup {
 .upper, .lower, .word {
     border: solid 5px;
     width: fit-content;
-    margin: 29px auto;
-    padding: 53px;
+    margin: 2dvh auto;
+    padding: 5dvh;
     font-weight: 700;
     border-radius: 10px;
     background: #fee9c7;
@@ -195,8 +196,8 @@ sup {
 }
     .appContainer {
         background: url(../data/img/app_bkrd.png);
-        height: 100svh;
-        background-size: 100svh;
+        height: 100vh;
+        background-size: 100vh;
         background-position: center 64px;
         background-repeat: no-repeat;
     }
@@ -261,7 +262,7 @@ sup {
         width: 40%;
     }
 .letterSelection {
-    height: calc(100svh - 145px);
+    height: calc(100vh - 145px);
 }
 .eachLetter {
     width: 38px;
