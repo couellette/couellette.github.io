@@ -1,0 +1,600 @@
+[
+  {
+    "letterUpperCase": "A",
+    "letterLowerCase": "a",
+    "letterSound": "a (as in “cat”)",
+    "words": [
+      {
+        "word": "Apple",
+        "sentence": "Apple, round and red, where is it? On my head!"
+      },
+      {
+        "word": "Ant",
+        "sentence": "Look at the ant, so very small, crawling up the big brick wall!"
+      },
+      {
+        "word": "All",
+        "sentence": "I want all the toys, big and small!"
+      },
+      {
+        "word": "Ask",
+        "sentence": "If you don’t know, just ask me so!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "B",
+    "letterLowerCase": "b",
+    "letterSound": "b (as in “bat”)",
+    "words": [
+      {
+        "word": "Ball",
+        "sentence": "Bounce the ball up, bounce it down, bounce it all around the town!"
+      },
+      {
+        "word": "Bat",
+        "sentence": "A bat flies high in the night sky."
+      },
+      {
+        "word": "Bag",
+        "sentence": "My bag is full of toys and fun!"
+      },
+      {
+        "word": "Big",
+        "sentence": "That dog is big, bigger than me!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "C",
+    "letterLowerCase": "c",
+    "letterSound": "k (as in “cat”)",
+    "words": [
+      {
+        "word": "Cat",
+        "sentence": "The cat is soft and likes to nap."
+      },
+      {
+        "word": "Car",
+        "sentence": "A car goes fast, zoom zoom past!"
+      },
+      {
+        "word": "Cup",
+        "sentence": "I drink from my cup when I am thirsty."
+      },
+      {
+        "word": "Cow",
+        "sentence": "The cow says moo, in the field so blue."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "D",
+    "letterLowerCase": "d",
+    "letterSound": "d (as in “dog”)",
+    "words": [
+      {
+        "word": "Dog",
+        "sentence": "The dog runs fast to catch the ball."
+      },
+      {
+        "word": "Dad",
+        "sentence": "My dad gives me a big hug!"
+      },
+      {
+        "word": "Duck",
+        "sentence": "The duck swims in the pond, quack quack!"
+      },
+      {
+        "word": "Door",
+        "sentence": "Open the door and step inside."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "E",
+    "letterLowerCase": "e",
+    "letterSound": "e (as in “bed”)",
+    "words": [
+      {
+        "word": "Egg",
+        "sentence": "I like eggs for breakfast, yum yum!"
+      },
+      {
+        "word": "Ear",
+        "sentence": "I hear with my ear, loud and clear!"
+      },
+      {
+        "word": "Eat",
+        "sentence": "I eat my lunch when I feel hungry."
+      },
+      {
+        "word": "End",
+        "sentence": "The story has an end, but we can read again!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "F",
+    "letterLowerCase": "f",
+    "letterSound": "f (as in “fun”)",
+    "words": [
+      {
+        "word": "Fish",
+        "sentence": "The fish swims fast in the sea."
+      },
+      {
+        "word": "Fan",
+        "sentence": "The fan spins to keep me cool."
+      },
+      {
+        "word": "Fun",
+        "sentence": "We have fun when we play outside."
+      },
+      {
+        "word": "Fox",
+        "sentence": "The fox runs quickly through the trees."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "G",
+    "letterLowerCase": "g",
+    "letterSound": "g (as in “go”)",
+    "words": [
+      {
+        "word": "Go",
+        "sentence": "Go, go, go! Let's run fast!"
+      },
+      {
+        "word": "Good",
+        "sentence": "I had a good day at school today."
+      },
+      {
+        "word": "Game",
+        "sentence": "Let’s play a game with a ball!"
+      },
+      {
+        "word": "Got",
+        "sentence": "I got a gift from my friend!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "H",
+    "letterLowerCase": "h",
+    "letterSound": "h (as in “hat”)",
+    "words": [
+      {
+        "word": "Hat",
+        "sentence": "My hat is red and keeps me warm."
+      },
+      {
+        "word": "Hop",
+        "sentence": "Hop like a bunny, one, two, three!"
+      },
+      {
+        "word": "Hot",
+        "sentence": "The sun is hot on a summer day."
+      },
+      {
+        "word": "Hand",
+        "sentence": "I wave my hand to say hello!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "I",
+    "letterLowerCase": "i",
+    "letterSound": "i (as in “sit”)",
+    "words": [
+      {
+        "word": "Ice",
+        "sentence": "Ice is cold and melts in the sun."
+      },
+      {
+        "word": "In",
+        "sentence": "The cat is in the box."
+      },
+      {
+        "word": "It",
+        "sentence": "It is time to go to bed."
+      },
+      {
+        "word": "Ill",
+        "sentence": "I rest when I feel ill."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "J",
+    "letterLowerCase": "j",
+    "letterSound": "j (as in “jump”)",
+    "words": [
+      {
+        "word": "Jam",
+        "sentence": "I love jam on my toast!"
+      },
+      {
+        "word": "Jet",
+        "sentence": "A jet flies high in the sky."
+      },
+      {
+        "word": "Jump",
+        "sentence": "Jump up high, touch the sky!"
+      },
+      {
+        "word": "Jug",
+        "sentence": "The jug is full of water."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "K",
+    "letterLowerCase": "k",
+    "letterSound": "k (as in “kite”)",
+    "words": [
+      {
+        "word": "Kit",
+        "sentence": "I have a first-aid kit for boo-boos."
+      },
+      {
+        "word": "Key",
+        "sentence": "A key opens the door."
+      },
+      {
+        "word": "Kid",
+        "sentence": "I am a kid who loves to play!"
+      },
+      {
+        "word": "Keep",
+        "sentence": "Keep your toys in the box."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "L",
+    "letterLowerCase": "l",
+    "letterSound": "l (as in “lip”)",
+    "words": [
+      {
+        "word": "Leg",
+        "sentence": "My leg helps me run so fast."
+      },
+      {
+        "word": "Lip",
+        "sentence": "My lips help me smile."
+      },
+      {
+        "word": "Lot",
+        "sentence": "I have a lot of fun at the park."
+      },
+      {
+        "word": "Let",
+        "sentence": "Let’s go play outside!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "M",
+    "letterLowerCase": "m",
+    "letterSound": "m (as in “map”)",
+    "words": [
+      {
+        "word": "Man",
+        "sentence": "The man wears a big hat."
+      },
+      {
+        "word": "Mom",
+        "sentence": "My mom gives the best hugs."
+      },
+      {
+        "word": "Mat",
+        "sentence": "Sit on the mat, nice and flat."
+      },
+      {
+        "word": "Map",
+        "sentence": "The map shows us where to go."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "N",
+    "letterLowerCase": "n",
+    "letterSound": "n (as in “net”)",
+    "words": [
+      {
+        "word": "Net",
+        "sentence": "I caught a fish in my net!"
+      },
+      {
+        "word": "Not",
+        "sentence": "I do not like cold soup."
+      },
+      {
+        "word": "Nut",
+        "sentence": "A squirrel eats a nut."
+      },
+      {
+        "word": "Nap",
+        "sentence": "I take a nap when I feel sleepy."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "O",
+    "letterLowerCase": "o",
+    "letterSound": "o (as in “hot”)",
+    "words": [
+      {
+        "word": "Ox",
+        "sentence": "An ox is big and strong."
+      },
+      {
+        "word": "On",
+        "sentence": "The book is on the table."
+      },
+      {
+        "word": "Off",
+        "sentence": "Turn the light off at night."
+      },
+      {
+        "word": "Owl",
+        "sentence": "The owl hoots in the tree at night."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "P",
+    "letterLowerCase": "p",
+    "letterSound": "p (as in “pig”)",
+    "words": [
+      {
+        "word": "Pig",
+        "sentence": "The pig rolls in the mud."
+      },
+      {
+        "word": "Pan",
+        "sentence": "I cook eggs in a pan."
+      },
+      {
+        "word": "Pet",
+        "sentence": "My pet dog is very happy!"
+      },
+      {
+        "word": "Pin",
+        "sentence": "Be careful with a sharp pin!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "Q",
+    "letterLowerCase": "q",
+    "letterSound": "kw (as in “quick”)",
+    "words": [
+      {
+        "word": "Quiz",
+        "sentence": "I did well on my quiz!"
+      },
+      {
+        "word": "Quick",
+        "sentence": "Run quick like a rabbit!"
+      },
+      {
+        "word": "Quilt",
+        "sentence": "Grandma made a warm quilt."
+      },
+      {
+        "word": "Quit",
+        "sentence": "I will not quit my puzzle!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "R",
+    "letterLowerCase": "r",
+    "letterSound": "r (as in “red”)",
+    "words": [
+      {
+        "word": "Red",
+        "sentence": "My balloon is bright red!"
+      },
+      {
+        "word": "Run",
+        "sentence": "Run fast like the wind!"
+      },
+      {
+        "word": "Rat",
+        "sentence": "A little rat ran past me!"
+      },
+      {
+        "word": "Rip",
+        "sentence": "Be careful not to rip the paper."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "S",
+    "letterLowerCase": "s",
+    "letterSound": "s (as in “sun”)",
+    "words": [
+      {
+        "word": "Sun",
+        "sentence": "The sun shines bright in the sky."
+      },
+      {
+        "word": "Sit",
+        "sentence": "Sit down and rest a while."
+      },
+      {
+        "word": "Sad",
+        "sentence": "I feel sad when my toy breaks."
+      },
+      {
+        "word": "See",
+        "sentence": "I see a bird in the tree!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "T",
+    "letterLowerCase": "t",
+    "letterSound": "t (as in “top”)",
+    "words": [
+      {
+        "word": "Top",
+        "sentence": "Spin the top round and round!"
+      },
+      {
+        "word": "Toy",
+        "sentence": "I love my new toy car!"
+      },
+      {
+        "word": "Ten",
+        "sentence": "I have ten fingers and ten toes!"
+      },
+      {
+        "word": "Tap",
+        "sentence": "Tap your toes to the beat!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "U",
+    "letterLowerCase": "u",
+    "letterSound": "u (as in “up”)",
+    "words": [
+      {
+        "word": "Up",
+        "sentence": "Look up at the blue sky!"
+      },
+      {
+        "word": "Us",
+        "sentence": "Come play with us at the park!"
+      },
+      {
+        "word": "Under",
+        "sentence": "The cat is under the table."
+      },
+      {
+        "word": "Use",
+        "sentence": "Use a spoon to eat soup."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "V",
+    "letterLowerCase": "v",
+    "letterSound": "v (as in “van”)",
+    "words": [
+      {
+        "word": "Van",
+        "sentence": "A big blue van drives down the street."
+      },
+      {
+        "word": "Vet",
+        "sentence": "The vet helps sick animals."
+      },
+      {
+        "word": "Very",
+        "sentence": "I am very happy today!"
+      },
+      {
+        "word": "Vest",
+        "sentence": "A vest keeps me warm."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "W",
+    "letterLowerCase": "w",
+    "letterSound": "w (as in “wet”)",
+    "words": [
+      {
+        "word": "Wet",
+        "sentence": "The rain makes my shoes wet."
+      },
+      {
+        "word": "Win",
+        "sentence": "I want to win the game!"
+      },
+      {
+        "word": "Wax",
+        "sentence": "The candle is made of wax."
+      },
+      {
+        "word": "Way",
+        "sentence": "This is the way to my house."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "X",
+    "letterLowerCase": "x",
+    "letterSound": "ks (as in “box”)",
+    "words": [
+      {
+        "word": "Box",
+        "sentence": "Put your toys in the box."
+      },
+      {
+        "word": "Fox",
+        "sentence": "The fox runs fast through the trees."
+      },
+      {
+        "word": "Ax",
+        "sentence": "An ax is used to cut wood."
+      },
+      {
+        "word": "Mix",
+        "sentence": "Mix the flour to make bread."
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "Y",
+    "letterLowerCase": "y",
+    "letterSound": "y (as in “yes”)",
+    "words": [
+      {
+        "word": "Yes",
+        "sentence": "Yes, I like ice cream!"
+      },
+      {
+        "word": "You",
+        "sentence": "You are my best friend!"
+      },
+      {
+        "word": "Yam",
+        "sentence": "A yam is a kind of sweet potato."
+      },
+      {
+        "word": "Yell",
+        "sentence": "I yell when I am excited!"
+      }
+    ]
+  },
+  {
+    "letterUpperCase": "Z",
+    "letterLowerCase": "z",
+    "letterSound": "z (as in “zoo”)",
+    "words": [
+      {
+        "word": "Zoo",
+        "sentence": "We saw a lion at the zoo!"
+      },
+      {
+        "word": "Zip",
+        "sentence": "Zip up your coat before going outside."
+      },
+      {
+        "word": "Zap",
+        "sentence": "The toy makes a zap sound!"
+      },
+      {
+        "word": "Zig",
+        "sentence": "The car zig-zags down the road."
+      }
+    ]
+  }
+]

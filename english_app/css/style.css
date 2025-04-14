@@ -1,0 +1,269 @@
+body {margin: 0;font-family: sans-serif;background: #0e4d6f;}
+header {
+    height: 70px;
+    background: #0e4d6f;
+}
+header div {
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    line-height: 70px;
+    margin-left: 10px;
+}
+.select {
+    background: url(../data/img/choose.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 10px;
+    background-size: contain;
+    filter: invert(1);
+    top: 9px;
+    cursor: pointer;
+}
+.letterSelection {
+    position: absolute;
+    width: inherit;
+    background: #0e4d6fad;
+    right: -250px;
+    top: 70px;
+    height: calc(100vh - 179px);
+    transition: ease-in-out .5s;
+    overflow: scroll;
+}
+.eachLetter {
+    font-size: 100px;
+    background: #fde9c7;
+    color: #9b2c1d;
+    font-weight: 800;
+    border: solid 5px;
+    margin: 10px;
+    padding: 12px 35px;
+    width: 77px;
+}
+.letterSelection.selected {
+    right: 0px;
+}
+.app {
+    display: flex;
+    background: #ffe9bc8a;
+}
+.storyPage, .lettersPage {
+    width: 50%;
+    font-size: 30px;
+    border: solid 5px #0e4d6f;
+    height: calc(100vh - 80px);
+    background: linear-gradient(#fff3dcf5, #fff3dce6), url(../data/img/cover3.png);
+    background-size: cover;
+}
+.appContainer {
+    background: url(../data/img/app_bkrd.png);
+    height: 100vh;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.storyText {
+    position: absolute;
+    bottom: 146px;
+    margin: 20px;
+    display: none;
+}
+.logoContainer {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 5em;
+}
+sup {
+    font-size: 13px;
+    font-weight: 900;
+    color: brown;
+}
+.startButton {
+    border: solid 5px #12616e;
+    width: max-content;
+    margin: 50px auto;
+    padding: 10px 30px;
+    font-size: 3em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1em;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #17616f;
+    font-weight: 800;
+}
+.lettersPage div {
+    font-size: 4em;
+    text-align: center;
+    line-height: 75px;
+}
+.storyImage img {
+    height: 79vh;
+    /* margin: 0 auto; */
+    border-radius: 10px;
+    border: solid 5px #912d1d;
+    margin-top: 6px;
+}
+
+.nextButton {
+    border: solid 5px #912d1d;
+    width: max-content;
+    /* margin: 50px auto; */
+    padding: 10px 15px;
+    font-size: 2em !important;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    border-radius: 20px 0 0 0;
+    cursor: pointer;
+    background: #fff7e8;
+    color:  #912d1d;
+    font-weight: 700;
+}
+.backButton {
+    font-weight: 800;
+    border: solid 5px #0e4d6f;
+    width: max-content;
+    /* margin: 50px auto; */
+    padding: 10px 15px;
+    font-size: 2em !important;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    /* left: 0; */
+    left: 0;
+    border-radius: 0 20px 0 0;
+    cursor: pointer;
+    background: #fff7e9;
+    color: #0e4d6f;
+}
+.upper {
+    margin: .5em 0;
+}
+.word {
+    margin: .5em 0 0 0;
+}
+.upper,.lower,.word {
+    cursor: pointer;
+}
+.genImage {
+    width: 256px;
+    height: 256px;
+    border-radius: 20px;
+    margin: 20px;
+    border: solid 6px;
+}
+.storyImage {
+    margin: 0 auto;
+    width: min-content;
+}
+.lettersPage {
+    border-right: none;
+    background: linear-gradient(#fff3dcf5, #fff3dce6), url(../data/img/cover2.png);
+    background-size: cover;
+}
+.upper {
+    color: #9b2c1d;
+}
+
+.lower {
+    color: #0e4d6f;
+}
+
+.word {
+    color: #0b4f71;
+}
+.upper, .lower, .word {
+    border: solid 5px;
+    width: fit-content;
+    margin: 29px auto;
+    padding: 53px;
+    font-weight: 700;
+    border-radius: 10px;
+    background: #fee9c7;
+}
+@media only screen and (max-width: 767px) {
+    body {
+    background: #feeac3;
+}
+    .appContainer {
+        background: url(../data/img/app_bkrd.png);
+        height: 100vh;
+        background-size: 100vh;
+        background-position: center 64px;
+        background-repeat: no-repeat;
+    }
+
+.startButton {
+    border: solid 5px #12616e;
+    /* margin: 50px auto; */
+    padding: 50px 30px;
+    font-size: 5em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    color: #17616f;
+    font-weight: 800;
+    width: auto;
+    text-align: center;
+}
+.app {
+    display: block;
+}
+    .lettersPage {
+     border-right: solid 5px #0e4d6f;
+     /*width: 100%;*/
+     height: 221px;
+     border-bottom: none;
+    }
+    .storyPage, .lettersPage {
+    width: calc(100% - 10px);
+}
+
+
+.upper, .lower, .word {
+        margin: auto;
+        padding: 44px 0;
+        width: calc(100% - 27px);
+    }
+    .lettersPage div {
+        font-size: 2.5em;
+        line-height: 0;
+        float: left;
+    }
+    .lettersPage div:first-child, .lettersPage div:nth-child(2) {
+        width: 44%;
+        margin: 6px;
+    }
+.lettersPage div:nth-child(3) {
+        width: calc(100% - 28px);
+        margin: 6px;
+    }
+    .storyImage img {
+        width: 84vw;
+        height: auto;
+    }
+        .nextButton, .backButton {
+        line-height: 48px !important;
+        height: 45px;
+        width: 40%;
+    }
+.letterSelection {
+    height: calc(100vh - 145px);
+}
+.eachLetter {
+    width: 38px;
+    font-size: 57px;
+}
+}
