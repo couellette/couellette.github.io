@@ -230,7 +230,7 @@ sup {
      border-bottom: none;
     }
     .storyPage, .lettersPage {
-    width: calc(100% - 10px);
+    width: -webkit-fill-available;
 }
 
 
