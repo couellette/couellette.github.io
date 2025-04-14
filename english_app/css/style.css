@@ -206,7 +206,7 @@ sup {
     background: #feeac3;
 }
 .lettersPage div:first-child {
-    margin-left: 2dvw;
+    margin-left: 2dvw!important;
 }
     .appContainer {
         background: url(../data/img/app_bkrd.png);
@@ -314,7 +314,7 @@ header div {
 
     }
         .lettersPage div:first-child, .lettersPage div:nth-child(2) {
-        width: calc(51svw - 15px);
+        width: calc(50svw - 13px);
         margin: 1svw;
     }
         .lettersPage {
