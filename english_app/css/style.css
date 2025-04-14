@@ -329,7 +329,7 @@ header div {
         height: 40svh;
     }
 }
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 800px) {
     .upper, .lower, .word {
         /* padding: 8px; */
         font-size: 2em !important;
