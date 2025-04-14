@@ -190,7 +190,7 @@ sup {
     border-radius: 10px;
     background: #fee9c7;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     body {
     background: #feeac3;
 }
