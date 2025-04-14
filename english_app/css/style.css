@@ -57,7 +57,7 @@ header div {
     width: 50%;
     font-size: 30px;
     border: solid 5px #0e4d6f;
-    height: -webkit-fill-available;
+    /*height: -webkit-fill-available;*/
     background: linear-gradient(#fff3dcf5, #fff3dce6), url(../data/img/cover3.png);
     background-size: cover;
 }
@@ -107,7 +107,7 @@ sup {
     line-height: 75px;
 }
 .storyImage img {
-    height: 68.3svh;
+    height: 54.3svh;
     /* margin: 0 auto; */
     border-radius: 10px;
     border: solid 5px #912d1d;
@@ -201,13 +201,13 @@ sup {
         background: url(../data/img/app_bkrd.png);
         height: 100vh;
         background-size: 100vh;
-        background-position: center 64px;
+        background-position: top;
         background-repeat: no-repeat;
     }
 
 .startButton {
     border: solid 5px #12616e;
-    /* margin: 50px auto; */
+    margin: 17px auto;
     padding: 50px 30px;
     font-size: 5em;
     text-transform: uppercase;
@@ -220,7 +220,6 @@ sup {
     background: #ffffff;
     color: #17616f;
     font-weight: 800;
-    width: auto;
     text-align: center;
 }
 .app {
@@ -248,16 +247,15 @@ sup {
         float: left;
     }
     .lettersPage div:first-child, .lettersPage div:nth-child(2) {
-        width: 44%;
-        margin: 6px;
+        width: 44dvw;
+        margin: 1dvw;
     }
 .lettersPage div:nth-child(3) {
-        width: calc(100% - 28px);
-        margin: 6px;
+        width: 92dvw;
+        margin: 1dvw;
     }
     .storyImage img {
-        width: 84vw;
-        height: auto;
+        /* height: 69dvw; */
     }
         .nextButton, .backButton {
         line-height: 48px !important;
@@ -270,5 +268,14 @@ sup {
 .eachLetter {
     width: 38px;
     font-size: 57px;
+}
+}
+@media only screen and (max-width: 400px) {
+    .storyImage img {
+    height: 38.3svh;
+
+}
+header div {
+    font-size: 46px;
 }
 }
