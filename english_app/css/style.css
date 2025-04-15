@@ -271,7 +271,7 @@ sup {
         padding: inherit;
     }
     .lettersPage div:first-child, .lettersPage div:nth-child(2) {
-        width: calc(50svw - 15px);
+        width: calc(48svw - 9px);
         margin: 1svw;
         height: 86px;
         line-height: 78px;
@@ -279,11 +279,12 @@ sup {
         margin-top: 9px!important;
     }
     .lettersPage div:nth-child(2) {
-        margin-left: 0dvw;
+        margin-left: 1svw;
+        margin-right: 2svw;
     }
 .lettersPage div:nth-child(3) {
-        width: calc(98svw - 10px)!important;
-        margin: 1svw;
+        width: calc(96svw - 10px)!important;
+        margin: 10px 2svw;
         height: 93px;
         line-height: 95px;
     }
